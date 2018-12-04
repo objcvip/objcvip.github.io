@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Effective Objective-C 2.0（第1章） | Chance</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS开发工程师">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Effective Objective-C 2.0（第1章） | Chance">
+    <meta name="twitter:description" content="iOS开发工程师">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Effective Objective-C 2.0（第1章） | Chance">
+    <meta property="og:description" content="iOS开发工程师">
+
+    
+    <meta name="author" content="Chance">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/Effective-Objective-C-2-0（第1章）/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Talk is cheap, show me the code.</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">iOS开发工程师</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
+            
+              <li class="navigation__item"><a href="https://gitee.com/redlic">码云</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme/">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/lcbest" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-disabled"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-12-31T16:00:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Effective Objective-C 2.0（第1章）</h1>
+  </header>
+
+  <section class="post">
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第1章-熟悉Objective-C"><a href="#第1章-熟悉Objective-C" class="headerlink" title="第1章 熟悉Objective-C"></a>第1章 熟悉Objective-C</h3><a id="more"></a>
+<h4 id="1-了解Objective-C-语言的起源"><a href="#1-了解Objective-C-语言的起源" class="headerlink" title="1.了解Objective-C 语言的起源"></a>1.了解Objective-C 语言的起源</h4><p>Objective-C使用消息结构messaging structure，而非函数调用function calling。<br>消息结构：运行时所运行的代码是由运行环境决定的。运行时才会去查找索要执行的方法。<br>函数调用：编译器决定。<br>Objective-C是C语言的超集，使用动态绑定的消息结构，在运行时才会检查对象类型。接收到一条消息后，究竟该执行何种代码，由运行时环境而非编译器决定。<br>对象所占内存总是分配在堆上。</p>
+<h4 id="2-在类的头文件中尽量少引入其他头文件"><a href="#2-在类的头文件中尽量少引入其他头文件" class="headerlink" title="2.在类的头文件中尽量少引入其他头文件"></a>2.在类的头文件中尽量少引入其他头文件</h4><p>@class的作用：<br>（1）可以将引入头文件的时机延后，只在确实有需要的时候才引入，可以减少类的使用者所需引入的头文件数量，减少编译时间。<br>（2）解决两个类相互引用的问题。相互引用会导致循环引用，两个类里有一个无法被正确编译。</p>
+<h4 id="3-多用字面量语法，少用与之等价的方法"><a href="#3-多用字面量语法，少用与之等价的方法" class="headerlink" title="3.多用字面量语法，少用与之等价的方法"></a>3.多用字面量语法，少用与之等价的方法</h4><p>字面量语法简明扼要。<br>创建数组或字典时使用字面量语法能够尽早发现插入nil的问题。</p>
+<h4 id="4-多用类型常量，少用-define预处理命令"><a href="#4-多用类型常量，少用-define预处理命令" class="headerlink" title="4.多用类型常量，少用#define预处理命令"></a>4.多用类型常量，少用#define预处理命令</h4><p>不要使用预处理指令定义常量。（1）这样定义出来的常量不含类型信息（2）如果被其他人重新定义了常量值，编译器不会报警告，这将导致常量值不一致。<br>在实现文件里使用static const来定义此类中使用的常量。<br>在头文件中使用extern来声明全局变量，并在实现文件中定义其值。这种常量会出现在全局符号表中，所以名称最好加上与之相关的类名做前缀。</p>
+<h4 id="5-用枚举表示状态、选项、状态码"><a href="#5-用枚举表示状态、选项、状态码" class="headerlink" title="5.用枚举表示状态、选项、状态码"></a>5.用枚举表示状态、选项、状态码</h4>
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第3章）/" title="Effective Objective-C 2.0（第3章）">Effective Objective-C 2.0（第3章）</a></h2>
+                <p class="excerpt">
+                
+                编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-12-31T16:00:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第3章）/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第4章）/" title="Effective Objective-C 2.0（第4章）">Effective Objective-C 2.0（第4章）</a></h2>
+                <p class="excerpt">
+                
+                编写高质量iOS与OS X代码的52个有效方法第4章 协议与分类
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-12-31T16:00:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第4章）/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Chance
+       
+    </span>
+    <span class="footer__copyright">
+            
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

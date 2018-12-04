@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Effective Objective-C 2.0（第4章） | Chance</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS开发工程师">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Effective Objective-C 2.0（第4章） | Chance">
+    <meta name="twitter:description" content="iOS开发工程师">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Effective Objective-C 2.0（第4章） | Chance">
+    <meta property="og:description" content="iOS开发工程师">
+
+    
+    <meta name="author" content="Chance">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/Effective-Objective-C-2-0（第4章）/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Talk is cheap, show me the code.</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">iOS开发工程师</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
+            
+              <li class="navigation__item"><a href="https://gitee.com/redlic">码云</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme/">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/lcbest" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-disabled"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-12-31T16:00:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Effective Objective-C 2.0（第4章）</h1>
+  </header>
+
+  <section class="post">
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第4章-协议与分类"><a href="#第4章-协议与分类" class="headerlink" title="第4章 协议与分类"></a>第4章 协议与分类</h3><a id="more"></a>
+<h4 id="23-通过委托与数据源协议进行对象间通信"><a href="#23-通过委托与数据源协议进行对象间通信" class="headerlink" title="23.通过委托与数据源协议进行对象间通信"></a>23.通过委托与数据源协议进行对象间通信</h4><ul>
+<li>委托模式为对象提供了一套接口，使其可由此将相关事件告知其他对象。</li>
+<li>将委托对象应该支持的接口定义成协议，在协议中把可能需要处理的事件定义成方法。</li>
+<li>当某对象需要从另外一个对象中获取数据时，可以使用委托模式。这种情境下，该模式亦称“数据源协议”（data source protocal）。</li>
+<li>若有必要，可实现含有位段的结构体，将委托对象是否能响应相关协议方法这一信息缓存至其中。</li>
+</ul>
+<h4 id="24-将类的实现代码分散到便于管理的数个分类之中"><a href="#24-将类的实现代码分散到便于管理的数个分类之中" class="headerlink" title="24.将类的实现代码分散到便于管理的数个分类之中"></a>24.将类的实现代码分散到便于管理的数个分类之中</h4><ul>
+<li>使用分类机制把类的实现代码划分成易于管理的小块。</li>
+<li>将应该视为“私有”的方法归入名叫Private的分类中，以隐藏实现细节。</li>
+</ul>
+<h4 id="25-总是为第三方类的分类名称加前缀"><a href="#25-总是为第三方类的分类名称加前缀" class="headerlink" title="25.总是为第三方类的分类名称加前缀"></a>25.总是为第三方类的分类名称加前缀</h4><ul>
+<li>向第三方类中添加分类时，总应给其名称加上你专用的前缀。</li>
+<li>向第三方类中添加分类时，总应给其中的方法名加上你专用的前缀。</li>
+</ul>
+<h4 id="26-勿在分类中声明属性"><a href="#26-勿在分类中声明属性" class="headerlink" title="26.勿在分类中声明属性"></a>26.勿在分类中声明属性</h4><ul>
+<li>把封装数据所用的全部属性都定义在主接口里。</li>
+<li>在“class-continuation分类”之外的其他分类中，可以定义存取方法，但尽量不要定义属性。</li>
+</ul>
+<h4 id="27-使用“class-continuation分类”隐藏实现细节"><a href="#27-使用“class-continuation分类”隐藏实现细节" class="headerlink" title="27.使用“class-continuation分类”隐藏实现细节"></a>27.使用“class-continuation分类”隐藏实现细节</h4><ul>
+<li>通过“class-continuation分类”向类中新增实例变量。</li>
+<li>如果某属性在主接口中声明为“只读”，而类的内部又要用设置方法修改此属性，那么就在“class-continuation分类”中将其扩展为“可读写”。</li>
+<li>把私有方法的原型声明在“class-continuation分类”里面。</li>
+<li>若想使类所遵循的协议不为人所知，则可于“class-continuation分类”中声明。</li>
+</ul>
+<h4 id="28-通过协议提供匿名对象"><a href="#28-通过协议提供匿名对象" class="headerlink" title="28.通过协议提供匿名对象"></a>28.通过协议提供匿名对象</h4><ul>
+<li>协议可在某种程度上提供匿名类型。具体的对象类型可以淡化成遵从某协议的id类型，协议里规定了对象所应实现的方法。</li>
+<li>使用匿名对象来隐藏类型名称（或类名）。</li>
+<li>如果具体类型不重要，重要的是对象能够响应（定义在协议里的）特定方法，那么可以使用匿名对象来表示。</li>
+</ul>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第1章）/" title="Effective Objective-C 2.0（第1章）">Effective Objective-C 2.0（第1章）</a></h2>
+                <p class="excerpt">
+                
+                编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-12-31T16:00:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第1章）/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第5章）/" title="Effective Objective-C 2.0（第5章）">Effective Objective-C 2.0（第5章）</a></h2>
+                <p class="excerpt">
+                
+                编写高质量iOS与OS X代码的52个有效方法第5章 内存管理
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-12-31T16:00:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第5章）/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Chance
+       
+    </span>
+    <span class="footer__copyright">
+            
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

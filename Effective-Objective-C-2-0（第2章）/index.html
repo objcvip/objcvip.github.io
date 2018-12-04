@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Effective Objective-C 2.0（第2章） | Chance</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS开发工程师">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Effective Objective-C 2.0（第2章） | Chance">
+    <meta name="twitter:description" content="iOS开发工程师">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Effective Objective-C 2.0（第2章） | Chance">
+    <meta property="og:description" content="iOS开发工程师">
+
+    
+    <meta name="author" content="Chance">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/Effective-Objective-C-2-0（第2章）/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Talk is cheap, show me the code.</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">iOS开发工程师</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
+            
+              <li class="navigation__item"><a href="https://gitee.com/redlic">码云</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme/">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/lcbest" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-disabled"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-12-31T16:00:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Effective Objective-C 2.0（第2章）</h1>
+  </header>
+
+  <section class="post">
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第2章-对象、消息、运行期"><a href="#第2章-对象、消息、运行期" class="headerlink" title="第2章 对象、消息、运行期"></a>第2章 对象、消息、运行期</h3><a id="more"></a>
+<h4 id="6-理解“属性”这一概念"><a href="#6-理解“属性”这一概念" class="headerlink" title="6.理解“属性”这一概念"></a>6.理解“属性”这一概念</h4><p>可以使用@synthesize语法来指定实例变量的名字。<br>atomic同步锁会严重影响性能，并且并不能保证线程安全。所以使用nonatomic。<br>atomic为什么不能保证线程安全？例：一个线程在连续多次读取某属性值的过程中有别的线程在同时改写该值，那么即便将属性声明为atomic，也还是会读到不同的属性值。</p>
+<h4 id="7-在对象内部尽量直接访问实例变量"><a href="#7-在对象内部尽量直接访问实例变量" class="headerlink" title="7.在对象内部尽量直接访问实例变量"></a>7.在对象内部尽量直接访问实例变量</h4><p>在对象内部读取数据时，应该直接通过实例变量来读，而写入数据时，则应该通过属性来写（set方法，为了触发KVO）。<br>在初始化方法和dealloc方法中，总是应该直接通过实例变量来读写数据。<br>使用懒加载时，需要通过属性来读取数据。（get方法）</p>
+<h4 id="8-理解“对象等同性”这一概念"><a href="#8-理解“对象等同性”这一概念" class="headerlink" title="8.理解“对象等同性”这一概念"></a>8.理解“对象等同性”这一概念</h4><p>== 比较的是两个指针本身，而不是所指的对象。<br>isEqual 比较的两个对象。<br>相同的对象必须具有相同的哈希码，但是两个哈希码相同的对象却未必相同。<br>不要盲目地逐个检测每条属性，而是应该依照具体需求来制定监测方案。<br>编写hash方法时，应该使用计算速度快而且哈希码碰撞几率低的算法。</p>
+<h4 id="9-以“类族模式”隐藏实现细节"><a href="#9-以“类族模式”隐藏实现细节" class="headerlink" title="9.以“类族模式”隐藏实现细节"></a>9.以“类族模式”隐藏实现细节</h4><ul>
+<li>类族模式可以把实现细节隐藏在一套简单的公共接口后面。</li>
+<li>系统框架中经常使用类族。</li>
+<li>从类族的公共抽象基类中继承子类时要当心。</li>
+</ul>
+<h4 id="10-在既有类中使用关联对象存放自定义数据"><a href="#10-在既有类中使用关联对象存放自定义数据" class="headerlink" title="10.在既有类中使用关联对象存放自定义数据"></a>10.在既有类中使用关联对象存放自定义数据</h4><p>objc_setAssociatedObject<br>objc_getAssociatedObject<br>objc_removeAssociatedObject</p>
+<h4 id="11-理解objc-msgSend的作用"><a href="#11-理解objc-msgSend的作用" class="headerlink" title="11.理解objc_msgSend的作用"></a>11.理解objc_msgSend的作用</h4><ul>
+<li>消息由接收者、选择子及参数构成。给某对象发送消息也就相当于在该对象上调用方法。</li>
+<li>发给某对象的全部消息都要由动态消息派发系统来处理，该系统会查出对应的方法，并执行其代码。</li>
+</ul>
+<h4 id="12-理解消息转发机制"><a href="#12-理解消息转发机制" class="headerlink" title="12.理解消息转发机制"></a>12.理解消息转发机制</h4><ul>
+<li>若对象无法响应某个选择子，则进入消息转发流程。</li>
+<li>通过运行期的动态方法解析功能，我们可以在需要用到某个方法时再将其加入类中。</li>
+<li>对象可以把其无法解读的某些选择子转交给其他对象来处理。</li>
+<li>经过上述两步后，如果还是没办法处理选择子，那就启动完整的消息转发机制。</li>
+</ul>
+<h4 id="13-用“方法调配技术”调试“黑盒方法”"><a href="#13-用“方法调配技术”调试“黑盒方法”" class="headerlink" title="13.用“方法调配技术”调试“黑盒方法”"></a>13.用“方法调配技术”调试“黑盒方法”</h4><ul>
+<li>在运行期，可以向类中新增或替换选择子所对应的方法实现。</li>
+<li>使用另一份实现来替换原有的方法实现，这道工序叫做“方法调配”，开发者常使用此技术向原有实现中添加新功能。</li>
+<li>一般来说，只有调试程序的时候才需要在运行期修改方法实现，这种做法不宜滥用。</li>
+</ul>
+<h4 id="14-理解“类对象”的用意"><a href="#14-理解“类对象”的用意" class="headerlink" title="14.理解“类对象”的用意"></a>14.理解“类对象”的用意</h4><ul>
+<li>每个实例都有一个指向Class对象的指针，用以表明其类型，而这些Class对象则构成了类的继承体系。</li>
+<li>如果对象类型无法在编译期确定，那么就应该使用类型信息查询方法来探知。</li>
+<li>尽量使用类型信息查询方法来确定对象类型，而不要直接比较类对象，因为某些对象可能实现了消息转发功能。</li>
+</ul>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第3章）/" title="Effective Objective-C 2.0（第3章）">Effective Objective-C 2.0（第3章）</a></h2>
+                <p class="excerpt">
+                
+                编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-12-31T16:00:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第3章）/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Chance
+       
+    </span>
+    <span class="footer__copyright">
+            
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

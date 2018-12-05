@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Effective Objective-C 2.0（第7章） | Chance</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS开发工程师">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Effective Objective-C 2.0（第7章） | Chance">
+    <meta name="twitter:description" content="iOS开发工程师">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Effective Objective-C 2.0（第7章） | Chance">
+    <meta property="og:description" content="iOS开发工程师">
+
+    
+    <meta name="author" content="Chance">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/Effective-Objective-C-2-0（第7章）/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Talk is cheap, show me the code.</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">iOS开发工程师</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
+            
+              <li class="navigation__item"><a href="https://gitee.com/redlic">码云</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme/">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/lcbest" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-disabled"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-12-31T16:07:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Effective Objective-C 2.0（第7章）</h1>
+  </header>
+
+  <section class="post">
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第7章-系统框架"><a href="#第7章-系统框架" class="headerlink" title="第7章 系统框架"></a>第7章 系统框架</h3><a id="more"></a>
+<h4 id="47-熟悉系统框架"><a href="#47-熟悉系统框架" class="headerlink" title="47.熟悉系统框架"></a>47.熟悉系统框架</h4><p>将一系列代码封装为动态库（dynamic library），并在其中放入描述其接口的头文件，这样做出来的东西就叫框架。有时为iOS平台构建的第三方框架所使用的是静态库（static library），这是因为iOS应用程序不允许在其中包含动态库。这些东西严格来讲并不是真正的框架，然而也经常视为框架。不过，所有iOS平台的系统框架仍然使用动态库。</p>
+<h5 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h5><ul>
+<li>许多系统框架都可以直接使用。其中最重要的是Foundation与CoreFoundation，这两个框架提供了构建应用程序所需的许多核心功能。</li>
+<li>很多常见任务都能用框架来做，例如音频与视频处理、网络通信、数据管理等。</li>
+<li>请记住：用纯C写成的框架与用Objective-C写成的一样重要，若想成为优秀的Objective-C开发者，应该掌握C语言的核心概念。</li>
+</ul>
+<h4 id="48-多用块枚举，少用for循环"><a href="#48-多用块枚举，少用for循环" class="headerlink" title="48.多用块枚举，少用for循环"></a>48.多用块枚举，少用for循环</h4><ul>
+<li>for 循环</li>
+<li>使用Objective-C 1.0 的 NSEnumerator来遍历</li>
+<li>快速遍历</li>
+<li>基于块的遍历方式<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)enumerateObjectsUsingBlock:(void(^)(id object, NSUInteger idx, BOOL *stop))block</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="要点-1"><a href="#要点-1" class="headerlink" title="要点"></a>要点</h5><ul>
+<li>遍历collection有四种方式。最基本的办法是for循环，其次是NSEnumerator遍历法及快速遍历法，最新、最先进的方式是“块枚举法”。</li>
+<li>“块枚举法”本身就能通过GCD来并发执行遍历操作，无须另行编写代码。而采用其他遍历方式则无法轻易实现这一点。</li>
+<li>若提前知道待遍历的collection含有何种对象，则应修改块签名，指出对象的具体类型。</li>
+</ul>
+<h4 id="49-对自定义其内存管理语义的collection使用无缝桥接"><a href="#49-对自定义其内存管理语义的collection使用无缝桥接" class="headerlink" title="49.对自定义其内存管理语义的collection使用无缝桥接"></a>49.对自定义其内存管理语义的collection使用无缝桥接</h4><p>__bridge</p>
+<h5 id="要点-2"><a href="#要点-2" class="headerlink" title="要点"></a>要点</h5><ul>
+<li>通过无缝桥接技术，可以在Foundation框架中的Objective-C对象与CoreFoundation框架中的C语言数据结构之间来回转换。</li>
+<li>在CoreFoundation层面创建collection时，可以指定许多回调函数，将其转换成具备特殊内存管理予以的Objective-C collection。</li>
+</ul>
+<h4 id="50-构建缓存时选用NSCache而非NSDictionary"><a href="#50-构建缓存时选用NSCache而非NSDictionary" class="headerlink" title="50.构建缓存时选用NSCache而非NSDictionary"></a>50.构建缓存时选用NSCache而非NSDictionary</h4><p>NSCache是线程安全的。而NSDictionary则绝对不具备此优势，意思就是：在开发者自己不编写加锁代码的前提下，多个线程便可以同时访问NSCache。</p>
+<h5 id="要点-3"><a href="#要点-3" class="headerlink" title="要点"></a>要点</h5><ul>
+<li>实现缓存时应选用NSCache而非NSDictionary对象。因为NSCache可以提供优雅的自动删减功能，而且是“线程安全的”，此外，它与字典不同，并不会拷贝键。</li>
+<li>可以给NSCache对象设置上限，用以限制缓存中的对象总个数及“总成本”，而这些尺度则定义了缓存删减其中对象的时机。但是绝对不要把这些尺度当成可靠的“硬限制”（hard limit），它们仅对NSCache起指导作用。</li>
+<li>将NSPurgeableData与NSCache搭配使用，可实现自动清除数据的功能，也就是说，当NSPurgeableData对象所占内存为系统所丢弃时，该对象自身也会从缓存中移除。</li>
+<li>如果缓存使用得当，那么应用程序的响应速度就能提高。只有那种“重新计算起来费事的”数据，才值得放入缓存，比如那些需要从网络获取或从磁盘读取的数据。</li>
+</ul>
+<h4 id="51-精简initialize与load的实现代码"><a href="#51-精简initialize与load的实现代码" class="headerlink" title="51.精简initialize与load的实现代码"></a>51.精简initialize与load的实现代码</h4><h5 id="要点-4"><a href="#要点-4" class="headerlink" title="要点"></a>要点</h5><ul>
+<li>在加载阶段，如果累实现了load方法，那么系统就会调用它。分类里也可以定义此方法，类的load方法要比分类中的先调用。与其他方法不同，load方法不参与覆写机制。</li>
+<li>首次使用到某个类之前，系统会向其发送initialize消息。由于此方法遵从普通的覆写规则，所以通常应该在里面判断当前要初始化的是哪个类。</li>
+<li>load与initialize方法都应该实现得精简一些，这有助于保持应用程序的响应能力，也能减少引入“依赖环”（interdependency cycle）的几率。</li>
+<li>无法在编译期设定的全局变量，可以放在initialize方法里初始化。</li>
+</ul>
+<h4 id="52-别忘了NSTimer会保留其目标对象"><a href="#52-别忘了NSTimer会保留其目标对象" class="headerlink" title="52.别忘了NSTimer会保留其目标对象"></a>52.别忘了NSTimer会保留其目标对象</h4><h5 id="要点-5"><a href="#要点-5" class="headerlink" title="要点"></a>要点</h5><ul>
+<li>NSTimer对象会保留其目标，直到计时器本身失效为止，调用invalidate方法可令计时器失效，另外，一次性的计时器在触发完成任务之后也会失效。</li>
+<li>反复执行任务的计时器（repeating timer），很容易引入保留环，如果这种计时器的目标对象又保留了计时器本身，那肯定户籍导致保留环。这种环状保留关系，可能是直接发生的，也可能是通过对象图里的其他对象间接发生的。</li>
+<li>可以扩充NSTimer的功能，用“块”来打破保留环。不过，除非NSTimer将来在公共接口里提供此功能，否则必须创建分类，将相关实现代码加入其中。</li>
+</ul>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第6章）/" title="Effective Objective-C 2.0（第6章）">Effective Objective-C 2.0（第6章）</a></h2>
+                <p class="excerpt">
+                
+                编写高质量iOS与OS X代码的52个有效方法第6章 块与大中枢派发
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-12-31T16:06:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第6章）/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Chance
+       
+    </span>
+    <span class="footer__copyright">
+            
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

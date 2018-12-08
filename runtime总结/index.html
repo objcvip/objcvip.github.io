@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Runtime总结 | Chance</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS开发工程师">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Runtime总结 | Chance">
+    <meta name="twitter:description" content="iOS开发工程师">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Runtime总结 | Chance">
+    <meta property="og:description" content="iOS开发工程师">
+
+    
+    <meta name="author" content="Chance">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/runtime总结/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Talk is cheap, show me the code.</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">iOS开发工程师</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
+            
+              <li class="navigation__item"><a href="https://gitee.com/redlic">码云</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme/">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/lcbest" title="查看我的GitHub主页" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  <li class="navigation__item">
+    <a href="https://www.facebook.com/lichangpro" title="上Facebook找我" target="_blank">
+      <i class="social fa fa-facebook"></i>
+      <span class="label">Facebook</span>
+    </a>
+  </li>
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/pass7580" title="上Twitter找我" target="_blank">
+      <i class="social fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+
+  <li class="navigation__item">
+    <a href="mailto:redlic@163.com" title="邮件联系我" target="_blank">
+      <i class="social fa fa-envelope"></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-disabled"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-04-23T16:00:00.000Z" class="post-list__meta--date date">2017-04-24</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Runtime总结</h1>
+  </header>
+
+  <section class="post">
+    <h3 id="一、Runtime是什么？"><a href="#一、Runtime是什么？" class="headerlink" title="一、Runtime是什么？"></a>一、Runtime是什么？</h3><a id="more"></a>
+<p>Runtime 运行时，就是系统在运行的时候的一些机制，其中最主要的是消息机制。<br>Runtime 基本是用C和汇编编写的。</p>
+<h4 id="OC与C语言在函数调用上的区别："><a href="#OC与C语言在函数调用上的区别：" class="headerlink" title="OC与C语言在函数调用上的区别："></a>OC与C语言在函数调用上的区别：</h4><p>C语言：</p>
+<ol>
+<li>函数的调用在编译的时候就决定调用哪个函数，编译完成之后直接顺序执行，无任何二义性。</li>
+<li>C语言在编译阶段调用未实现的函数就会报错。</li>
+</ol>
+<p>OC：</p>
+<ol>
+<li>函数的调用称为消息发送。属于动态调用过程。</li>
+<li>在编译的时候并不能决定真正调用哪个函数。在编译阶段，可以调用任何函数，只要函数声明过。</li>
+</ol>
+<h3 id="二、与Runtime系统交互："><a href="#二、与Runtime系统交互：" class="headerlink" title="二、与Runtime系统交互："></a>二、与Runtime系统交互：</h3><h5 id="1-通过OC源代码"><a href="#1-通过OC源代码" class="headerlink" title="1. 通过OC源代码"></a>1. 通过OC源代码</h5><p>编译器会自动将OC代码转换成运行时代码，在运行时确定数据结构和函数。</p>
+<h5 id="2-NSObject类定义的方法"><a href="#2-NSObject类定义的方法" class="headerlink" title="2. NSObject类定义的方法"></a>2. NSObject类定义的方法</h5><p>-class<br>-isKindOfClass  -isMemberOfClass<br>-respondsToSelector<br>-confirmsToProtocol<br>-methodForSelector  返回指定方法实现的地址</p>
+<h5 id="3-直接调用-Runtime-库函数-Runtime-常用接口方法"><a href="#3-直接调用-Runtime-库函数-Runtime-常用接口方法" class="headerlink" title="3. 直接调用 Runtime 库函数(Runtime 常用接口方法)"></a>3. 直接调用 Runtime 库函数(Runtime 常用接口方法)</h5><p>object_getClass<br>@selector()<br>class_getClassMethod<br>class_getInstanceMethod<br>class_addMethod()<br>class_replaceMethod<br>method_exchangeImplementations<br>class_copyPropertyList<br>class_copyMethodList<br>class_copyProtocolList</p>
+<h3 id="三、Runtime相关术语"><a href="#三、Runtime相关术语" class="headerlink" title="三、Runtime相关术语"></a>三、Runtime相关术语</h3><p>SEL<br>id<br>Class<br>Method<br>Ivar 成员变量<br>IMP 是一个函数指针，指向了方法的实现。<br>Cache</p>
+<h3 id="四、消息发送和消息转发"><a href="#四、消息发送和消息转发" class="headerlink" title="四、消息发送和消息转发"></a>四、消息发送和消息转发</h3><h4 id="消息发送-objc-msgSend"><a href="#消息发送-objc-msgSend" class="headerlink" title="消息发送  objc_msgSend"></a>消息发送  objc_msgSend</h4><ol>
+<li>通过isa指针找到所属类。</li>
+<li>查找类的cache列表, 如果没有则下一步。</li>
+<li>查找类的”方法列表”。</li>
+<li>如果能找到与选择子名称相符的方法, 就跳至其实现代码。</li>
+<li>找不到, 就沿着继承体系继续向上查找。</li>
+<li>如果能找到与选择子名称相符的方法, 就跳至其实现代码。</li>
+<li>找不到, 执行”消息转发”。</li>
+</ol>
+<h4 id="消息转发"><a href="#消息转发" class="headerlink" title="消息转发"></a>消息转发</h4><ol>
+<li><p>动态方法解析</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (BOOL)resolveInstanceMethod:(SEL)selector</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>其他接收者</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (id)forwardingTargetForSelector:(SEL)selector</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>消息签名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>完整的消息转发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- (void)forwardInvocation:(NSInvocation *)invocation</span><br><span class="line">// invocation : 封装了与那条尚未处理的消息相关的所有细节的对象</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="五、Runtime应用"><a href="#五、Runtime应用" class="headerlink" title="五、Runtime应用"></a>五、Runtime应用</h3><ol>
+<li>动态添加一个类（KVO的实现原理）</li>
+<li>获取一个类的所有属性<br>（1）打印一个类的成员变量列表，属性列表，方法列表<br>（2）动态改变变量的值。<br>（3）在 NSObject 的分类中增加方法，判断是否有该属性，用于避免使用KVC赋值时崩溃。<br>（4）自动归档和解档<br>（5）字典转模型</li>
+<li>动态交换方法<br>（1）交换方法<br>（2）替换系统方法<br>（3）实现多继承的效果</li>
+<li>动态添加方法 performSelector<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">resolveInstanceMethod</span><br><span class="line">class_addMethod(self, @selector(eat), eat, &quot;v@:&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/runloop总结/" title="RunLoop总结">RunLoop总结</a></h2>
+                <p class="excerpt">
+                
+                Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-04-25T16:00:00.000Z" class="post-list__meta--date date">2017-04-26</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
+</span><a class="btn-border-small" href="/runloop总结/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/aboutme/" title="关于我">关于我</a></h2>
+                <p class="excerpt">
+                
+                iOS开发工程师。
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2016-12-31T16:00:00.000Z" class="post-list__meta--date date">2017-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/个人简介/">个人简介</a>
+</span><a class="btn-border-small" href="/aboutme/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Chance - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+            
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-130581623-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?1fd71bc196ee52d6ace3860b092024e4";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

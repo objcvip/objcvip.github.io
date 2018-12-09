@@ -3,7 +3,7 @@
   <title>Chance</title>
   <icon>https://www.gravatar.com/avatar/a31c8546996faf9a1219c8776754ad93</icon>
   <subtitle>Talk is cheap, show me the code.</subtitle>
-  <link href="/feed.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
   <updated>2018-12-06T10:04:13.873Z</updated>

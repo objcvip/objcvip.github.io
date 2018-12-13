@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://chanceli.com/aboutme/</loc>
+    <lastmod>2018-12-13T10:07:52.474Z</lastmod>
+  </url>  <url>
     <loc>http://chanceli.com/runloop%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2018-12-08T14:36:23.829Z</lastmod>
   </url>  <url>
@@ -12,9 +15,6 @@
   </url>  <url>
     <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC1%E7%AB%A0%EF%BC%89/</loc>
     <lastmod>2018-12-08T11:51:36.703Z</lastmod>
-  </url>  <url>
-    <loc>http://chanceli.com/aboutme/</loc>
-    <lastmod>2018-12-06T10:04:41.039Z</lastmod>
   </url>  <url>
     <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC7%E7%AB%A0%EF%BC%89/</loc>
     <lastmod>2018-12-06T10:04:13.873Z</lastmod>

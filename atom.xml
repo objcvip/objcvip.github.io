@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chanceli.com/"/>
-  <updated>2018-12-21T11:03:09.743Z</updated>
+  <updated>2019-01-02T05:48:43.355Z</updated>
   <id>http://chanceli.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Game</title>
+    <link href="http://chanceli.com/game/"/>
+    <id>http://chanceli.com/game/</id>
+    <published>2019-01-02T05:48:00.000Z</published>
+    <updated>2019-01-02T05:48:43.355Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="QQ区"><a href="#QQ区" class="headerlink" title="QQ区"></a>QQ区</h1><p><img src="https://ws1.sinaimg.cn/large/007xVAS0ly1fys3cxhzpzj31pc0yie86.jpg" alt="QQ区"></p><h1 id="微信区"><a href="#微信区" class="headerlink" title="微信区"></a>微信区</h1><p><img src="https://wx2.sinaimg.cn/large/007xVAS0ly1fys3dhs6s0j31pc0yix6t.jpg" alt="微信区"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;QQ区&quot;&gt;&lt;a href=&quot;#QQ区&quot; class=&quot;headerlink&quot; title=&quot;QQ区&quot;&gt;&lt;/a&gt;QQ区&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/007xVAS0ly1fys3cxhzpzj31pc0
+      
+    
+    </summary>
+    
+      <category term="Game" scheme="http://chanceli.com/categories/Game/"/>
+    
+    
+      <category term="Game" scheme="http://chanceli.com/tags/Game/"/>
+    
+  </entry>
   
   <entry>
     <title>我曾七次鄙视我的灵魂（卡里.纪伯伦）</title>

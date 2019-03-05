@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Game | Chance</title>
+    <title>《大话数据结构》学习笔记一 | Chance</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Game | Chance">
+    <meta name="twitter:title" content="《大话数据结构》学习笔记一 | Chance">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Game | Chance">
+    <meta property="og:title" content="《大话数据结构》学习笔记一 | Chance">
     <meta property="og:description" content="iOS developer">
 
     
@@ -39,7 +39,7 @@
     <link rel="alternate" type="application/rss+xml" title="Chance" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://chanceli.com/game/"/>
+    <link rel="canonical" href="http://chanceli.com/《大话数据结构》学习笔记一/"/>
 
                  
 </head>
@@ -162,26 +162,66 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2019-01-02T05:48:00.000Z" class="post-list__meta--date date">2019-01-02</time> &#8226; <span class="post-meta__tags tags">于 
-  <a class="tag-link" href="/tags/Game/">Game</a>
+      <time datetime="2019-03-05T15:41:00.000Z" class="post-list__meta--date date">2019-03-05</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
  </span>
       <span class="page-pv">
        阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">Game</h1>
+    <h1 class="post-title">《大话数据结构》学习笔记一</h1>
   </header>
 
   <section class="post">
-    <blockquote>
-<p>Super Mario Run</p>
-</blockquote>
-<p><img src="https://ws2.sinaimg.cn/large/007xVAS0ly1g0na20liuaj318g0p0jt1.jpg" alt="SuperMarioRun"><br><img src="https://wx1.sinaimg.cn/large/007xVAS0ly1g0nadn39u8j30yi1pcqvc.jpg" alt="image"></p>
-<blockquote>
-<p>王者荣耀</p>
-</blockquote>
-<p>QQ区<br><img src="https://ws1.sinaimg.cn/large/007xVAS0ly1fys3cxhzpzj31pc0yie86.jpg" alt="QQ区"><br>微信区<br><img src="https://wx2.sinaimg.cn/large/007xVAS0ly1fys3dhs6s0j31pc0yix6t.jpg" alt="微信区"></p>
+    <h1 id="第1章-数据结构绪论"><a href="#第1章-数据结构绪论" class="headerlink" title="第1章 数据结构绪论"></a>第1章 数据结构绪论</h1><ul>
+<li>数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。</li>
+<li>数据元素： 是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。</li>
+<li>数据项：一个数据元素可以由若干个数据项组成。数据项是数据不可分割的最小单位。</li>
+<li>数据对象：是性质相同的数据元素的集合，是数据的子集。</li>
+<li>数据结构：是相互之间存在一种或多种特定关系的数据元素的集合。</li>
+</ul>
+<h2 id="逻辑结构与物理结构"><a href="#逻辑结构与物理结构" class="headerlink" title="逻辑结构与物理结构"></a>逻辑结构与物理结构</h2><h4 id="1-逻辑结构：是指数据对象中数据元素之间的相互关系。分为以下4种："><a href="#1-逻辑结构：是指数据对象中数据元素之间的相互关系。分为以下4种：" class="headerlink" title="1. 逻辑结构：是指数据对象中数据元素之间的相互关系。分为以下4种："></a>1. 逻辑结构：是指数据对象中数据元素之间的相互关系。分为以下4种：</h4><ul>
+<li>集合机构</li>
+<li>线性结构</li>
+<li>树形结构</li>
+<li>图形结构</li>
+</ul>
+<h4 id="2-物理结构：是指数据的逻辑结构在计算机中的存储形式。"><a href="#2-物理结构：是指数据的逻辑结构在计算机中的存储形式。" class="headerlink" title="2. 物理结构：是指数据的逻辑结构在计算机中的存储形式。"></a>2. 物理结构：是指数据的逻辑结构在计算机中的存储形式。</h4><ul>
+<li>顺序存储结构：是把数据元素放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的。</li>
+<li>链式存储结构：是把数据元素存放在任意的存储单元里，这组单元可以是连续的，也可以是不连续的。</li>
+</ul>
+<h2 id="抽象数据类型"><a href="#抽象数据类型" class="headerlink" title="抽象数据类型"></a>抽象数据类型</h2><p>数据类型：是指一组性质相同的值得集合及定义在此集合上的一些操作的总称。<br>C语言中，按照取值的不同，可以分为两类：</p>
+<ul>
+<li>原子类型：是不可以再分解的基本类型，包括整型、实型、字符型等。</li>
+<li>结构类型：由若干个类型组合而成，是可以再分解的。例如，整型数组是由若干整型数组组成的。</li>
+</ul>
+<p>抽象数据类型（Abstract Data Type, ADT）：是指一个数学模型及定义在该模型上的一组操作。</p>
+<h1 id="第2章-算法"><a href="#第2章-算法" class="headerlink" title="第2章 算法"></a>第2章 算法</h1><p>算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有序序列，并且每条指令表示一个或多个操作。</p>
+<h2 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h2><ol>
+<li>输入输出</li>
+<li>有穷性</li>
+<li>确定性</li>
+<li>可行性</li>
+</ol>
+<h2 id="算法设计的要求"><a href="#算法设计的要求" class="headerlink" title="算法设计的要求"></a>算法设计的要求</h2><ol>
+<li>正确性</li>
+<li>可读性</li>
+<li>健壮性</li>
+<li>时间效率高和存储量低</li>
+</ol>
+<h2 id="算法效率的度量方法"><a href="#算法效率的度量方法" class="headerlink" title="算法效率的度量方法"></a>算法效率的度量方法</h2><ol>
+<li>事后统计方法（不科学、不准确）</li>
+<li>事前分析估算方法</li>
+</ol>
+<h2 id="函数的渐近式增长"><a href="#函数的渐近式增长" class="headerlink" title="函数的渐近式增长"></a>函数的渐近式增长</h2><p>函数的渐近增长：给定两个函数 f(n) 和 g(n), 如果存在一个整数N，使得对于所有的 n &gt; N, f(n) 总是比 g(n) 大，那么，我们说 f(n) 的增长渐近快于 g(n)。</p>
+<h2 id="算法时间复杂度"><a href="#算法时间复杂度" class="headerlink" title="算法时间复杂度"></a>算法时间复杂度</h2><p>在进行算法分析时，语句总的执行次数 T(n) 是关于问题规模 n 的函数，进而分析 T(n) 随 n 的变化情况并确定 T(n) 的数量级。算法的时间复杂度，也就是算法的时间度量，记作：T(n) = O(f(n))。它表示随问题规模 n 的增大，算法执行时间的增长率和 f(n) 的增长率相同，称作算法的渐近时间复杂度，简称为时间复杂度。其中 f(n) 是问题规模 n 的某个函数。</p>
+<h2 id="推导大-O-阶方法"><a href="#推导大-O-阶方法" class="headerlink" title="推导大 O 阶方法"></a>推导大 O 阶方法</h2><ol>
+<li>用常数 1 取代运行时间中的所有加法常数。</li>
+<li>在修改后的运行次数函数中，只保留最高阶项。</li>
+<li>如果最高阶存在且不是 1，则去除与这个项相乘的常数。<br>得到的结果就是大 O 阶。</li>
+</ol>
+<h2 id="常见的时间复杂度"><a href="#常见的时间复杂度" class="headerlink" title="常见的时间复杂度"></a>常见的时间复杂度</h2><p>O(1) &lt; O(logn) &lt; O(n) &lt; O(nlogn) &lt; O(n^2) &lt; O(n^3) &lt; O(2^n) &lt; O(n!) &lt; O(n^n)</p>
 
   </section>
 
@@ -190,9 +230,11 @@
 <section class="read-more">
            
     
+        
+        
                
             <div class="read-more-item">
-                <span class="read-more-item-dim">最近的文章</span>
+                <span class="read-more-item-dim">更早的文章</span>
                 <h2 class="post-list__post-title post-title"><a href="/CodingGuidelines/" title="iOS 代码规范">iOS 代码规范</a></h2>
                 <p class="excerpt">
                 
@@ -206,24 +248,6 @@
                 <div class="post-list__meta"><time datetime="2019-03-04T16:00:00.000Z" class="post-list__meta--date date">2019-03-05</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/代码规范/">代码规范</a>
 </span><a class="btn-border-small" href="/CodingGuidelines/">阅读全文</a></div>
-                           
-            </div>
-        
-        
-               
-            <div class="read-more-item">
-                <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/我曾七次鄙视我的灵魂/" title="我曾七次鄙视我的灵魂（卡里.纪伯伦）">我曾七次鄙视我的灵魂（卡里.纪伯伦）</a></h2>
-                <p class="excerpt">
-                
-                
-Seven times have I despised my soul:
-——Kahlil Gibran
-                &hellip;
-                </p>
-                <div class="post-list__meta"><time datetime="2018-12-21T10:09:00.000Z" class="post-list__meta--date date">2018-12-21</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/诗和远方/">诗和远方</a>
-</span><a class="btn-border-small" href="/我曾七次鄙视我的灵魂/">阅读全文</a></div>
                        
             </div>
         

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chanceli.com/aboutme/</loc>
+    
+    <lastmod>2019-05-29T10:21:47.130Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chanceli.com/DataStructurePart2/</loc>
     
     <lastmod>2019-05-29T09:57:40.748Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://chanceli.com/SevenTimesHaveIDespisedMySoul/</loc>
     
     <lastmod>2018-12-21T11:03:09.743Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chanceli.com/aboutme/</loc>
-    
-    <lastmod>2018-12-14T09:30:31.286Z</lastmod>
     
   </url>
   

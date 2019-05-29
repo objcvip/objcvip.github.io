@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>我曾七次鄙视我的灵魂（卡里.纪伯伦） | Chance</title>
+    <title>Effective Objective-C 2.0（第4章） | Chance</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="我曾七次鄙视我的灵魂（卡里.纪伯伦） | Chance">
+    <meta name="twitter:title" content="Effective Objective-C 2.0（第4章） | Chance">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="我曾七次鄙视我的灵魂（卡里.纪伯伦） | Chance">
+    <meta property="og:title" content="Effective Objective-C 2.0（第4章） | Chance">
     <meta property="og:description" content="iOS developer">
 
     
@@ -39,7 +39,7 @@
     <link rel="alternate" type="application/rss+xml" title="Chance" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://chanceli.com/我曾七次鄙视我的灵魂/"/>
+    <link rel="canonical" href="http://chanceli.com/EffectiveObjectiveCPart4/"/>
 
                  
 </head>
@@ -162,39 +162,48 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2018-12-21T10:09:00.000Z" class="post-list__meta--date date">2018-12-21</time> &#8226; <span class="post-meta__tags tags">于 
-  <a class="tag-link" href="/tags/诗和远方/">诗和远方</a>
+      <time datetime="2018-01-03T16:04:00.000Z" class="post-list__meta--date date">2018-01-04</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
  </span>
       <span class="page-pv">
        阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">我曾七次鄙视我的灵魂（卡里.纪伯伦）</h1>
+    <h1 class="post-title">Effective Objective-C 2.0（第4章）</h1>
   </header>
 
   <section class="post">
-    <blockquote>
-<p>Seven times have I despised my soul:</p>
-<p>——Kahlil Gibran</p>
-<a id="more"></a>
-<p>The first time when I saw her being meek that she might attain height.</p>
-<p>The second time when I saw her limping before the crippled.</p>
-<p>The third time when she was given to choose between the hard and the easy, and she chose the easy.</p>
-<p>The fourth time when she committed a wrong, and comforted herself that others also commit wrong.</p>
-<p>The fifth time when she forbore for weakness, and attributed her patience to strength.</p>
-<p>The sixth time when she despised the ugliness of a face, and knew not that it was one of her own masks.</p>
-<p>And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
-</blockquote>
-<h1 id="译文"><a href="#译文" class="headerlink" title="译文"></a>译文</h1><p>我曾七次鄙视我的灵魂</p>
-<p>——卡里.纪伯伦</p>
-<p>第一次，当它本可进取时，却故作谦卑；</p>
-<p>第二次，当它在空虚时，用爱欲来填充；</p>
-<p>第三次，在困难和容易之间，它选择了容易；</p>
-<p>第四次，它犯了错，却借由别人也会犯错来宽慰自己；</p>
-<p>第五次，它自由软弱，却把它认为是生命的坚韧；</p>
-<p>第六次，当它鄙夷一张丑恶的嘴脸时，却不知那正是自己面具中的一副；</p>
-<p>第七次，它侧身于生活的污泥中，虽不甘心，却又畏首畏尾。</p>
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第4章-协议与分类"><a href="#第4章-协议与分类" class="headerlink" title="第4章 协议与分类"></a>第4章 协议与分类</h3><a id="more"></a>
+<h4 id="23-通过委托与数据源协议进行对象间通信"><a href="#23-通过委托与数据源协议进行对象间通信" class="headerlink" title="23.通过委托与数据源协议进行对象间通信"></a>23.通过委托与数据源协议进行对象间通信</h4><ul>
+<li>委托模式为对象提供了一套接口，使其可由此将相关事件告知其他对象。</li>
+<li>将委托对象应该支持的接口定义成协议，在协议中把可能需要处理的事件定义成方法。</li>
+<li>当某对象需要从另外一个对象中获取数据时，可以使用委托模式。这种情境下，该模式亦称“数据源协议”（data source protocal）。</li>
+<li>若有必要，可实现含有位段的结构体，将委托对象是否能响应相关协议方法这一信息缓存至其中。</li>
+</ul>
+<h4 id="24-将类的实现代码分散到便于管理的数个分类之中"><a href="#24-将类的实现代码分散到便于管理的数个分类之中" class="headerlink" title="24.将类的实现代码分散到便于管理的数个分类之中"></a>24.将类的实现代码分散到便于管理的数个分类之中</h4><ul>
+<li>使用分类机制把类的实现代码划分成易于管理的小块。</li>
+<li>将应该视为“私有”的方法归入名叫Private的分类中，以隐藏实现细节。</li>
+</ul>
+<h4 id="25-总是为第三方类的分类名称加前缀"><a href="#25-总是为第三方类的分类名称加前缀" class="headerlink" title="25.总是为第三方类的分类名称加前缀"></a>25.总是为第三方类的分类名称加前缀</h4><ul>
+<li>向第三方类中添加分类时，总应给其名称加上你专用的前缀。</li>
+<li>向第三方类中添加分类时，总应给其中的方法名加上你专用的前缀。</li>
+</ul>
+<h4 id="26-勿在分类中声明属性"><a href="#26-勿在分类中声明属性" class="headerlink" title="26.勿在分类中声明属性"></a>26.勿在分类中声明属性</h4><ul>
+<li>把封装数据所用的全部属性都定义在主接口里。</li>
+<li>在“class-continuation分类”之外的其他分类中，可以定义存取方法，但尽量不要定义属性。</li>
+</ul>
+<h4 id="27-使用“class-continuation分类”隐藏实现细节"><a href="#27-使用“class-continuation分类”隐藏实现细节" class="headerlink" title="27.使用“class-continuation分类”隐藏实现细节"></a>27.使用“class-continuation分类”隐藏实现细节</h4><ul>
+<li>通过“class-continuation分类”向类中新增实例变量。</li>
+<li>如果某属性在主接口中声明为“只读”，而类的内部又要用设置方法修改此属性，那么就在“class-continuation分类”中将其扩展为“可读写”。</li>
+<li>把私有方法的原型声明在“class-continuation分类”里面。</li>
+<li>若想使类所遵循的协议不为人所知，则可于“class-continuation分类”中声明。</li>
+</ul>
+<h4 id="28-通过协议提供匿名对象"><a href="#28-通过协议提供匿名对象" class="headerlink" title="28.通过协议提供匿名对象"></a>28.通过协议提供匿名对象</h4><ul>
+<li>协议可在某种程度上提供匿名类型。具体的对象类型可以淡化成遵从某协议的id类型，协议里规定了对象所应实现的方法。</li>
+<li>使用匿名对象来隐藏类型名称（或类名）。</li>
+<li>如果具体类型不重要，重要的是对象能够响应（定义在协议里的）特定方法，那么可以使用匿名对象来表示。</li>
+</ul>
 
   </section>
 
@@ -206,23 +215,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/game/" title="Game">Game</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart5/" title="Effective Objective-C 2.0（第5章）">Effective Objective-C 2.0（第5章）</a></h2>
                 <p class="excerpt">
                 
-                
-Super Mario Run
-
-
-
-王者荣耀
-
-QQ区微信区
-
+                编写高质量iOS与OS X代码的52个有效方法第5章 内存管理
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2019-01-02T05:48:00.000Z" class="post-list__meta--date date">2019-01-02</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/Game/">Game</a>
-</span><a class="btn-border-small" href="/game/">阅读全文</a></div>
+                <div class="post-list__meta"><time datetime="2018-01-04T16:05:00.000Z" class="post-list__meta--date date">2018-01-05</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/EffectiveObjectiveCPart5/">阅读全文</a></div>
                            
             </div>
         
@@ -230,15 +231,15 @@ QQ区微信区
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第7章）/" title="Effective Objective-C 2.0（第7章）">Effective Objective-C 2.0（第7章）</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart3/" title="Effective Objective-C 2.0（第3章）">Effective Objective-C 2.0（第3章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第7章 系统框架
+                编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2018-01-06T16:07:00.000Z" class="post-list__meta--date date">2018-01-07</time> &#8226; <span class="post-list__meta--tags tags">于 
+                <div class="post-list__meta"><time datetime="2018-01-02T16:03:00.000Z" class="post-list__meta--date date">2018-01-03</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
-</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第7章）/">阅读全文</a></div>
+</span><a class="btn-border-small" href="/EffectiveObjectiveCPart3/">阅读全文</a></div>
                        
             </div>
         

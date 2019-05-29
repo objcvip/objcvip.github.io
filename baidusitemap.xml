@@ -1,49 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://chanceli.com/DataStructurePart2/</loc>
+    <lastmod>2019-05-29T09:57:40.748Z</lastmod>
+  </url>  <url>
     <loc>http://chanceli.com/CodingGuidelines/</loc>
     <lastmod>2019-03-05T15:58:23.997Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</loc>
+    <loc>http://chanceli.com/DataStructurePart1/</loc>
     <lastmod>2019-03-05T15:45:52.662Z</lastmod>
   </url>  <url>
     <loc>http://chanceli.com/game/</loc>
     <lastmod>2019-03-01T07:04:11.821Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC2%E7%AB%A0%EF%BC%89/</loc>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart2/</loc>
     <lastmod>2018-12-21T11:04:51.409Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/%E6%88%91%E6%9B%BE%E4%B8%83%E6%AC%A1%E9%84%99%E8%A7%86%E6%88%91%E7%9A%84%E7%81%B5%E9%AD%82/</loc>
+    <loc>http://chanceli.com/SevenTimesHaveIDespisedMySoul/</loc>
     <lastmod>2018-12-21T11:03:09.743Z</lastmod>
   </url>  <url>
     <loc>http://chanceli.com/aboutme/</loc>
     <lastmod>2018-12-14T09:30:31.286Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</loc>
+    <loc>http://chanceli.com/MarkdownUsage/</loc>
     <lastmod>2018-12-14T06:30:28.892Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/runloop%E6%80%BB%E7%BB%93/</loc>
+    <loc>http://chanceli.com/RunloopSummary/</loc>
     <lastmod>2018-12-08T14:36:23.829Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/runtime%E6%80%BB%E7%BB%93/</loc>
+    <loc>http://chanceli.com/RuntimeSummary/</loc>
     <lastmod>2018-12-08T14:34:14.857Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC1%E7%AB%A0%EF%BC%89/</loc>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart1/</loc>
     <lastmod>2018-12-08T11:51:36.703Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC7%E7%AB%A0%EF%BC%89/</loc>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart7/</loc>
     <lastmod>2018-12-06T10:04:13.873Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC6%E7%AB%A0%EF%BC%89/</loc>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart6/</loc>
     <lastmod>2018-12-06T10:03:56.385Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC5%E7%AB%A0%EF%BC%89/</loc>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart5/</loc>
     <lastmod>2018-12-06T10:03:45.635Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC4%E7%AB%A0%EF%BC%89/</loc>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart4/</loc>
     <lastmod>2018-12-06T10:03:35.180Z</lastmod>
   </url>  <url>
-    <loc>http://chanceli.com/Effective-Objective-C-2-0%EF%BC%88%E7%AC%AC3%E7%AB%A0%EF%BC%89/</loc>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart3/</loc>
     <lastmod>2018-12-06T10:03:24.485Z</lastmod>
   </url>  <url>
     <loc>http://chanceli.com/helloworld/</loc>

@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Effective Objective-C 2.0（第4章） | Chance</title>
+    <title>RunLoop总结 | Chance</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Effective Objective-C 2.0（第4章） | Chance">
+    <meta name="twitter:title" content="RunLoop总结 | Chance">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Effective Objective-C 2.0（第4章） | Chance">
+    <meta property="og:title" content="RunLoop总结 | Chance">
     <meta property="og:description" content="iOS developer">
 
     
@@ -39,7 +39,7 @@
     <link rel="alternate" type="application/rss+xml" title="Chance" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://chanceli.com/Effective-Objective-C-2-0（第4章）/"/>
+    <link rel="canonical" href="http://chanceli.com/RunloopSummary/"/>
 
                  
 </head>
@@ -162,48 +162,65 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2018-01-03T16:04:00.000Z" class="post-list__meta--date date">2018-01-04</time> &#8226; <span class="post-meta__tags tags">于 
-  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+      <time datetime="2017-04-25T16:00:00.000Z" class="post-list__meta--date date">2017-04-26</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
  </span>
       <span class="page-pv">
        阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">Effective Objective-C 2.0（第4章）</h1>
+    <h1 class="post-title">RunLoop总结</h1>
   </header>
 
   <section class="post">
-    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第4章-协议与分类"><a href="#第4章-协议与分类" class="headerlink" title="第4章 协议与分类"></a>第4章 协议与分类</h3><a id="more"></a>
-<h4 id="23-通过委托与数据源协议进行对象间通信"><a href="#23-通过委托与数据源协议进行对象间通信" class="headerlink" title="23.通过委托与数据源协议进行对象间通信"></a>23.通过委托与数据源协议进行对象间通信</h4><ul>
-<li>委托模式为对象提供了一套接口，使其可由此将相关事件告知其他对象。</li>
-<li>将委托对象应该支持的接口定义成协议，在协议中把可能需要处理的事件定义成方法。</li>
-<li>当某对象需要从另外一个对象中获取数据时，可以使用委托模式。这种情境下，该模式亦称“数据源协议”（data source protocal）。</li>
-<li>若有必要，可实现含有位段的结构体，将委托对象是否能响应相关协议方法这一信息缓存至其中。</li>
+    <p>Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。<br><a id="more"></a><br>作用：接受循环事件和安排线程的工作。<br>目的：让线程在有任务的时候忙于工作，而没有任务的时候处于休眠状态。</p>
+<h4 id="RunLoop概念"><a href="#RunLoop概念" class="headerlink" title="RunLoop概念"></a>RunLoop概念</h4><p>Runloop运行循环<br>iOS中通常所说的Runloop指的是NSRunloop（Foundation框架）或者CFRunloopRef（CoreFoundation框架），CFRunloopRef是纯C的函数，而NSRunloop仅仅是CFRunloopRef的一层OC封装。</p>
+<h4 id="RunLoop作用"><a href="#RunLoop作用" class="headerlink" title="RunLoop作用"></a>RunLoop作用</h4><ol>
+<li>保持程序的持续运行。</li>
+<li>处理App中的各种事件。（如：touches触摸事件、NSTimer定时器事件、Selector事件）</li>
+<li>节省CPU资源，提高程序性能（有事情就做事情，没事情就休息，资源释放）</li>
+<li>负责渲染屏幕上的所有UI。</li>
+</ol>
+<h4 id="RunLoop开启-amp-退出"><a href="#RunLoop开启-amp-退出" class="headerlink" title="RunLoop开启&amp;退出"></a>RunLoop开启&amp;退出</h4><p>在UIApplicationMain函数内部开启了一个和主线程相关的RunLoop (保证主线程不会被销毁)，导致 UIApplicationMain 不会返回，一直在运行中，也就保证了程序的持续运行。<br>Runloop 的退出条件：<br>App退出；线程关闭；设置最大时间到期。</p>
+<h4 id="RunLoop和线程关系"><a href="#RunLoop和线程关系" class="headerlink" title="RunLoop和线程关系"></a>RunLoop和线程关系</h4><ol>
+<li>每条线程都有唯一的一个与之对应的Runloop对象。</li>
+<li>主线程的RunLoop已经自动创建，子线程的RunLoop需要主动创建。</li>
+<li>RunLoop在第一次获取时创建，在线程结束时销毁。</li>
+<li>Runloop对象是利用字典来进行存储，Key：线程  Value：线程对应的Runloop。</li>
+</ol>
+<h5 id="创建子线程对应的RunLoop"><a href="#创建子线程对应的RunLoop" class="headerlink" title="创建子线程对应的RunLoop"></a>创建子线程对应的RunLoop</h5><p>currentRunLoop</p>
+<h4 id="RunLoop相关类"><a href="#RunLoop相关类" class="headerlink" title="RunLoop相关类"></a>RunLoop相关类</h4><ul>
+<li>CFRunLoopRef: RunLoop本身</li>
+<li>CFRunLoopModeRef: 运行模式</li>
+<li>CFRunLoopSourceRef: 事件源</li>
+<li>CFRunLoopTimerRef: Timer事件</li>
+<li>CFRunLoopObserverRef: 观察者（监听者）</li>
 </ul>
-<h4 id="24-将类的实现代码分散到便于管理的数个分类之中"><a href="#24-将类的实现代码分散到便于管理的数个分类之中" class="headerlink" title="24.将类的实现代码分散到便于管理的数个分类之中"></a>24.将类的实现代码分散到便于管理的数个分类之中</h4><ul>
-<li>使用分类机制把类的实现代码划分成易于管理的小块。</li>
-<li>将应该视为“私有”的方法归入名叫Private的分类中，以隐藏实现细节。</li>
+<ol>
+<li><p>一条线程 对应一个 Runloop，Runloop 总是运行在某种特定的CFRunLoopModeRef（运行模式）下。</p>
+</li>
+<li><p>每个 Runloop 都可以包含若干个 Mode ，每个 Mode 又包含Source源 / Timer事件 / Observer观察者。</p>
+</li>
+<li><p>在 Runloop 中有多个运行模式，每次调用 RunLoop 的主函数<code>__CFRunloopRun()</code>时，只能指定其中一个 Mode（称 CurrentMode）运行， 如果需要切换 Mode，只能是退出 CurrentMode 切换到指定的 Mode 进入，目的以保证不同 Mode 下的 Source / Timer / Observer 互不影响。</p>
+</li>
+<li><p>Runloop 有效，mode 里面 至少 要有一个timer(定时器事件) 或者是source(源)。</p>
+</li>
+</ol>
+<h5 id="Mode"><a href="#Mode" class="headerlink" title="Mode"></a>Mode</h5><ul>
+<li>kCFRunLoopDefaultMode App的默认Mode，通常主线程是在这个Mode下运行。</li>
+<li>UITrackingRunLoopMode 界面跟踪 Mode，用于 ScrollView 追踪触摸滑动</li>
+<li>UIInitializationRunLoopMode  在刚启动 App 时第进入的第一个 Mode，启动完成后就不再使用。</li>
+<li>GSEventReceiveRunLoopMode 接受系统事件的内部 Mode，通常用不到。</li>
+<li>kCFRunLoopCommonModes 一种模式组合</li>
 </ul>
-<h4 id="25-总是为第三方类的分类名称加前缀"><a href="#25-总是为第三方类的分类名称加前缀" class="headerlink" title="25.总是为第三方类的分类名称加前缀"></a>25.总是为第三方类的分类名称加前缀</h4><ul>
-<li>向第三方类中添加分类时，总应给其名称加上你专用的前缀。</li>
-<li>向第三方类中添加分类时，总应给其中的方法名加上你专用的前缀。</li>
+<h5 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h5><ul>
+<li>Source0:非基于端口Port的事件（用于用户主动触发的事件，如：点击按钮或点击屏幕）。</li>
+<li>Source：基于端口Port的事件（通过内核和其他线程互相发送消息）</li>
 </ul>
-<h4 id="26-勿在分类中声明属性"><a href="#26-勿在分类中声明属性" class="headerlink" title="26.勿在分类中声明属性"></a>26.勿在分类中声明属性</h4><ul>
-<li>把封装数据所用的全部属性都定义在主接口里。</li>
-<li>在“class-continuation分类”之外的其他分类中，可以定义存取方法，但尽量不要定义属性。</li>
-</ul>
-<h4 id="27-使用“class-continuation分类”隐藏实现细节"><a href="#27-使用“class-continuation分类”隐藏实现细节" class="headerlink" title="27.使用“class-continuation分类”隐藏实现细节"></a>27.使用“class-continuation分类”隐藏实现细节</h4><ul>
-<li>通过“class-continuation分类”向类中新增实例变量。</li>
-<li>如果某属性在主接口中声明为“只读”，而类的内部又要用设置方法修改此属性，那么就在“class-continuation分类”中将其扩展为“可读写”。</li>
-<li>把私有方法的原型声明在“class-continuation分类”里面。</li>
-<li>若想使类所遵循的协议不为人所知，则可于“class-continuation分类”中声明。</li>
-</ul>
-<h4 id="28-通过协议提供匿名对象"><a href="#28-通过协议提供匿名对象" class="headerlink" title="28.通过协议提供匿名对象"></a>28.通过协议提供匿名对象</h4><ul>
-<li>协议可在某种程度上提供匿名类型。具体的对象类型可以淡化成遵从某协议的id类型，协议里规定了对象所应实现的方法。</li>
-<li>使用匿名对象来隐藏类型名称（或类名）。</li>
-<li>如果具体类型不重要，重要的是对象能够响应（定义在协议里的）特定方法，那么可以使用匿名对象来表示。</li>
-</ul>
+<h5 id="Timer"><a href="#Timer" class="headerlink" title="Timer"></a>Timer</h5><p>NSTimer受RunLoop的Mode影响。GCD定时器不受RunLoop影响。</p>
+<h5 id="Observer"><a href="#Observer" class="headerlink" title="Observer"></a>Observer</h5><p>消息循环中的监听器</p>
+<h4 id="RunLoop休眠"><a href="#RunLoop休眠" class="headerlink" title="RunLoop休眠"></a>RunLoop休眠</h4><p>RunLoop 最核心的事情就是保证线程在没有消息时休眠以避免占用系统资源，有消息时能够及时唤醒。 RunLoop 的这个机制完全依靠系统内核来完成，具体来说是苹果操作系统核心组件 Darwin 中的 Mach 来完成的。</p>
 
   </section>
 
@@ -215,15 +232,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第5章）/" title="Effective Objective-C 2.0（第5章）">Effective Objective-C 2.0（第5章）</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart1/" title="Effective Objective-C 2.0（第1章）">Effective Objective-C 2.0（第1章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第5章 内存管理
+                编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2018-01-04T16:05:00.000Z" class="post-list__meta--date date">2018-01-05</time> &#8226; <span class="post-list__meta--tags tags">于 
+                <div class="post-list__meta"><time datetime="2017-12-31T16:01:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
-</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第5章）/">阅读全文</a></div>
+</span><a class="btn-border-small" href="/EffectiveObjectiveCPart1/">阅读全文</a></div>
                            
             </div>
         
@@ -231,15 +248,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/Effective-Objective-C-2-0（第3章）/" title="Effective Objective-C 2.0（第3章）">Effective Objective-C 2.0（第3章）</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/RuntimeSummary/" title="Runtime总结">Runtime总结</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计
+                一、Runtime是什么？
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2018-01-02T16:03:00.000Z" class="post-list__meta--date date">2018-01-03</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
-</span><a class="btn-border-small" href="/Effective-Objective-C-2-0（第3章）/">阅读全文</a></div>
+                <div class="post-list__meta"><time datetime="2017-04-23T16:00:00.000Z" class="post-list__meta--date date">2017-04-24</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
+</span><a class="btn-border-small" href="/RuntimeSummary/">阅读全文</a></div>
                        
             </div>
         

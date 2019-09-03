@@ -2,30 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://chanceli.com/aboutme/</loc>
+    <loc>http://chanceli.com/imeasemob/</loc>
     
-    <lastmod>2019-05-30T03:52:13.108Z</lastmod>
+    <lastmod>2019-08-26T12:25:03.147Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chanceli.com/DataStructurePart2/</loc>
+    <loc>http://chanceli.com/about/index.html</loc>
     
-    <lastmod>2019-05-29T09:57:40.748Z</lastmod>
+    <lastmod>2019-08-15T03:19:17.536Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/categories/index.html</loc>
+    
+    <lastmod>2019-08-15T02:42:45.761Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/tags/index.html</loc>
+    
+    <lastmod>2019-08-15T02:42:35.009Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://chanceli.com/CodingGuidelines/</loc>
     
-    <lastmod>2019-03-05T15:58:23.997Z</lastmod>
+    <lastmod>2019-08-14T15:55:05.885Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/DataStructurePart2/</loc>
+    
+    <lastmod>2019-08-14T15:51:05.962Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://chanceli.com/DataStructurePart1/</loc>
     
-    <lastmod>2019-03-05T15:45:52.662Z</lastmod>
+    <lastmod>2019-08-14T15:50:48.911Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/aboutme/</loc>
+    
+    <lastmod>2019-05-30T03:52:13.108Z</lastmod>
     
   </url>
   

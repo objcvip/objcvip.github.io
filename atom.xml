@@ -5,12 +5,12 @@
   <subtitle>Stay hungry, stay foolish.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://objc.vip/"/>
+  <link href="https://objcvip.github.io/"/>
   <updated>2019-08-27T05:20:06.000Z</updated>
-  <id>http://objc.vip/</id>
+  <id>https://objcvip.github.io/</id>
   
   <author>
-    <name>Objc.vip</name>
+    <name>ObjC.vip</name>
     <email>objcvip@163.com</email>
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>【iOS 开发】使用环信实现聊天遇到的一些坑</title>
-    <link href="http://objc.vip/imeasemob/"/>
-    <id>http://objc.vip/imeasemob/</id>
+    <link href="https://objcvip.github.io/imeasemob/"/>
+    <id>https://objcvip.github.io/imeasemob/</id>
     <published>2019-08-26T07:47:00.000Z</published>
     <updated>2019-08-27T05:20:06.000Z</updated>
     
@@ -31,19 +31,19 @@
     
     </summary>
     
-      <category term="iOS 开发" scheme="http://objc.vip/categories/iOS-%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS 开发" scheme="https://objcvip.github.io/categories/iOS-%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS 开发" scheme="http://objc.vip/tags/iOS-%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS 开发" scheme="https://objcvip.github.io/tags/iOS-%E5%BC%80%E5%8F%91/"/>
     
-      <category term="环信" scheme="http://objc.vip/tags/%E7%8E%AF%E4%BF%A1/"/>
+      <category term="环信" scheme="https://objcvip.github.io/tags/%E7%8E%AF%E4%BF%A1/"/>
     
   </entry>
   
   <entry>
     <title>《大话数据结构》学习笔记二</title>
-    <link href="http://objc.vip/DataStructurePart2/"/>
-    <id>http://objc.vip/DataStructurePart2/</id>
+    <link href="https://objcvip.github.io/DataStructurePart2/"/>
+    <id>https://objcvip.github.io/DataStructurePart2/</id>
     <published>2019-05-29T09:46:00.000Z</published>
     <updated>2019-09-04T06:01:45.399Z</updated>
     
@@ -55,17 +55,17 @@
     
     </summary>
     
-      <category term="《大话数据结构》" scheme="http://objc.vip/categories/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B/"/>
+      <category term="《大话数据结构》" scheme="https://objcvip.github.io/categories/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B/"/>
     
     
-      <category term="学习笔记" scheme="http://objc.vip/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://objcvip.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>《大话数据结构》学习笔记一</title>
-    <link href="http://objc.vip/DataStructurePart1/"/>
-    <id>http://objc.vip/DataStructurePart1/</id>
+    <link href="https://objcvip.github.io/DataStructurePart1/"/>
+    <id>https://objcvip.github.io/DataStructurePart1/</id>
     <published>2019-03-05T15:41:00.000Z</published>
     <updated>2019-09-04T06:02:02.073Z</updated>
     
@@ -77,17 +77,17 @@
     
     </summary>
     
-      <category term="《大话数据结构》" scheme="http://objc.vip/categories/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B/"/>
+      <category term="《大话数据结构》" scheme="https://objcvip.github.io/categories/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B/"/>
     
     
-      <category term="学习笔记" scheme="http://objc.vip/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://objcvip.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>iOS 代码规范</title>
-    <link href="http://objc.vip/CodingGuidelines/"/>
-    <id>http://objc.vip/CodingGuidelines/</id>
+    <link href="https://objcvip.github.io/CodingGuidelines/"/>
+    <id>https://objcvip.github.io/CodingGuidelines/</id>
     <published>2019-03-04T16:00:00.000Z</published>
     <updated>2019-09-04T05:59:56.028Z</updated>
     
@@ -99,17 +99,17 @@
     
     </summary>
     
-      <category term="代码规范" scheme="http://objc.vip/categories/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="代码规范" scheme="https://objcvip.github.io/categories/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
     
-      <category term="代码规范" scheme="http://objc.vip/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="代码规范" scheme="https://objcvip.github.io/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title>【算法】用两个栈实现队列</title>
-    <link href="http://objc.vip/%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/"/>
-    <id>http://objc.vip/用两个栈实现队列/</id>
+    <link href="https://objcvip.github.io/%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/"/>
+    <id>https://objcvip.github.io/用两个栈实现队列/</id>
     <published>2018-03-06T07:47:00.000Z</published>
     <updated>2019-09-04T05:53:52.842Z</updated>
     
@@ -121,21 +121,21 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="栈" scheme="http://objc.vip/tags/%E6%A0%88/"/>
+      <category term="栈" scheme="https://objcvip.github.io/tags/%E6%A0%88/"/>
     
-      <category term="队列" scheme="http://objc.vip/tags/%E9%98%9F%E5%88%97/"/>
+      <category term="队列" scheme="https://objcvip.github.io/tags/%E9%98%9F%E5%88%97/"/>
     
   </entry>
   
   <entry>
     <title>【算法】用队列实现栈</title>
-    <link href="http://objc.vip/%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88/"/>
-    <id>http://objc.vip/用队列实现栈/</id>
+    <link href="https://objcvip.github.io/%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88/"/>
+    <id>https://objcvip.github.io/用队列实现栈/</id>
     <published>2018-03-05T07:47:00.000Z</published>
     <updated>2019-09-04T05:53:35.557Z</updated>
     
@@ -147,17 +147,17 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>【算法】连续子数组的最大和</title>
-    <link href="http://objc.vip/%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/"/>
-    <id>http://objc.vip/连续子数组的最大和/</id>
+    <link href="https://objcvip.github.io/%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/"/>
+    <id>https://objcvip.github.io/连续子数组的最大和/</id>
     <published>2018-03-04T07:47:00.000Z</published>
     <updated>2019-09-04T05:53:06.229Z</updated>
     
@@ -169,17 +169,17 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>【算法】Swift 用数组实现栈</title>
-    <link href="http://objc.vip/Swift%E7%94%A8%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E6%A0%88/"/>
-    <id>http://objc.vip/Swift用数组实现栈/</id>
+    <link href="https://objcvip.github.io/Swift%E7%94%A8%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E6%A0%88/"/>
+    <id>https://objcvip.github.io/Swift用数组实现栈/</id>
     <published>2018-03-03T07:47:00.000Z</published>
     <updated>2019-09-04T05:52:20.511Z</updated>
     
@@ -191,19 +191,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="栈" scheme="http://objc.vip/tags/%E6%A0%88/"/>
+      <category term="栈" scheme="https://objcvip.github.io/tags/%E6%A0%88/"/>
     
   </entry>
   
   <entry>
     <title>【算法】合并两个数组并去重</title>
-    <link href="http://objc.vip/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E5%B9%B6%E5%8E%BB%E9%87%8D/"/>
-    <id>http://objc.vip/合并两个数组并去重/</id>
+    <link href="https://objcvip.github.io/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E5%B9%B6%E5%8E%BB%E9%87%8D/"/>
+    <id>https://objcvip.github.io/合并两个数组并去重/</id>
     <published>2018-03-02T07:47:00.000Z</published>
     <updated>2019-09-04T05:52:20.611Z</updated>
     
@@ -215,17 +215,17 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>【算法】斐波那切数列</title>
-    <link href="http://objc.vip/%E6%96%90%E6%B3%A2%E9%82%A3%E5%88%87%E6%95%B0%E5%88%97/"/>
-    <id>http://objc.vip/斐波那切数列/</id>
+    <link href="https://objcvip.github.io/%E6%96%90%E6%B3%A2%E9%82%A3%E5%88%87%E6%95%B0%E5%88%97/"/>
+    <id>https://objcvip.github.io/斐波那切数列/</id>
     <published>2018-03-01T07:47:00.000Z</published>
     <updated>2019-09-04T05:56:13.059Z</updated>
     
@@ -237,17 +237,17 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>【算法】翻转字符串</title>
-    <link href="http://objc.vip/%E7%BF%BB%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://objc.vip/翻转字符串/</id>
+    <link href="https://objcvip.github.io/%E7%BF%BB%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>https://objcvip.github.io/翻转字符串/</id>
     <published>2018-03-01T07:47:00.000Z</published>
     <updated>2019-09-04T05:52:05.114Z</updated>
     
@@ -259,17 +259,17 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>【算法】二分查找</title>
-    <link href="http://objc.vip/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
-    <id>http://objc.vip/二分查找/</id>
+    <link href="https://objcvip.github.io/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
+    <id>https://objcvip.github.io/二分查找/</id>
     <published>2018-02-05T07:47:00.000Z</published>
     <updated>2019-09-04T06:11:18.026Z</updated>
     
@@ -281,17 +281,17 @@
     
     </summary>
     
-      <category term="iOS 开发" scheme="http://objc.vip/categories/iOS-%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS 开发" scheme="https://objcvip.github.io/categories/iOS-%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>【算法】选择排序</title>
-    <link href="http://objc.vip/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
-    <id>http://objc.vip/选择排序/</id>
+    <link href="https://objcvip.github.io/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
+    <id>https://objcvip.github.io/选择排序/</id>
     <published>2018-02-04T07:47:00.000Z</published>
     <updated>2019-09-04T05:48:22.251Z</updated>
     
@@ -303,19 +303,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="选择排序" scheme="http://objc.vip/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
+      <category term="选择排序" scheme="https://objcvip.github.io/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>【算法】快速排序</title>
-    <link href="http://objc.vip/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
-    <id>http://objc.vip/快速排序/</id>
+    <link href="https://objcvip.github.io/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
+    <id>https://objcvip.github.io/快速排序/</id>
     <published>2018-02-03T07:47:00.000Z</published>
     <updated>2019-09-04T05:43:53.225Z</updated>
     
@@ -327,19 +327,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="http://objc.vip/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="https://objcvip.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>【算法】冒泡排序</title>
-    <link href="http://objc.vip/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
-    <id>http://objc.vip/冒泡排序/</id>
+    <link href="https://objcvip.github.io/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
+    <id>https://objcvip.github.io/冒泡排序/</id>
     <published>2018-02-02T07:47:00.000Z</published>
     <updated>2019-09-04T05:47:06.293Z</updated>
     
@@ -351,19 +351,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="冒泡排序" scheme="http://objc.vip/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
+      <category term="冒泡排序" scheme="https://objcvip.github.io/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>【算法】排序算法</title>
-    <link href="http://objc.vip/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-    <id>http://objc.vip/排序算法/</id>
+    <link href="https://objcvip.github.io/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <id>https://objcvip.github.io/排序算法/</id>
     <published>2018-02-01T07:47:00.000Z</published>
     <updated>2019-09-04T05:47:16.286Z</updated>
     
@@ -375,19 +375,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://objc.vip/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://objc.vip/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="http://objc.vip/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="https://objcvip.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第7章）</title>
-    <link href="http://objc.vip/EffectiveObjectiveCPart7/"/>
-    <id>http://objc.vip/EffectiveObjectiveCPart7/</id>
+    <link href="https://objcvip.github.io/EffectiveObjectiveCPart7/"/>
+    <id>https://objcvip.github.io/EffectiveObjectiveCPart7/</id>
     <published>2018-01-06T16:07:00.000Z</published>
     <updated>2018-12-06T10:04:13.873Z</updated>
     
@@ -399,17 +399,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第6章）</title>
-    <link href="http://objc.vip/EffectiveObjectiveCPart6/"/>
-    <id>http://objc.vip/EffectiveObjectiveCPart6/</id>
+    <link href="https://objcvip.github.io/EffectiveObjectiveCPart6/"/>
+    <id>https://objcvip.github.io/EffectiveObjectiveCPart6/</id>
     <published>2018-01-05T16:06:00.000Z</published>
     <updated>2018-12-06T10:03:56.385Z</updated>
     
@@ -421,17 +421,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第5章）</title>
-    <link href="http://objc.vip/EffectiveObjectiveCPart5/"/>
-    <id>http://objc.vip/EffectiveObjectiveCPart5/</id>
+    <link href="https://objcvip.github.io/EffectiveObjectiveCPart5/"/>
+    <id>https://objcvip.github.io/EffectiveObjectiveCPart5/</id>
     <published>2018-01-04T16:05:00.000Z</published>
     <updated>2018-12-06T10:03:45.635Z</updated>
     
@@ -443,17 +443,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第4章）</title>
-    <link href="http://objc.vip/EffectiveObjectiveCPart4/"/>
-    <id>http://objc.vip/EffectiveObjectiveCPart4/</id>
+    <link href="https://objcvip.github.io/EffectiveObjectiveCPart4/"/>
+    <id>https://objcvip.github.io/EffectiveObjectiveCPart4/</id>
     <published>2018-01-03T16:04:00.000Z</published>
     <updated>2018-12-06T10:03:35.180Z</updated>
     
@@ -465,10 +465,10 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   

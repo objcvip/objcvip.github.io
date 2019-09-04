@@ -5,9 +5,9 @@
   <subtitle>Stay hungry, stay foolish.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="objc.vip/"/>
+  <link href="http://objc.vip/"/>
   <updated>2019-08-26T12:25:03.147Z</updated>
-  <id>objc.vip/</id>
+  <id>http://objc.vip/</id>
   
   <author>
     <name>Objc.vip</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>【iOS 开发】使用环信实现聊天遇到的一些坑</title>
-    <link href="objc.vip/imeasemob/"/>
-    <id>objc.vip/imeasemob/</id>
+    <link href="http://objc.vip/imeasemob/"/>
+    <id>http://objc.vip/imeasemob/</id>
     <published>2019-08-26T07:47:00.000Z</published>
     <updated>2019-08-26T12:25:03.147Z</updated>
     
@@ -31,17 +31,17 @@
     
     </summary>
     
-      <category term="iOS 开发" scheme="objc.vip/categories/iOS-%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS 开发" scheme="http://objc.vip/categories/iOS-%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS 开发" scheme="objc.vip/tags/iOS-%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS 开发" scheme="http://objc.vip/tags/iOS-%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>《大话数据结构》学习笔记二</title>
-    <link href="objc.vip/DataStructurePart2/"/>
-    <id>objc.vip/DataStructurePart2/</id>
+    <link href="http://objc.vip/DataStructurePart2/"/>
+    <id>http://objc.vip/DataStructurePart2/</id>
     <published>2019-05-29T09:46:00.000Z</published>
     <updated>2019-08-14T15:51:05.962Z</updated>
     
@@ -57,17 +57,17 @@
     
     </summary>
     
-      <category term="《大话数据结构》" scheme="objc.vip/categories/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B/"/>
+      <category term="《大话数据结构》" scheme="http://objc.vip/categories/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B/"/>
     
     
-      <category term="学习笔记" scheme="objc.vip/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://objc.vip/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>《大话数据结构》学习笔记一</title>
-    <link href="objc.vip/DataStructurePart1/"/>
-    <id>objc.vip/DataStructurePart1/</id>
+    <link href="http://objc.vip/DataStructurePart1/"/>
+    <id>http://objc.vip/DataStructurePart1/</id>
     <published>2019-03-05T15:41:00.000Z</published>
     <updated>2019-08-14T15:50:48.911Z</updated>
     
@@ -84,17 +84,17 @@
     
     </summary>
     
-      <category term="《大话数据结构》" scheme="objc.vip/categories/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B/"/>
+      <category term="《大话数据结构》" scheme="http://objc.vip/categories/%E3%80%8A%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B/"/>
     
     
-      <category term="学习笔记" scheme="objc.vip/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://objc.vip/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>iOS 代码规范</title>
-    <link href="objc.vip/CodingGuidelines/"/>
-    <id>objc.vip/CodingGuidelines/</id>
+    <link href="http://objc.vip/CodingGuidelines/"/>
+    <id>http://objc.vip/CodingGuidelines/</id>
     <published>2019-03-04T16:00:00.000Z</published>
     <updated>2019-08-14T15:55:05.885Z</updated>
     
@@ -114,17 +114,17 @@
     
     </summary>
     
-      <category term="代码规范" scheme="objc.vip/categories/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="代码规范" scheme="http://objc.vip/categories/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
     
-      <category term="代码规范" scheme="objc.vip/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="代码规范" scheme="http://objc.vip/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title>我曾七次鄙视我的灵魂（卡里.纪伯伦）</title>
-    <link href="objc.vip/SevenTimesHaveIDespisedMySoul/"/>
-    <id>objc.vip/SevenTimesHaveIDespisedMySoul/</id>
+    <link href="http://objc.vip/SevenTimesHaveIDespisedMySoul/"/>
+    <id>http://objc.vip/SevenTimesHaveIDespisedMySoul/</id>
     <published>2018-12-21T10:09:00.000Z</published>
     <updated>2018-12-21T11:03:09.743Z</updated>
     
@@ -138,17 +138,17 @@
     
     </summary>
     
-      <category term="诗和远方" scheme="objc.vip/categories/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/"/>
+      <category term="诗和远方" scheme="http://objc.vip/categories/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/"/>
     
     
-      <category term="诗和远方" scheme="objc.vip/tags/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/"/>
+      <category term="诗和远方" scheme="http://objc.vip/tags/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第7章）</title>
-    <link href="objc.vip/EffectiveObjectiveCPart7/"/>
-    <id>objc.vip/EffectiveObjectiveCPart7/</id>
+    <link href="http://objc.vip/EffectiveObjectiveCPart7/"/>
+    <id>http://objc.vip/EffectiveObjectiveCPart7/</id>
     <published>2018-01-06T16:07:00.000Z</published>
     <updated>2018-12-06T10:04:13.873Z</updated>
     
@@ -160,17 +160,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第6章）</title>
-    <link href="objc.vip/EffectiveObjectiveCPart6/"/>
-    <id>objc.vip/EffectiveObjectiveCPart6/</id>
+    <link href="http://objc.vip/EffectiveObjectiveCPart6/"/>
+    <id>http://objc.vip/EffectiveObjectiveCPart6/</id>
     <published>2018-01-05T16:06:00.000Z</published>
     <updated>2018-12-06T10:03:56.385Z</updated>
     
@@ -182,17 +182,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第5章）</title>
-    <link href="objc.vip/EffectiveObjectiveCPart5/"/>
-    <id>objc.vip/EffectiveObjectiveCPart5/</id>
+    <link href="http://objc.vip/EffectiveObjectiveCPart5/"/>
+    <id>http://objc.vip/EffectiveObjectiveCPart5/</id>
     <published>2018-01-04T16:05:00.000Z</published>
     <updated>2018-12-06T10:03:45.635Z</updated>
     
@@ -204,17 +204,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第4章）</title>
-    <link href="objc.vip/EffectiveObjectiveCPart4/"/>
-    <id>objc.vip/EffectiveObjectiveCPart4/</id>
+    <link href="http://objc.vip/EffectiveObjectiveCPart4/"/>
+    <id>http://objc.vip/EffectiveObjectiveCPart4/</id>
     <published>2018-01-03T16:04:00.000Z</published>
     <updated>2018-12-06T10:03:35.180Z</updated>
     
@@ -226,17 +226,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第3章）</title>
-    <link href="objc.vip/EffectiveObjectiveCPart3/"/>
-    <id>objc.vip/EffectiveObjectiveCPart3/</id>
+    <link href="http://objc.vip/EffectiveObjectiveCPart3/"/>
+    <id>http://objc.vip/EffectiveObjectiveCPart3/</id>
     <published>2018-01-02T16:03:00.000Z</published>
     <updated>2018-12-06T10:03:24.485Z</updated>
     
@@ -248,17 +248,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第2章）</title>
-    <link href="objc.vip/EffectiveObjectiveCPart2/"/>
-    <id>objc.vip/EffectiveObjectiveCPart2/</id>
+    <link href="http://objc.vip/EffectiveObjectiveCPart2/"/>
+    <id>http://objc.vip/EffectiveObjectiveCPart2/</id>
     <published>2018-01-01T16:02:00.000Z</published>
     <updated>2018-12-21T11:04:51.409Z</updated>
     
@@ -270,17 +270,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>Effective Objective-C 2.0（第1章）</title>
-    <link href="objc.vip/EffectiveObjectiveCPart1/"/>
-    <id>objc.vip/EffectiveObjectiveCPart1/</id>
+    <link href="http://objc.vip/EffectiveObjectiveCPart1/"/>
+    <id>http://objc.vip/EffectiveObjectiveCPart1/</id>
     <published>2017-12-31T16:01:00.000Z</published>
     <updated>2018-12-08T11:51:36.703Z</updated>
     
@@ -292,17 +292,17 @@
     
     </summary>
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/categories/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/categories/Effective-Objective-C-2-0/"/>
     
     
-      <category term="Effective Objective-C 2.0" scheme="objc.vip/tags/Effective-Objective-C-2-0/"/>
+      <category term="Effective Objective-C 2.0" scheme="http://objc.vip/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   
   <entry>
     <title>RunLoop总结</title>
-    <link href="objc.vip/RunloopSummary/"/>
-    <id>objc.vip/RunloopSummary/</id>
+    <link href="http://objc.vip/RunloopSummary/"/>
+    <id>http://objc.vip/RunloopSummary/</id>
     <published>2017-04-25T16:00:00.000Z</published>
     <updated>2018-12-08T14:36:23.829Z</updated>
     
@@ -314,17 +314,17 @@
     
     </summary>
     
-      <category term="iOS开发" scheme="objc.vip/categories/iOS%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS开发" scheme="http://objc.vip/categories/iOS%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS开发" scheme="objc.vip/tags/iOS%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS开发" scheme="http://objc.vip/tags/iOS%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>Runtime总结</title>
-    <link href="objc.vip/RuntimeSummary/"/>
-    <id>objc.vip/RuntimeSummary/</id>
+    <link href="http://objc.vip/RuntimeSummary/"/>
+    <id>http://objc.vip/RuntimeSummary/</id>
     <published>2017-04-23T16:00:00.000Z</published>
     <updated>2018-12-08T14:34:14.857Z</updated>
     
@@ -336,17 +336,17 @@
     
     </summary>
     
-      <category term="iOS开发" scheme="objc.vip/categories/iOS%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS开发" scheme="http://objc.vip/categories/iOS%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS开发" scheme="objc.vip/tags/iOS%E5%BC%80%E5%8F%91/"/>
+      <category term="iOS开发" scheme="http://objc.vip/tags/iOS%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>关于</title>
-    <link href="objc.vip/aboutme/"/>
-    <id>objc.vip/aboutme/</id>
+    <link href="http://objc.vip/aboutme/"/>
+    <id>http://objc.vip/aboutme/</id>
     <published>2016-12-31T16:00:00.000Z</published>
     <updated>2019-05-30T03:52:13.108Z</updated>
     
@@ -358,17 +358,17 @@
     
     </summary>
     
-      <category term="关于" scheme="objc.vip/categories/%E5%85%B3%E4%BA%8E/"/>
+      <category term="关于" scheme="http://objc.vip/categories/%E5%85%B3%E4%BA%8E/"/>
     
     
-      <category term="个人简介" scheme="objc.vip/tags/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
+      <category term="个人简介" scheme="http://objc.vip/tags/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
     
   </entry>
   
   <entry>
     <title>Markdown常用语法</title>
-    <link href="objc.vip/MarkdownUsage/"/>
-    <id>objc.vip/MarkdownUsage/</id>
+    <link href="http://objc.vip/MarkdownUsage/"/>
+    <id>http://objc.vip/MarkdownUsage/</id>
     <published>2015-12-31T16:00:00.000Z</published>
     <updated>2018-12-14T06:30:28.892Z</updated>
     
@@ -382,17 +382,17 @@
     
     </summary>
     
-      <category term="Markdown" scheme="objc.vip/categories/Markdown/"/>
+      <category term="Markdown" scheme="http://objc.vip/categories/Markdown/"/>
     
     
-      <category term="Markdown" scheme="objc.vip/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://objc.vip/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Hello World.</title>
-    <link href="objc.vip/helloworld/"/>
-    <id>objc.vip/helloworld/</id>
+    <link href="http://objc.vip/helloworld/"/>
+    <id>http://objc.vip/helloworld/</id>
     <published>2014-12-31T16:00:00.000Z</published>
     <updated>2018-12-06T05:50:31.101Z</updated>
     
@@ -408,10 +408,10 @@
     
     </summary>
     
-      <category term="Hello World" scheme="objc.vip/categories/Hello-World/"/>
+      <category term="Hello World" scheme="http://objc.vip/categories/Hello-World/"/>
     
     
-      <category term="Hello World" scheme="objc.vip/tags/Hello-World/"/>
+      <category term="Hello World" scheme="http://objc.vip/tags/Hello-World/"/>
     
   </entry>
   

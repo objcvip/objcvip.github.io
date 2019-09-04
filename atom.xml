@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Chance</title>
-  <icon>https://www.gravatar.com/avatar/3458ca35c2ea49bdfd4dd2f81d6274b4</icon>
-  <subtitle>Talk is cheap, show me the code.</subtitle>
+  <title>ObjC.vip</title>
+  <icon>https://www.gravatar.com/avatar/7f3b33261dd48600587207c66a04554c</icon>
+  <subtitle>Stay hungry, stay foolish.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="objc.vip/"/>
@@ -10,8 +10,8 @@
   <id>objc.vip/</id>
   
   <author>
-    <name>Chance</name>
-    <email>lc@chanceli.com</email>
+    <name>Objc.vip</name>
+    <email>objcvip@163.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>

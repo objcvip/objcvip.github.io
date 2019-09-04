@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://objcvip.github.io/"/>
-  <updated>2019-09-04T06:56:36.079Z</updated>
+  <updated>2019-09-04T08:16:49.347Z</updated>
   <id>https://objcvip.github.io/</id>
   
   <author>
@@ -15,6 +15,116 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新浪乐居面试题</title>
+    <link href="https://objcvip.github.io/%E6%96%B0%E6%B5%AA%E4%B9%90%E5%B1%85%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://objcvip.github.io/新浪乐居面试题/</id>
+    <published>2019-09-04T08:12:00.000Z</published>
+    <updated>2019-09-04T08:16:49.347Z</updated>
+    
+    <content type="html"><![CDATA[<p>新浪乐居面试题<br><a id="more"></a></p><h1 id="笔试题"><a href="#笔试题" class="headerlink" title="笔试题"></a>笔试题</h1><p>笔试题</p><h1 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h1><p>1、类方法和实例方法有什么区别？</p><p>2、用封装的类方法去请求网络会有什么问题？</p><p>3、说一下单例。单例的作用是什么？为什么不能多次创建对象？</p><p>4、说一下 ARC、MRC，有什么区别？有啥优缺点？</p><p>5、自动释放池的使用场景？耗内存时需要加到池子里。</p><p>6、沙盒目录除了 Documents 还有啥？Cache 和 Temp 有什么区别？</p><p>7、项目里用地图了吗？如果用系统的地图会有一个问题，电量急速下降，遇到过这个问题吗？</p><p>8、都有哪些可能循环引用？</p><p>9、说一下从网络请求回来的数据怎么存？数据持久化的方法。数据库是存在沙盒的哪个目录？我说在 Documents 中。</p><p>10、assign 与 weak 区别？</p><p>11、笔试题19的答案为什么是2、5？</p><p>12、说一下冒泡排序的思路？</p><p>13、GCD 需要注意什么？我说了一下使用场景。</p><p>14、Runtime、Runloop 了解吗？（说了一下消息发送和消息转发的流程）Runloop 有哪些 Mode？（说了3个，面试官说能用的到的就这三个。。其他俩点进去也看不着）说一下 CommonMode ？</p><p>15、最后一个问题：类似简历  右上角是图片（宽高已知） 左边是一段文字  文字会包裹着图片，问实现思路？</p><p>说了三个思路：<br>（1）计算一下上边 label 宽高，左边用一个 label 显示，下边多余的字也用另一个 label 显示。</p><p>（2）YYText 可能有处理办法，算是第三方。</p><p>（3）他提示底层一点的，我说绘制。</p><h1 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h1><p>1、了解项目，问在公司干啥。</p><p>2、AutoLayout 和 Masonry 有什么区别？</p><p>3、面向对象在 OC 中的体现？封装、继承、多态。你觉得最主要的是面向对象的哪个特性？</p><p>4、你对 H5、原生交互的看法。我说了实现方式后，他说不要实现细节，就你的看法。我又说了阿里是大前端，他说不要说阿里，你的看法呢？我说活动页用H5，其他用原生，可能效率高。</p><p>5、Block 和 delegate 的使用场景差异？</p><p>6、你觉得开发一个项目难点在哪儿？</p><p>7、其他问题：薪水能商量吗？有什么要问我的？</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;新浪乐居面试题&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微店面试题</title>
+    <link href="https://objcvip.github.io/%E5%BE%AE%E5%BA%97%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://objcvip.github.io/微店面试题/</id>
+    <published>2019-09-04T08:05:00.000Z</published>
+    <updated>2019-09-04T08:10:06.680Z</updated>
+    
+    <content type="html"><![CDATA[<p>微店面试题<br><a id="more"></a></p><h1 id="微店一面"><a href="#微店一面" class="headerlink" title="微店一面"></a>微店一面</h1><p>1、说项目里的有价值的东西？</p><p>2、HTTPS 过程是怎么样的？非对称加密</p><p>3、Swift 中逃逸闭包和非逃逸闭包的区别？</p><p>4、属性用 copy 关键字，是深拷贝还是浅拷贝？深拷贝和浅拷贝的区别？</p><p>5、SDWebImage 的缓存机制？LRU 内部原理？下载完成图片后，是先存到内存、磁盘后，才显示到界面上吗？</p><p>6、AFN 用到了 NSOperation、GCD，说一下内部 Operation 相关的？Manager？</p><p>7、GCD 内部实现？</p><p>8、约束 left/right 和 leading/trailing 的区别？约束报黄怎么解决？</p><p>9、KVO 的原理？具体 NSObject 的两个方法？</p><p>10、消息转发流程？使用场景？</p><p>11、数据库减字段怎么容错？</p><p>12、有没有打包过私有库？</p><p>13、从点击 App 的图标到 App 启动，说一下这个过程？+load 发生在什么时候？</p><p>14、用什么管理第三方库？CocoaPods 中的 .lock 文件存储了什么信息？</p><p>15、说一下一个项目的架构？</p><p>16、组件化？</p><p>17、手写冒泡排序算法？算法复杂度？</p><h1 id="微店二面"><a href="#微店二面" class="headerlink" title="微店二面"></a>微店二面</h1><p>1、项目介绍，开发人员分工？购物车本地化如果加入购物车的价格变了怎么处理的？</p><p>2、写一下其中一个项目的项目架构？写一下用到的第三方库。</p><p>3、项目用什么管理的？CocoaPods 指定版本号带 ~ 跟不带 ~各有什么含义？</p><p>4、AFN 实现原理？发10个网络请求，AFN 内部是怎么处理的？</p><p>5、SDWebImage 是怎么加载图片的？用的是 Get 还是 Post ？如果让你实现，你会选择 Get 还是 Post ？</p><p>6、HTTPS 流程是怎么样的？（画一下客户端、服务器的时序图）</p><p>7、加密算法，对称加密和非对称加密？</p><p>8、如何理解 OC 是动态语言？</p><p>9、Runtime？用 Runtime 做过什么？</p><p>10、Runloop？内部实现原理？跟自己写个 for 循环有没有区别？</p><p>11、内存管理？内存优化？</p><p>12、卡顿？</p><p>13、多线程？用 GCD 实现同步多个异步调用（a，b），然后再同步执行（c，d）</p><p>14、从点击 App 图标，到显示界面流程？</p><p>15、组件化？</p><p>16、编译过程？某一个东西是属于哪一步骤的？</p><p>17、微信支付流程（客户端、微信 SDK 、自己服务器、微信服务器时序图）</p><p>18、RN、Week？内部是怎么用 JS 调用原生的？</p><p>19、日志记录？</p><p>20、遇到的闪退？Bug？</p><p>21、竞争同一个资源？</p><p>22、进程线程与 App 的关系。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;微店面试题&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>好未来面试题</title>
+    <link href="https://objcvip.github.io/%E5%A5%BD%E6%9C%AA%E6%9D%A5%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://objcvip.github.io/好未来面试题/</id>
+    <published>2019-09-04T07:56:00.000Z</published>
+    <updated>2019-09-04T08:01:25.975Z</updated>
+    
+    <content type="html"><![CDATA[<p>好未来面试题<br><a id="more"></a></p><h1 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h1><p>1、说一下optional。（？ ！ ？？ 几种解包方式 if let、guard、？？等）</p><p>2、说一下闭包。</p><p>3、比较代理、通知、KVO？这三个谁的效率最高，谁的效率最低？( KVO 效率最低，因为 Runtime ）</p><p>4、NSString 和 String 的区别？（ String 是值类型，NSString 是引用类型）</p><p>5、Swift 跟 OC 的区别？（ OC 是动态的语言，Swift 是静态的语言）OC 是面向对象的，Swift 呢？（面向对象、面向协议、响应式编程）解释一下面向协议编程？</p><p>6、说一下 MRC ？自动释放池？自动释放池什么时候释放？（我说 drain ）</p><p>7、说一下多线程？（我提到了 dispatch_once 单例）</p><p>8、分别用 OC 和 Swift 手写一下单例。（ Swift 的单例我忘记写 static 了，但是经提醒立马说出来了）</p><p>9、SnaptKit 内部看过吗？</p><p>10、链式语法的实现。</p><p>UIView.top.equalTo().offSet(10)</p><p>UIView.left.equalTo().offSet(10)</p><p>为什么能写成UIView.top.left.offSet(10)</p><h1 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h1><p>主要是手写算法题：</p><p>1、用两个栈实现队列。</p><p>2、从扑克牌中抽出5张，写一个方法判断是不是顺子。（如34567）大小王是万能的，可以替代任意数字。</p><h1 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h1><p>项目经理</p><h1 id="四面"><a href="#四面" class="headerlink" title="四面"></a>四面</h1><p>HR</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;好未来面试题&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高思教育面试题</title>
+    <link href="https://objcvip.github.io/%E9%AB%98%E6%80%9D%E6%95%99%E8%82%B2%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://objcvip.github.io/高思教育面试题/</id>
+    <published>2019-09-04T07:39:00.000Z</published>
+    <updated>2019-09-04T07:50:20.868Z</updated>
+    
+    <content type="html"><![CDATA[<p>高思教育面试题<br><a id="more"></a></p><h1 id="笔试题"><a href="#笔试题" class="headerlink" title="笔试题"></a>笔试题</h1><p>笔试题</p><h1 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h1><p>1、@property 本质是什么？NSString 为什么用 Copy，用 Strong 行不行？</p><p>2、block 为什么用 copy ？</p><p>3、block 和代理你用的哪个多？各有什么特点？</p><p>4、GCD 的两个队列（串行、并行）有了解吗？从字面意思看，你觉得这俩哪个效率高，哪个（占空间）忘记了问的啥指标了。。</p><p>5、（说一下你的项目吧）看到我的酒店 App，问类似网易新闻那种滑动切换页面你是怎么做的？我说是一个 scrollView，点击按钮后滚动到指定的 index。他说的顶部按钮是3个，如果是30个呢，会有什么问题？他说如果1个页面占用5M，30个页面就占用5x30M，会有内存问题，怎么解决这个问题？我说看过别人写的，用的是子控制器，把这些页面加到当前控制器的子控制器中。（现在想想我也是这么做的。。但是没说是这么做）</p><p>6、AFN内部看过吗？AFN的5个模块。</p><p>大概这时候问，你觉得自己是什么级别的？（中级）</p><p>7、说一下响应者链。</p><p>8、一个约束题。</p><p>9、项目不忙的时候做过什么优化？（我说用 Instruments 分析过内存泄漏）他说发现过什么问题？（发现过 NSTimer 定时器有内存泄漏）他说那考虑用什么替换定时器呢？（我说没有替换它，退出这个页面的时候关掉了 Timer）</p><p>还做过什么优化？（忘记咋回答了）</p><p>10、（不知道问啥我的回答是野指针）然后就问野指针是啥？指针指向的那块地址（忘记了。。）如果又有其他指针指向了这块内存，会怎么样（他好像说会闪退）</p><p>12、斐波那切数列</p><p>0 1 2 3 4 5…</p><p>1 1 2 3 5 8 13 21  求n  f(n) = f(n-1) + f(n-2)</p><h1 id="复试"><a href="#复试" class="headerlink" title="复试"></a>复试</h1><p>1、怎么学的 iOS ？为什么没搞 Java </p><p>2、介绍公司情况，人员规模，介绍项目</p><p>3、说一下项目中遇到的问题，怎么解决的？</p><p>4、说一下内存管理，怎么检测内存泄漏的？</p><p>5、你用 OC 开发还是 Swift ？你觉得两者有啥不同？</p><p>6、金融 App 应该有一些安全措施吧？你们是怎么做的？</p><p>7、TCP 和 UDP 有啥区别？</p><p>8、TCP 几次握手？过程是怎么样的？</p><p>9、Post 请求和 Get 请求有啥区别？</p><p>10、数据持久化都有哪些？</p><p>11、AFN 的实现原理？SDWebImage 的实现原理？哪些存在内存，哪些存在磁盘？</p><p>12、两个网络请求有依赖关系时，怎么处理的？</p><p>13、同步、异步  串行、并行</p><p>14、几张图合成一张图</p><p>15、说一下 Runloop</p><p>16、KVO 的实现原理</p><p>17、不使用中间变量 实现交换两个数 swap(a, b)</p><p>18、copy 关键字修饰什么？</p><p>19、类的私有属性，怎么设置属性值？我答了 KVC  他提到了 Runtime</p><p>20、有没有做过音频的处理？类似唱吧把原唱关掉。</p><p>21、动画了解的怎么样？</p><p>22、了解 ARKit 吗？</p><p>23、数据结构和算法你怎么样？冒泡排序，选择排序？</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;高思教育面试题&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>滴滴面试题</title>
+    <link href="https://objcvip.github.io/%E6%BB%B4%E6%BB%B4%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://objcvip.github.io/滴滴面试题/</id>
+    <published>2019-09-04T07:27:00.000Z</published>
+    <updated>2019-09-04T08:02:21.795Z</updated>
+    
+    <content type="html"><![CDATA[<p>滴滴面试题<br><a id="more"></a></p><h1 id="笔试题"><a href="#笔试题" class="headerlink" title="笔试题"></a>笔试题</h1><p>笔试题</p><h1 id="滴滴一面"><a href="#滴滴一面" class="headerlink" title="滴滴一面"></a>滴滴一面</h1><p>看了一下笔试题的答案，第一题 C 语言字符串反转打印了一下</p><p>1、说一下你觉得项目中遇到了什么印象深刻的问题，你是怎么解决的？</p><p>2、大学里学了哪些课？信息管理与信息系统专业是哪个学院的？</p><p>3、项目里的网络请求用到了网络5层模型的哪些，TCP/IP 属于哪一层？HTTP 呢？</p><p>4、你觉得自己是什么级别的？优势和不足主要是哪方面？</p><p>5、GCD 平时项目里怎么用的？我提到了回到主线程操作 UI 需要 dispatch_get_mainQueue</p><p>6、为什么操作 UI 需要在主线程？</p><p>7、哪些是你独立开发的项目？</p><p>8、问了一下上家公司的情况</p><p>9、之后有什么打算？</p><p>10、上家薪资多少？你还有啥想问的吗？</p><h1 id="滴滴二面"><a href="#滴滴二面" class="headerlink" title="滴滴二面"></a>滴滴二面</h1><p>1、自定义封装控件需要注意什么？有什么规范？</p><p>2、说一下你了解的设计模式。</p><p>3、数据库怎么优化？我说数据量大的话加索引提升查询效率。问其他优化呢？比如数据库大小有没有做过优化？</p><p>4、内存优化是怎么做的？我提到了内存泄漏。什么情况会发生内存泄漏？</p><p>5、App 启动时间优化？</p><p>6、视图做过哪些优化，我提了 TableView。那就以 TableView 说一下优化了哪些方面？</p><p>7、AFNetworking 内部是怎么样的一个过程？</p><p>8、你还有什么想问我的？</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;滴滴面试题&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>面试题讨论（2019.09.03）</title>
@@ -355,120 +465,6 @@
       <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="排序" scheme="https://objcvip.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【算法】冒泡排序</title>
-    <link href="https://objcvip.github.io/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
-    <id>https://objcvip.github.io/冒泡排序/</id>
-    <published>2018-02-02T07:47:00.000Z</published>
-    <updated>2019-09-04T05:47:06.293Z</updated>
-    
-    <content type="html"><![CDATA[<p>冒泡排序。<br><a id="more"></a></p><h1 id="算法原理"><a href="#算法原理" class="headerlink" title="算法原理"></a>算法原理</h1><ol><li>比较相邻的元素。如果第一个比第二个大，就交换两个元素。</li><li>对每一对相邻的元素做同样的工作，从开始第一对到结尾最后一对。一次循环后，最后的元素应该会是最大的数。</li><li>针对所有元素重复以上步骤，除了最后一个。</li><li>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li></ol><p>外层循环控制数组的容量，内层循环一个一个比较交换排序。</p><h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1><p>冒泡排序最好的时间复杂度是O(n)<br>最坏时间复杂度是O(n^2)<br>平均复杂度为O(n^2)<br>冒泡排序是一种稳定的排序算法。</p><h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><h2 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">void bubble_sort (int a[], int n);</span><br><span class="line">void bubble_sort (int a[], int n)</span><br><span class="line">&#123; </span><br><span class="line">      int i, j, temp;</span><br><span class="line">      for ( j = 0; j &lt; n; j++) &#123;</span><br><span class="line">          for ( i = 0; i &lt; n-1-j; i++) &#123;</span><br><span class="line">              if (a[i] &gt; a[i + 1]) &#123;</span><br><span class="line">                    temp = a[i];</span><br><span class="line">                    a[i] = a[i + 1];</span><br><span class="line">                    a[i + 1] = temp;</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="Objective-C"><a href="#Objective-C" class="headerlink" title="Objective-C"></a>Objective-C</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- (void)sort:(NSMutableArray *)array &#123;</span><br><span class="line">for (int i = 0; i &lt; array.count; i++) &#123;</span><br><span class="line">    for (int j = 0; j &lt; array.count-1-j; j++) &#123;</span><br><span class="line">      NSInteger left = [array[j] integerValue];</span><br><span class="line">      NSInteger right = [array[j+1] integerValue];</span><br><span class="line">      if (left &lt; right) &#123;</span><br><span class="line">        [array exchangeObjectAtIndex:j withObjectAtIndex:j+1];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">NSLog(@&quot;%@&quot;,array);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">func bubbleSort(_ array: inout [Int]) &#123;</span><br><span class="line">    let n = array.count</span><br><span class="line">    for i in 0..&lt;n &#123;</span><br><span class="line">      for j in 0..&lt; (n-1-j) &#123;</span><br><span class="line">          if array[j] &gt; array[j+1] &#123;</span><br><span class="line">             array.swapAt (j, j+1)</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    print(array)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;冒泡排序。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="冒泡排序" scheme="https://objcvip.github.io/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【算法】排序算法</title>
-    <link href="https://objcvip.github.io/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-    <id>https://objcvip.github.io/排序算法/</id>
-    <published>2018-02-01T07:47:00.000Z</published>
-    <updated>2019-09-04T05:47:16.286Z</updated>
-    
-    <content type="html"><![CDATA[<p>排序算法。<br><a id="more"></a></p><h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p><img src="https://upload-images.jianshu.io/upload_images/822370-cf39c6e47bc8a0cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="排序算法"></p><h2 id="非线性时间比较类排序"><a href="#非线性时间比较类排序" class="headerlink" title="非线性时间比较类排序"></a>非线性时间比较类排序</h2><h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><ul><li><a href="https://www.jianshu.com/p/9621dc5ff1a4" target="_blank" rel="noopener">冒泡排序</a></li><li><a href="https://www.jianshu.com/p/c76f04ece973" target="_blank" rel="noopener">快速排序</a><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3></li><li><a href="">插入排序</a></li><li><a href="">希尔排序</a><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3></li><li><a href="https://www.jianshu.com/p/4b1bfc1a1581" target="_blank" rel="noopener">简单选择排序</a></li><li><a href="">堆排序</a><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3></li><li><a href="">二路归并排序</a></li><li><a href="">多路归并排序</a><h2 id="线性时间非比较类排序"><a href="#线性时间非比较类排序" class="headerlink" title="线性时间非比较类排序"></a>线性时间非比较类排序</h2></li><li><a href="">计数排序</a></li><li><a href="">桶排序</a></li><li><a href="">基数排序</a><h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1><img src="https://upload-images.jianshu.io/upload_images/822370-e8734d4bca578ccc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="时间复杂度"><h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><a href="https://www.cnblogs.com/onepixel/articles/7674659.html" target="_blank" rel="noopener">十大经典排序算法</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;排序算法。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="排序" scheme="https://objcvip.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Effective Objective-C 2.0（第7章）</title>
-    <link href="https://objcvip.github.io/EffectiveObjectiveCPart7/"/>
-    <id>https://objcvip.github.io/EffectiveObjectiveCPart7/</id>
-    <published>2018-01-06T16:07:00.000Z</published>
-    <updated>2018-12-06T10:04:13.873Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第7章-系统框架"><a href="#第7章-系统框架" class="headerlink" title="第7章 系统框架"></a>第7章 系统框架</h3><a id="more"></a><h4 id="47-熟悉系统框架"><a href="#47-熟悉系统框架" class="headerlink" title="47.熟悉系统框架"></a>47.熟悉系统框架</h4><p>将一系列代码封装为动态库（dynamic library），并在其中放入描述其接口的头文件，这样做出来的东西就叫框架。有时为iOS平台构建的第三方框架所使用的是静态库（static library），这是因为iOS应用程序不允许在其中包含动态库。这些东西严格来讲并不是真正的框架，然而也经常视为框架。不过，所有iOS平台的系统框架仍然使用动态库。</p><h5 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h5><ul><li>许多系统框架都可以直接使用。其中最重要的是Foundation与CoreFoundation，这两个框架提供了构建应用程序所需的许多核心功能。</li><li>很多常见任务都能用框架来做，例如音频与视频处理、网络通信、数据管理等。</li><li>请记住：用纯C写成的框架与用Objective-C写成的一样重要，若想成为优秀的Objective-C开发者，应该掌握C语言的核心概念。</li></ul><h4 id="48-多用块枚举，少用for循环"><a href="#48-多用块枚举，少用for循环" class="headerlink" title="48.多用块枚举，少用for循环"></a>48.多用块枚举，少用for循环</h4><ul><li>for 循环</li><li>使用Objective-C 1.0 的 NSEnumerator来遍历</li><li>快速遍历</li><li>基于块的遍历方式<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)enumerateObjectsUsingBlock:(void(^)(id object, NSUInteger idx, BOOL *stop))block</span><br></pre></td></tr></table></figure></li></ul><h5 id="要点-1"><a href="#要点-1" class="headerlink" title="要点"></a>要点</h5><ul><li>遍历collection有四种方式。最基本的办法是for循环，其次是NSEnumerator遍历法及快速遍历法，最新、最先进的方式是“块枚举法”。</li><li>“块枚举法”本身就能通过GCD来并发执行遍历操作，无须另行编写代码。而采用其他遍历方式则无法轻易实现这一点。</li><li>若提前知道待遍历的collection含有何种对象，则应修改块签名，指出对象的具体类型。</li></ul><h4 id="49-对自定义其内存管理语义的collection使用无缝桥接"><a href="#49-对自定义其内存管理语义的collection使用无缝桥接" class="headerlink" title="49.对自定义其内存管理语义的collection使用无缝桥接"></a>49.对自定义其内存管理语义的collection使用无缝桥接</h4><p>__bridge</p><h5 id="要点-2"><a href="#要点-2" class="headerlink" title="要点"></a>要点</h5><ul><li>通过无缝桥接技术，可以在Foundation框架中的Objective-C对象与CoreFoundation框架中的C语言数据结构之间来回转换。</li><li>在CoreFoundation层面创建collection时，可以指定许多回调函数，将其转换成具备特殊内存管理予以的Objective-C collection。</li></ul><h4 id="50-构建缓存时选用NSCache而非NSDictionary"><a href="#50-构建缓存时选用NSCache而非NSDictionary" class="headerlink" title="50.构建缓存时选用NSCache而非NSDictionary"></a>50.构建缓存时选用NSCache而非NSDictionary</h4><p>NSCache是线程安全的。而NSDictionary则绝对不具备此优势，意思就是：在开发者自己不编写加锁代码的前提下，多个线程便可以同时访问NSCache。</p><h5 id="要点-3"><a href="#要点-3" class="headerlink" title="要点"></a>要点</h5><ul><li>实现缓存时应选用NSCache而非NSDictionary对象。因为NSCache可以提供优雅的自动删减功能，而且是“线程安全的”，此外，它与字典不同，并不会拷贝键。</li><li>可以给NSCache对象设置上限，用以限制缓存中的对象总个数及“总成本”，而这些尺度则定义了缓存删减其中对象的时机。但是绝对不要把这些尺度当成可靠的“硬限制”（hard limit），它们仅对NSCache起指导作用。</li><li>将NSPurgeableData与NSCache搭配使用，可实现自动清除数据的功能，也就是说，当NSPurgeableData对象所占内存为系统所丢弃时，该对象自身也会从缓存中移除。</li><li>如果缓存使用得当，那么应用程序的响应速度就能提高。只有那种“重新计算起来费事的”数据，才值得放入缓存，比如那些需要从网络获取或从磁盘读取的数据。</li></ul><h4 id="51-精简initialize与load的实现代码"><a href="#51-精简initialize与load的实现代码" class="headerlink" title="51.精简initialize与load的实现代码"></a>51.精简initialize与load的实现代码</h4><h5 id="要点-4"><a href="#要点-4" class="headerlink" title="要点"></a>要点</h5><ul><li>在加载阶段，如果累实现了load方法，那么系统就会调用它。分类里也可以定义此方法，类的load方法要比分类中的先调用。与其他方法不同，load方法不参与覆写机制。</li><li>首次使用到某个类之前，系统会向其发送initialize消息。由于此方法遵从普通的覆写规则，所以通常应该在里面判断当前要初始化的是哪个类。</li><li>load与initialize方法都应该实现得精简一些，这有助于保持应用程序的响应能力，也能减少引入“依赖环”（interdependency cycle）的几率。</li><li>无法在编译期设定的全局变量，可以放在initialize方法里初始化。</li></ul><h4 id="52-别忘了NSTimer会保留其目标对象"><a href="#52-别忘了NSTimer会保留其目标对象" class="headerlink" title="52.别忘了NSTimer会保留其目标对象"></a>52.别忘了NSTimer会保留其目标对象</h4><h5 id="要点-5"><a href="#要点-5" class="headerlink" title="要点"></a>要点</h5><ul><li>NSTimer对象会保留其目标，直到计时器本身失效为止，调用invalidate方法可令计时器失效，另外，一次性的计时器在触发完成任务之后也会失效。</li><li>反复执行任务的计时器（repeating timer），很容易引入保留环，如果这种计时器的目标对象又保留了计时器本身，那肯定户籍导致保留环。这种环状保留关系，可能是直接发生的，也可能是通过对象图里的其他对象间接发生的。</li><li>可以扩充NSTimer的功能，用“块”来打破保留环。不过，除非NSTimer将来在公共接口里提供此功能，否则必须创建分类，将相关实现代码加入其中。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;编写高质量iOS与OS-X代码的52个有效方法&quot;&gt;&lt;a href=&quot;#编写高质量iOS与OS-X代码的52个有效方法&quot; class=&quot;headerlink&quot; title=&quot;编写高质量iOS与OS X代码的52个有效方法&quot;&gt;&lt;/a&gt;编写高质量iOS与OS X代码的52个有效方法&lt;/h2&gt;&lt;h3 id=&quot;第7章-系统框架&quot;&gt;&lt;a href=&quot;#第7章-系统框架&quot; class=&quot;headerlink&quot; title=&quot;第7章 系统框架&quot;&gt;&lt;/a&gt;第7章 系统框架&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/categories/Effective-Objective-C-2-0/"/>
-    
-    
-      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/tags/Effective-Objective-C-2-0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Effective Objective-C 2.0（第6章）</title>
-    <link href="https://objcvip.github.io/EffectiveObjectiveCPart6/"/>
-    <id>https://objcvip.github.io/EffectiveObjectiveCPart6/</id>
-    <published>2018-01-05T16:06:00.000Z</published>
-    <updated>2018-12-06T10:03:56.385Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第6章-块与大中枢派发"><a href="#第6章-块与大中枢派发" class="headerlink" title="第6章 块与大中枢派发"></a>第6章 块与大中枢派发</h3><a id="more"></a><h4 id="37-理解“块”这一概念"><a href="#37-理解“块”这一概念" class="headerlink" title="37.理解“块”这一概念"></a>37.理解“块”这一概念</h4><ul><li>块是C、C++、Objective-C 中的词法闭包。</li><li>块可接受参数，也可返回值。</li><li>块可以分配在栈或堆上，也可以是全局的。分配在栈上的块可拷贝到堆里，这样的话，就和标准的 Objective-C 对象一样，具备引用计数了。</li></ul><h4 id="38-为常用的块类型创建-typedef"><a href="#38-为常用的块类型创建-typedef" class="headerlink" title="38.为常用的块类型创建 typedef"></a>38.为常用的块类型创建 typedef</h4><ul><li>以typedef重新定义块类型，可令块变量用起来更加简单。</li><li>定义新类型时应遵从现有的命名习惯，勿使其名称与别的类型相冲突。</li><li>不妨为同一个块签名定义多个类型别名。如果要重构的代码使用了块类型的某个别名，那么只需修改相应的 typedef 中的块签名即可，无须改动其他typedef。</li></ul><h4 id="39-用-handler-块降低代码分散程度"><a href="#39-用-handler-块降低代码分散程度" class="headerlink" title="39.用 handler 块降低代码分散程度"></a>39.用 handler 块降低代码分散程度</h4><ul><li>在创建对象时，可以使用内联的 handler 块将相关业务逻辑一并声明。</li><li>在有多个实例需要监控时，如果采用委托模式，那么经常需要根据传入的对象来切换，而若改用 handler 块来实现，则可直接将块与相关对象放在一起。</li><li>设计 API 时如果用到了 handler 块，那么可以增加一个参数，使调用者可通过此参数来决定应该把块安排在哪个队列上执行。</li></ul><h4 id="40-用块引用其所属对象时不要出现保留环"><a href="#40-用块引用其所属对象时不要出现保留环" class="headerlink" title="40.用块引用其所属对象时不要出现保留环"></a>40.用块引用其所属对象时不要出现保留环</h4><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- (void)p_requestCompleted &#123;</span><br><span class="line">    if (_completionHandler) &#123;</span><br><span class="line">        _completionHandler(_downloadedData);</span><br><span class="line">  &#125;</span><br><span class="line">  self.completionHandler = nil;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>只要下载请求执行完毕，保留环就解除了，而获取器对象也将会在必要时为系统所回收。</p><ul><li>如果块所捕获的对象直接或间接地保留了块本身，那么就得当心保留环问题。</li><li>一定要找个适当的时机解除保留环，而不能把责任推给 API 的调用者。</li></ul><h4 id="41-多用派发队列，少用同步锁"><a href="#41-多用派发队列，少用同步锁" class="headerlink" title="41.多用派发队列，少用同步锁"></a>41.多用派发队列，少用同步锁</h4><h5 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h5><ol><li><p>同步块（synchronization block）</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (void)synchronizedMethod &#123;</span><br><span class="line">    @synchronized(self) &#123;</span><br><span class="line">          //Safe</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>NSLock锁对象  NSRecursiveLock递归锁</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">_lock = [[NSLock alloc] init];</span><br><span class="line">- (void)synchronizedMethod &#123;</span><br><span class="line">    [_lock lock];</span><br><span class="line">    //Safe</span><br><span class="line">    [_lock unlock];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><p>缺陷：</p><ul><li>在极端情况下，同步块会导致死锁。</li><li>效率不见得很高。</li><li>直接使用锁对象，一旦遇到死锁，就会非常麻烦。</li><li>用atomic来修饰属性，只能提供某种程度的线程安全，无法保证访问该对象时绝对是线程安全的。使用属性时，必然能从中获取到有效值，然而在同一线程上多次调用获取方法（getter），每次获取到的结果未必相同。在两次访问操作之间，其他线程可能会写入新的属性值。</li></ul><ol start="3"><li>GCD<br> 串行同步队列（serial synchronization queue）<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">_syncQueue = dispatch_queue_create(&quot;com.effectiveObjectivec.syncQueue&quot;,NULL);</span><br><span class="line">- (NSString *)someString &#123;</span><br><span class="line">  __block NSString *localSomeString;</span><br><span class="line"> dispatch_sync(_syncQueue, ^&#123;</span><br><span class="line">      localSomeString = _someString;</span><br><span class="line">    &#125;);</span><br><span class="line">    return localSomeString;</span><br><span class="line">&#125;</span><br><span class="line">- (void)setSomeString:(NSString *)someString &#123;</span><br><span class="line">    dispatch_sync(_syncQueue, ^&#123;</span><br><span class="line">          _someString = someString;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><p>思路是：把设置操作与获取操作都安排在序列化的队列里执行，这样的话，所有针对属性的访问操作就都同步了。全部加锁任务都在GCD中处理。<br>并发队列（concurrent queue）<br>栅栏（barrier）<br>在队列中，栅栏块必须单独执行，不能与其他块并行。这只对并发队列有意义，因为串行队列中的块总是按顺序逐个来执行的。并发队列如果发现接下来要处理的块是个栅栏块，那么久一直要等栅栏块执行过后，再按正常方式继续向下处理。</p><h5 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h5><ul><li>派发队列可用来表述同步语义（synchronization semantic），这种做法要比使用@synchronized 块或 NSLock 对象更简单。</li><li>将同步与异步派发结合起来，可以实现与普通加锁机制一样的同步行为，而这么做却不会阻塞执行异步派发的线程。</li><li>使用同步队列及栅栏块，可以令同步行为更加高效。</li></ul><h4 id="42-多用GCD，少用-performSelector-系列方法"><a href="#42-多用GCD，少用-performSelector-系列方法" class="headerlink" title="42.多用GCD，少用 performSelector 系列方法"></a>42.多用GCD，少用 performSelector 系列方法</h4><ol><li>performSelector 可能内存泄漏<br> performSelector 调用了一个方法。编译器并不知道将要调用的选择子是什么，因此，也就不了解其方法签名及返回值，甚至连是否有返回值都不清楚。而且，由于编译器不知道方法名，所以就没办法运用ARC的内存管理规则来判定返回值是不是应该释放。鉴于此，ARC采用了比较谨慎的做法，就是不添加释放操作。然而这么做可能导致内存泄漏，因为方法在返回对象时可能已经将其保留了。</li><li>有局限性。</li></ol><ul><li>返回值只能是void或对象类型。</li><li>参数类型是id，所以只能传入对象。此外，最多只能接受两个参数。</li></ul><p>dispatch_sync<br>dispatch_async<br>dispatch_after</p><h5 id="要点-1"><a href="#要点-1" class="headerlink" title="要点"></a>要点</h5><ul><li>performSelector 系列方法在内存管理方面容易有疏忽。它无法确定将要执行的选择子具体是什么，因而ARC编译器也就无法插入适当的内存管理方法。</li><li>performSelector 系列方法所能处理的选择子太过局限了，选择子的返回值类型及发送给方法的参数个数都收到限制。</li><li>如果想把任务放在另一个线程上执行，那么最好不要用 performSelector 系列方法，而是应该把任务封装到块里，然后调用大中枢派发机制的相关方法来实现。</li></ul><h4 id="43-掌握GCD及操作队列的使用时机"><a href="#43-掌握GCD及操作队列的使用时机" class="headerlink" title="43.掌握GCD及操作队列的使用时机"></a>43.掌握GCD及操作队列的使用时机</h4><h5 id="GCD与NSOperationQueue"><a href="#GCD与NSOperationQueue" class="headerlink" title="GCD与NSOperationQueue"></a>GCD与NSOperationQueue</h5><ul><li>操作队列在底层是用GCD来实现的。</li><li>GCD是纯C的API，而操作队列则是Objective-C的对象。</li><li>在GCD中，任务用块来表示，而块是一个轻量级的数据结构。预支相反，“操作”（operation）则是个更为重量级的Objective-C对象。</li></ul><h5 id="使用NSOperation及NSOperationQueue的好处："><a href="#使用NSOperation及NSOperationQueue的好处：" class="headerlink" title="使用NSOperation及NSOperationQueue的好处："></a>使用NSOperation及NSOperationQueue的好处：</h5><ul><li>取消某个操作。运行任务之前，可以在NSOperation对象上调用cancel方法，该方法会设置对象内的标志位，用以表明此任务不需执行，不过，已经启动的任务无法取消。若是不使用操作队列，而是把块安排在GCD队列，那就无法取消了。开发者可以在应用程序层自己来实现取消功能，不过这样做需要编写很多代码，而那些代码其实已经由操作队列实现好了。</li><li>指定操作间的依赖关系。</li><li>通过键值观察机制监控NSOperation对象的属性。如isCancelled、isFinished。如果想在某个任务变更其状态时得到通知，或是想用比GCD更为精细的方式来控制所要执行的任务，那么键值观察机制会很有用。</li><li>指定操作的优先级。GCD只有队列的优先级，没有任务的优先级。NSOpetation对象也有线程优先级，这决定了运行此操作的线程处在何种优先级上。GCD可以实现此功能，然而操作队列更简单，只需设置一个属性。</li><li>重用NSOperation对象。<br>系统的NSNotificationCenter API选用了操作队列而非派发队列，开发者可通过其中的方法来注册监听器，以便在发生相关事件时得到通知，而这个方法接受的参数是块，不是选择子。</li></ul><h5 id="要点-2"><a href="#要点-2" class="headerlink" title="要点"></a>要点</h5><ul><li>在解决多线程与任务管理问题时，派发队列并非唯一方案。</li><li>操作队列提供了一套高层的Objective-C API，能实现纯GCD所具备的绝大部分功能，而且还能完成一些更为复杂的操作，那些操作若改用GCD来实现，则需另外编写代码。</li></ul><h4 id="44-通过-Dispatch-Group-机制，根据系统资源状况来执行任务"><a href="#44-通过-Dispatch-Group-机制，根据系统资源状况来执行任务" class="headerlink" title="44.通过 Dispatch Group 机制，根据系统资源状况来执行任务"></a>44.通过 Dispatch Group 机制，根据系统资源状况来执行任务</h4><h5 id="要点-3"><a href="#要点-3" class="headerlink" title="要点"></a>要点</h5><ul><li>一系列任务可归入一个 dispatch group 之中。开发者可以在这组任务执行完毕时获得通知。</li><li>通过dispatch group，可以在并发式派发队列里同时执行多项任务。此时GCD会根据系统资源状况来调度这些并发执行的任务。开发者若自己来实现此功能，则需编写大量代码。</li></ul><h4 id="45-使用dispatch-once来执行只需运行一次的线程安全代码"><a href="#45-使用dispatch-once来执行只需运行一次的线程安全代码" class="headerlink" title="45. 使用dispatch_once来执行只需运行一次的线程安全代码"></a>45. 使用dispatch_once来执行只需运行一次的线程安全代码</h4><h5 id="实现单例"><a href="#实现单例" class="headerlink" title="实现单例"></a>实现单例</h5><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">+ (id)sharedInstance &#123;</span><br><span class="line">    static EOCClass *sharedInstance = nil;</span><br><span class="line">    static dispatch_once_t onceToken;</span><br><span class="line">    dispatch_once(&amp;onceToken, ^&#123;</span><br><span class="line">          sharedInstance = [[self alloc] init];</span><br><span class="line">    &#125;);</span><br><span class="line">    return sharedInstance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="要点-4"><a href="#要点-4" class="headerlink" title="要点"></a>要点</h5><ul><li>经常需要编写“只需执行一次的线程安全代码”（thread-safe single-code execution）。通过GCD所提供的 dispatch_once 函数，很容易就能实现此功能。</li><li>标记应该声明在 static 或 global 作用域中，这样的话，在把只需执行一次的块传给 dispatch_once 函数时，传进去的标记也是相同的。</li></ul><h4 id="46-不要使用-dispatch-get-current-queue"><a href="#46-不要使用-dispatch-get-current-queue" class="headerlink" title="46.不要使用 dispatch_get_current_queue"></a>46.不要使用 dispatch_get_current_queue</h4><h5 id="要点-5"><a href="#要点-5" class="headerlink" title="要点"></a>要点</h5><ul><li>dispatch_get_current_queue 函数的行为常常与开发者所预期的不同。此函数已经废弃，只应做调试之用。</li><li>由于派发队列是按层级来组织的，所以无法单用某个队列对象来描述“当前队列”这一概念。</li><li>dispatch_get_current_queue 函数用于解决由不可重入的代码所引发的死锁，然而能用此函数解决的问题，通常也能改用“队列特定数据”来解决。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;编写高质量iOS与OS-X代码的52个有效方法&quot;&gt;&lt;a href=&quot;#编写高质量iOS与OS-X代码的52个有效方法&quot; class=&quot;headerlink&quot; title=&quot;编写高质量iOS与OS X代码的52个有效方法&quot;&gt;&lt;/a&gt;编写高质量iOS与OS X代码的52个有效方法&lt;/h2&gt;&lt;h3 id=&quot;第6章-块与大中枢派发&quot;&gt;&lt;a href=&quot;#第6章-块与大中枢派发&quot; class=&quot;headerlink&quot; title=&quot;第6章 块与大中枢派发&quot;&gt;&lt;/a&gt;第6章 块与大中枢派发&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/categories/Effective-Objective-C-2-0/"/>
-    
-    
-      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/tags/Effective-Objective-C-2-0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Effective Objective-C 2.0（第5章）</title>
-    <link href="https://objcvip.github.io/EffectiveObjectiveCPart5/"/>
-    <id>https://objcvip.github.io/EffectiveObjectiveCPart5/</id>
-    <published>2018-01-04T16:05:00.000Z</published>
-    <updated>2018-12-06T10:03:45.635Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第5章-内存管理"><a href="#第5章-内存管理" class="headerlink" title="第5章 内存管理"></a>第5章 内存管理</h3><a id="more"></a><h4 id="29-理解引用计数"><a href="#29-理解引用计数" class="headerlink" title="29.理解引用计数"></a>29.理解引用计数</h4><ul><li>引用计数机制通过可以递增递减的计数器来管理内存。对象创建好之后，其保留计数至少为1。若保留计数为正，则对象继续存活。当保留计数降为0时，对象就被销毁了。</li><li>在对象的生命周期中，其余对象通过引用来保留或释放此对象。保留与释放操作分别会递增及递减保留计数。</li></ul><h4 id="30-以ARC简化引用计数"><a href="#30-以ARC简化引用计数" class="headerlink" title="30.以ARC简化引用计数"></a>30.以ARC简化引用计数</h4><ul><li>有ARC之后，程序员就无须担心内存管理问题了。使用ARC来编程，可以省去类中许多“样板代码”。</li><li>ARC管理对象生命期的办法基本上就是：在合适的地方插入“保留”及“释放”操作。在ARC环境下，变量的内存管理语义可以通过修饰符指明，而原来则需要手工执行“保留”及“释放”操作。</li><li>由方法所返回的对象，其内存管理语义总是通过方法名来体现。ARC将此确定为开发者必须遵守的规则。</li><li>ARC只负责管理Objective-C对象的内存。尤其要注意：CoreFoundation对象不归ARC管理，开发者必须适时调用CFRetain/CFRelease。</li></ul><h4 id="31-在dealloc方法中只释放引用并解除监听"><a href="#31-在dealloc方法中只释放引用并解除监听" class="headerlink" title="31.在dealloc方法中只释放引用并解除监听"></a>31.在dealloc方法中只释放引用并解除监听</h4><ul><li>在dealloc方法里，应该做的事情就是释放指向其他对象的引用，并取消原来订阅的“键值观察”(KVO)或NSNotificationCenter等通知，不要做其他事情。</li><li>如果对象持有文件描述符等系统资源，那么应该专门编写一个方法来释放此种资源。这样的类要和其使用者约定：用完资源后必须调用close方法。</li><li>执行异步任务的方法不应在dealloc里调用；只能在正常状态下执行的那些方法也不应在dealloc里调用，因为此时对象已处于正在回收的状态了。</li></ul><h4 id="32-编写“异常安全代码”时留意内存管理问题"><a href="#32-编写“异常安全代码”时留意内存管理问题" class="headerlink" title="32.编写“异常安全代码”时留意内存管理问题"></a>32.编写“异常安全代码”时留意内存管理问题</h4><ul><li>捕获异常时，一定要注意将try块内所创立的对象清理干净。</li><li>在默认情况下，ARC不生成安全处理异常所需的清理代码。开启编译器标志后，可生成这种代码，不过会导致应用程序变大，而且会降低运行效率。</li></ul><h4 id="33-以弱引用避免保留环"><a href="#33-以弱引用避免保留环" class="headerlink" title="33.以弱引用避免保留环"></a>33.以弱引用避免保留环</h4><ul><li>将某些引用设为weak，可避免出现“保留环”。</li><li>weak引用可以自动清空，也可以不自动清空。自动清空（autonilling）是随着ARC而引人的新特性，由运行期系统来实现。在具备自动清空功能的弱引用上，可以随意读取其数据，因为这种引用不会指向已经回收过的对象。</li></ul><h4 id="34-以“自动释放池块”降低内存峰值"><a href="#34-以“自动释放池块”降低内存峰值" class="headerlink" title="34.以“自动释放池块”降低内存峰值"></a>34.以“自动释放池块”降低内存峰值</h4><ul><li>自动释放池排布在栈中，对象收到autorelease消息后，系统将其放入最顶端的池里。</li><li>合理运用自动释放池，可降低应用程序的内存峰值。</li><li>@autoreleasepool这种新式写法能创建出更为轻便的自动释放池。</li></ul><h4 id="35-用“僵尸对象”调试内存管理问题"><a href="#35-用“僵尸对象”调试内存管理问题" class="headerlink" title="35.用“僵尸对象”调试内存管理问题"></a>35.用“僵尸对象”调试内存管理问题</h4><ul><li>系统在回收对象时，可以不将其真的回收，而是把它转化为僵尸对象。通过环境变量NSZombieEnabled可开启此功能。</li><li>系统会修改对象的isa指针，令其指向特殊的僵尸类，从而使该对象变为僵尸对象。僵尸类能够响应所有的选择子，响应方式为：打印一条包含消息内容及其接收者的消息，然后终止应用程序。</li></ul><h4 id="36-不要使用retainCount"><a href="#36-不要使用retainCount" class="headerlink" title="36.不要使用retainCount"></a>36.不要使用retainCount</h4><ul><li>对象的保留计数看似有用，实则不然，因为任何给定时间点上的“绝对保留计数”（absolute retain count）都无法反应对象生命周期的全貌。</li><li>引入ARC之后，retainCount方法就正式废止了，在ARC下调用该方法会导致编译器报错。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;编写高质量iOS与OS-X代码的52个有效方法&quot;&gt;&lt;a href=&quot;#编写高质量iOS与OS-X代码的52个有效方法&quot; class=&quot;headerlink&quot; title=&quot;编写高质量iOS与OS X代码的52个有效方法&quot;&gt;&lt;/a&gt;编写高质量iOS与OS X代码的52个有效方法&lt;/h2&gt;&lt;h3 id=&quot;第5章-内存管理&quot;&gt;&lt;a href=&quot;#第5章-内存管理&quot; class=&quot;headerlink&quot; title=&quot;第5章 内存管理&quot;&gt;&lt;/a&gt;第5章 内存管理&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/categories/Effective-Objective-C-2-0/"/>
-    
-    
-      <category term="Effective Objective-C 2.0" scheme="https://objcvip.github.io/tags/Effective-Objective-C-2-0/"/>
     
   </entry>
   

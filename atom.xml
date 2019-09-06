@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://objcvip.github.io/"/>
-  <updated>2019-09-06T08:51:09.319Z</updated>
+  <updated>2019-09-06T16:08:50.780Z</updated>
   <id>https://objcvip.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>苏宁面试题</title>
+    <link href="https://objcvip.github.io/%E8%8B%8F%E5%AE%81%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://objcvip.github.io/苏宁面试题/</id>
+    <published>2019-09-06T16:08:00.000Z</published>
+    <updated>2019-09-06T16:08:50.780Z</updated>
+    
+    <content type="html"><![CDATA[<p>苏宁面试题<br><a id="more"></a></p><h1 id="笔试题"><a href="#笔试题" class="headerlink" title="笔试题"></a>笔试题</h1><p>1、冒泡排序</p><p>2、二分查找</p><p>3、合并两个数组去重</p><p>4、两个大数相加</p><h1 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h1><p>笔试题过一遍。</p><p>1、SDWebImage 的缓存机制？LRU 说一下。</p><p>2、数据库升级，比如从 1.0 升级到 2.0，增加了字段。</p><p>3、性能优化。</p><p>4、Git 开发流程。</p><p>5、微信登录流程。</p><p>6、WebView 与 JS 交互。</p><p>7、说一下Runloop，苹果设计 Runloop 的初衷是什么？</p><p>8、性能优化。</p><p>9、Delegate</p><p>10、GCD</p><p>11、深拷贝与浅拷贝。</p><p>12、进程间通信。</p><p>13、线程间通信，两个线程怎么切换？</p><p>performSelector</p><p>14、多态。</p><p>15、HTTP 三次握手，四次挥手。</p><h1 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h1><p>像是人事，不太像技术。让说具体方案。</p><p>1、有没有复杂点的页面。</p><p>2、（这个部门是做只能硬件的）蓝牙有哪些API。</p><p>3、播放音频，展示音频的曲线，具体怎么做？</p><h1 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h1><p>技术总监</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;苏宁面试题&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="苏宁" scheme="https://objcvip.github.io/tags/%E8%8B%8F%E5%AE%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开果科技面试题</title>
+    <link href="https://objcvip.github.io/%E5%BC%80%E6%9E%9C%E7%A7%91%E6%8A%80%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://objcvip.github.io/开果科技面试题/</id>
+    <published>2019-09-06T15:30:00.000Z</published>
+    <updated>2019-09-06T16:13:42.745Z</updated>
+    
+    <content type="html"><![CDATA[<p>开果科技面试题<br><a id="more"></a></p><h1 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h1><p>1、卡顿原因、解决办法。为什么透明视图不如不透明视图？</p><p>2、闪退原因、监测、过程。友盟是怎么捕获闪退的？从一个事件到闪退发生了什么？</p><p>3、图片的压缩，从600k到500k，不能设置固定压缩比，应该怎么做？压缩图片，压缩图片实际压缩的是哪些东西？加载超大图；图片在计算机中的存储形式；10M的图片加载到内存中是多大？大图是怎么加载的？</p><p>图像文件存储的都是每一个像素对应的颜色值。</p><p>4、字典的本质？哈希表原理？</p><p>哈希表。</p><p>5、链表和数组，哪个容易找到地址？</p><p>数组。</p><ul><li><p>在内存中，数组是一块连续的区域。插入和删除数据效率低。随机读取效率很高，因为数组是连续的，知道每一个数据的内存地址，可以直接找到给地址的数据。</p></li><li><p>链表增加和删除数据很容易。查找数据时效率低，因为不具有随机访问性。</p></li></ul><p>6、列表有好多页，某一页和后边加载的一页中有相同的数据，怎么处理？</p><p>7、动态库和静态库的区别。</p><p>8、设计模式。</p><h1 id="二面-电话面试"><a href="#二面-电话面试" class="headerlink" title="二面(电话面试)"></a>二面(电话面试)</h1><p>1、什么时候开始接触 iOS？怎么学的iOS？</p><p>2、公司多少人？什么项目？</p><p>3、你会选择什么样的公司？</p><p>4、数据库（SQLite/Realm）是怎么保证线程安全的？</p><p>5、UserDeafaults 系统做了哪些优化？为什么可以在主线程上去做存取？如果让你实现，方法已经是同步的方法了，你会怎么处理？</p><p>6、+load 和 +initialize 方法什么时候会调用，+load 和 +initialize 方法、main 方法这三个的调用顺序。</p><p>7、@class 和 #import 在编译的时候有哪些区别？</p><p>8、JSON 转 Model 你用的是什么？MJExtension 字典转模型的具体步骤？拿到字典了，第一步做什么，第二步做什么？</p><p>9、WebView 跟 JS 是怎么交互的？</p><p>10、WebView 怎么存 cookie？</p><p>11、A-&gt;B-&gt;C-&gt;D 从D返回到B。说几个不同的实现思路。</p><ul><li>方案1：for 循环 self.navigationController.viewControllers 判断某个控制器是否是 B 如果是就 popToViewController:B。</li><li>方案2：self.navigationController.viewControllers 是一个不可变数组，可以赋值给一个可变的数组，然后把 C 移除，然后再赋值给 viewControllers。</li><li>其他方案：提示不一定要 push，present出来的怎么弄？</li></ul><p>12、二分查找。</p><p>13、深拷贝与浅拷贝，某个值得改变可能会影响原始值，那是深拷贝还是浅拷贝？</p><p>14、性能优化？图片加载到 UIImageView 上经过了哪些过程？</p><p>15、Label 怎么多行显示。</p><p>16、Button有哪些状态？</p><p>17、dispatch_group_notify 是在哪个线程上？</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;开果科技面试题&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="开果" scheme="https://objcvip.github.io/tags/%E5%BC%80%E6%9E%9C/"/>
+    
+      <category term="面试题" scheme="https://objcvip.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>美团面试题</title>
@@ -424,52 +476,6 @@
     <summary type="html">
     
       &lt;p&gt;连续子数组的最大和。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【算法】Swift 用数组实现栈</title>
-    <link href="https://objcvip.github.io/Swift%E7%94%A8%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E6%A0%88/"/>
-    <id>https://objcvip.github.io/Swift用数组实现栈/</id>
-    <published>2018-03-03T07:47:00.000Z</published>
-    <updated>2019-09-04T05:52:20.511Z</updated>
-    
-    <content type="html"><![CDATA[<p>用数组实现栈。<br><a id="more"></a><br><figure class="highlight swift hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stack</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">var</span> stack: [<span class="hljs-type">AnyObject</span>]</span><br><span class="line">    <span class="hljs-keyword">var</span> isEmpty: <span class="hljs-type">Bool</span> &#123; <span class="hljs-keyword">return</span> stack.isEmpty &#125;</span><br><span class="line">    <span class="hljs-keyword">var</span> peek: <span class="hljs-type">AnyObject</span>? &#123; <span class="hljs-keyword">return</span> stack.last &#125;</span><br><span class="line">    </span><br><span class="line">    int() &#123;</span><br><span class="line">      stack = [<span class="hljs-type">AnyObject</span>]()</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">push</span><span class="hljs-params">(object: AnyObject)</span></span> &#123;</span><br><span class="line">        stack.append(object)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">pop</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">AnyObject</span>? &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (!isEmpty) &#123;</span><br><span class="line">            <span class="hljs-keyword">return</span> stack.removeLast()</span><br><span class="line">        &#125;<span class="hljs-keyword">else</span> &#123;</span><br><span class="line">            <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;用数组实现栈。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://objcvip.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://objcvip.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="栈" scheme="https://objcvip.github.io/tags/%E6%A0%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【算法】合并两个数组并去重</title>
-    <link href="https://objcvip.github.io/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E5%B9%B6%E5%8E%BB%E9%87%8D/"/>
-    <id>https://objcvip.github.io/合并两个数组并去重/</id>
-    <published>2018-03-02T07:47:00.000Z</published>
-    <updated>2019-09-04T05:52:20.611Z</updated>
-    
-    <content type="html"><![CDATA[<p>合并两个数组并去重。<br><a id="more"></a><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">// 合并两个含有nA、nB个元素的有序数组</span><br><span class="line">void Merge(int *a, int *b, int *c, int nA, int nB, int&amp; nCout)</span><br><span class="line">&#123;</span><br><span class="line">    int i = 0 ;</span><br><span class="line">    int j = 0 ;</span><br><span class="line">    int k = 0 ;</span><br><span class="line">     </span><br><span class="line">    while (i &lt; nA &amp;&amp; j &lt; nB)</span><br><span class="line">    &#123;</span><br><span class="line">        if (a[i] &lt; b[j])// 如果a的元素小，则插入a中元素到c</span><br><span class="line">        &#123;</span><br><span class="line">            c[k++] = a[i] ;</span><br><span class="line">            ++i ;</span><br><span class="line">            nCout++;</span><br><span class="line">        &#125;</span><br><span class="line">        else if (a[i] == b[j])// 如果a和b元素相等，则插入二者皆可，这里插入a</span><br><span class="line">        &#123;</span><br><span class="line">            c[k++] = a[i] ;</span><br><span class="line">            ++i ;</span><br><span class="line">            ++j ;</span><br><span class="line">            nCout++;</span><br><span class="line">        &#125;</span><br><span class="line">        else // a[i] &gt; b[j] // 如果b中元素小，则插入b中元素到c</span><br><span class="line">        &#123;</span><br><span class="line">            c[k++] = b[j] ;</span><br><span class="line">            ++j ;</span><br><span class="line">            nCout++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">     </span><br><span class="line">    if (i == nA) // 若a遍历完毕，处理b中剩下的元素</span><br><span class="line">    &#123;</span><br><span class="line">        for (int m = j; m &lt; nB; ++m)</span><br><span class="line">        &#123;</span><br><span class="line">            c[k++] = b[m] ;</span><br><span class="line">            nCout++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else//j == n, 若b遍历完毕，处理a中剩下的元素</span><br><span class="line">    &#123;</span><br><span class="line">        for (int m = i; m &lt; nA; ++m)</span><br><span class="line">        &#123;</span><br><span class="line">            c[k++] = a[m] ;</span><br><span class="line">            nCout++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;合并两个数组并去重。&lt;br&gt;&lt;/p&gt;
     
     </summary>
     

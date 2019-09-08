@@ -19,7 +19,7 @@
 <meta property="og:description" content="选择排序。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-04T05:48:22.251Z">
+<meta property="og:updated_time" content="2019-09-08T09:18:10.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【算法】选择排序">
 <meta name="twitter:description" content="选择排序。">
@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
 
 
     
@@ -156,7 +156,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 438 个字)
+                    3 分钟 读完 (大约 439 个字)
                 </span>
                 
                 
@@ -180,7 +180,7 @@
 </li>
 </ol>
 <h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1><p>平均复杂度为O(n^2)</p>
-<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">void select_sort(int*a,int n)</span><br><span class="line">&#123;</span><br><span class="line"> </span><br><span class="line">    register int i,j,min,t;</span><br><span class="line"> </span><br><span class="line">    for(i=0;i&lt;n-1;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        min=i;//查找最小值</span><br><span class="line"></span><br><span class="line">        for(j=i+1;j&lt;n;j++)</span><br><span class="line"> </span><br><span class="line">            if(a[min]&gt;a[j])</span><br><span class="line"> </span><br><span class="line">                min=j;//交换</span><br><span class="line"> </span><br><span class="line">        if(min!=i)</span><br><span class="line">        &#123;</span><br><span class="line"> </span><br><span class="line">            t=a[min];</span><br><span class="line"> </span><br><span class="line">            a[min]=a[i];</span><br><span class="line"> </span><br><span class="line">            a[i]=t;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">select_sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span>*a,<span class="hljs-keyword">int</span> n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="hljs-keyword">register</span> <span class="hljs-keyword">int</span> i,j,min,t;</span><br><span class="line"> </span><br><span class="line">    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;n<span class="hljs-number">-1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        min=i;<span class="hljs-comment">//查找最小值</span></span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">for</span>(j=i+<span class="hljs-number">1</span>;j&lt;n;j++)</span><br><span class="line"> </span><br><span class="line">            <span class="hljs-keyword">if</span>(a[min]&gt;a[j])</span><br><span class="line"> </span><br><span class="line">                min=j;<span class="hljs-comment">//交换</span></span><br><span class="line"> </span><br><span class="line">        <span class="hljs-keyword">if</span>(min!=i)</span><br><span class="line">        &#123;</span><br><span class="line"> </span><br><span class="line">            t=a[min];</span><br><span class="line"> </span><br><span class="line">            a[min]=a[i];</span><br><span class="line"> </span><br><span class="line">            a[i]=t;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
         
@@ -230,8 +230,8 @@
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
 <div id="comment-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
         clientID: '7cf9ae5a9ae4228f59ef',

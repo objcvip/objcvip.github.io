@@ -19,7 +19,7 @@
 <meta property="og:description" content="连续子数组的最大和。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-04T05:53:06.229Z">
+<meta property="og:updated_time" content="2019-09-08T09:13:20.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【算法】连续子数组的最大和">
 <meta name="twitter:description" content="连续子数组的最大和。">
@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
 
 
     
@@ -156,7 +156,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 158 个字)
+                    1 分钟 读完 (大约 159 个字)
                 </span>
                 
                 
@@ -171,7 +171,7 @@
         <div class="content">
             <p>连续子数组的最大和。<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>输入一个整型数组，数组里有正数也有负数。数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。要求时间复杂度为 O(n)。<br>例如，输入的数组为{1, -2, 3, 10, -4, 7, 2, -5}，和最大的子数组为{3, 10, -4, 7, 2}，因此输出该子数组的和 18。</p>
-<h1 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h1><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">bool g_InvalidInput = false;</span><br><span class="line"></span><br><span class="line">int FindGreatestSumOfSubArray(int *pData, int nLength)</span><br><span class="line">&#123;</span><br><span class="line">    if(pData == nullptr) || (nLength &lt;= 0)</span><br><span class="line">    &#123;</span><br><span class="line">        g_InvalidInput = true;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    g_InvalidInput = false;</span><br><span class="line">    </span><br><span class="line">    int nCurSum = 0;</span><br><span class="line">    int nGreatestSum = 0x80000000;</span><br><span class="line">    for(int i = 0; i &lt; nLength; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        if(nCurSum &lt;= 0)</span><br><span class="line">            nCurSum = pData[i];</span><br><span class="line">        else</span><br><span class="line">            nCurSum += pData[i];</span><br><span class="line">        if(nCurSum &gt; nGreatestSum)</span><br><span class="line">            nGreatestSum = nCurSum;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return nGreatestSum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h1><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">bool</span> g_InvalidInput = <span class="hljs-literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">FindGreatestSumOfSubArray</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *pData, <span class="hljs-keyword">int</span> nLength)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(pData == <span class="hljs-literal">nullptr</span>) || (nLength &lt;= <span class="hljs-number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        g_InvalidInput = <span class="hljs-literal">true</span>;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    g_InvalidInput = <span class="hljs-literal">false</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="hljs-keyword">int</span> nCurSum = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">int</span> nGreatestSum = <span class="hljs-number">0x80000000</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nLength; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(nCurSum &lt;= <span class="hljs-number">0</span>)</span><br><span class="line">            nCurSum = pData[i];</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            nCurSum += pData[i];</span><br><span class="line">        <span class="hljs-keyword">if</span>(nCurSum &gt; nGreatestSum)</span><br><span class="line">            nGreatestSum = nCurSum;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="hljs-keyword">return</span> nGreatestSum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
         
@@ -221,8 +221,8 @@
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
 <div id="comment-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
         clientID: '7cf9ae5a9ae4228f59ef',

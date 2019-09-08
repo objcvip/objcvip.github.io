@@ -19,7 +19,7 @@
 <meta property="og:description" content="快速排序算法。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-04T05:43:53.225Z">
+<meta property="og:updated_time" content="2019-09-08T09:18:57.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【算法】快速排序">
 <meta name="twitter:description" content="快速排序算法。">
@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
 
 
     
@@ -156,7 +156,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 394 个字)
+                    3 分钟 读完 (大约 395 个字)
                 </span>
                 
                 
@@ -176,7 +176,7 @@
 <li>以数组的第一个元素作为关键数据，赋值给key，即key = A[0];</li>
 <li>从j开始向前搜索，即由后开始向前搜索（j–）,找到第一个小于key的值A[j],将A[j]和A[i]互换。</li>
 <li>从i开始向后搜索，即由前开始向后搜索(i++),找到第一个大于key的值A[i],将A[i]和A[j]互换。</li>
-<li>重复第3、4步，直到i=j。<h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1>最优情况下，时间复杂度为O(nlogn)。<br>最坏情况下，时间复杂度为O(n^2)。<br>平均情况时间复杂度为O(nlogn)。<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><h2 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">void sort (int *a, int left, int right)</span><br><span class="line">&#123;</span><br><span class="line">    if (left &gt;= right) //如果左边索引大于或等于右边的索引就代表已经整理完成了。</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    int i = left;</span><br><span class="line">    int j = right;</span><br><span class="line">    int key = a[left];</span><br><span class="line">    while (i &lt; j) </span><br><span class="line">    &#123;</span><br><span class="line">      while (i &lt; j &amp;&amp; key &lt;= a[j])</span><br><span class="line">      &#123;</span><br><span class="line">          j--;</span><br><span class="line">      &#125;</span><br><span class="line">      a[i] = a[j];</span><br><span class="line">      while (i &lt; j &amp;&amp; key &gt;= a[i])</span><br><span class="line">      &#123; </span><br><span class="line">          i++;</span><br><span class="line">      &#125;</span><br><span class="line">      a[j] = a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    a[i] = key;</span><br><span class="line">    sort (a, left i-1);</span><br><span class="line">    sort (a, i+1, right);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>重复第3、4步，直到i=j。<h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1>最优情况下，时间复杂度为O(nlogn)。<br>最坏情况下，时间复杂度为O(n^2)。<br>平均情况时间复杂度为O(nlogn)。<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><h2 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h2><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">sort</span> <span class="hljs-params">(<span class="hljs-keyword">int</span> *a, <span class="hljs-keyword">int</span> left, <span class="hljs-keyword">int</span> right)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (left &gt;= right) <span class="hljs-comment">//如果左边索引大于或等于右边的索引就代表已经整理完成了。</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">int</span> i = left;</span><br><span class="line">    <span class="hljs-keyword">int</span> j = right;</span><br><span class="line">    <span class="hljs-keyword">int</span> key = a[left];</span><br><span class="line">    <span class="hljs-keyword">while</span> (i &lt; j) </span><br><span class="line">    &#123;</span><br><span class="line">      <span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; key &lt;= a[j])</span><br><span class="line">      &#123;</span><br><span class="line">          j--;</span><br><span class="line">      &#125;</span><br><span class="line">      a[i] = a[j];</span><br><span class="line">      <span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; key &gt;= a[i])</span><br><span class="line">      &#123; </span><br><span class="line">          i++;</span><br><span class="line">      &#125;</span><br><span class="line">      a[j] = a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    a[i] = key;</span><br><span class="line">    sort (a, left i<span class="hljs-number">-1</span>);</span><br><span class="line">    sort (a, i+<span class="hljs-number">1</span>, right);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 
@@ -228,8 +228,8 @@
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
 <div id="comment-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
         clientID: '7cf9ae5a9ae4228f59ef',

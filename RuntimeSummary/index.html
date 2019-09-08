@@ -19,7 +19,7 @@
 <meta property="og:description" content="一、Runtime是什么？">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-08-26T10:19:56.000Z">
+<meta property="og:updated_time" content="2019-09-08T09:24:18.673Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【iOS 开发】Runtime 总结">
 <meta name="twitter:description" content="一、Runtime是什么？">
@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
 
 
     
@@ -156,7 +156,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 713 个字)
+                    5 分钟 读完 (大约 708 个字)
                 </span>
                 
                 
@@ -196,23 +196,23 @@
 </ol>
 <h4 id="消息转发"><a href="#消息转发" class="headerlink" title="消息转发"></a>消息转发</h4><ol>
 <li><p>动态方法解析</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (BOOL)resolveInstanceMethod:(SEL)selector</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (<span class="hljs-built_in">BOOL</span>)resolveInstanceMethod:(SEL)selector</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>其他接收者</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (id)forwardingTargetForSelector:(SEL)selector</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="hljs-keyword">id</span>)forwardingTargetForSelector:(SEL)selector</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>消息签名</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="hljs-built_in">NSMethodSignature</span> *)methodSignatureForSelector:(SEL)aSelector</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>完整的消息转发</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- (void)forwardInvocation:(NSInvocation *)invocation</span><br><span class="line">// invocation : 封装了与那条尚未处理的消息相关的所有细节的对象</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="hljs-keyword">void</span>)forwardInvocation:(<span class="hljs-built_in">NSInvocation</span> *)invocation</span><br><span class="line"><span class="hljs-comment">// invocation : 封装了与那条尚未处理的消息相关的所有细节的对象</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <h3 id="五、Runtime应用"><a href="#五、Runtime应用" class="headerlink" title="五、Runtime应用"></a>五、Runtime应用</h3><ol>
 <li>动态添加一个类（KVO的实现原理）</li>
 <li>获取一个类的所有属性<br>（1）打印一个类的成员变量列表，属性列表，方法列表<br>（2）动态改变变量的值。<br>（3）在 NSObject 的分类中增加方法，判断是否有该属性，用于避免使用KVC赋值时崩溃。<br>（4）自动归档和解档<br>（5）字典转模型</li>
 <li>动态交换方法<br>（1）交换方法<br>（2）替换系统方法<br>（3）实现多继承的效果</li>
-<li>动态添加方法 performSelector<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">resolveInstanceMethod</span><br><span class="line">class_addMethod(self, @selector(eat), eat, &quot;v@:&quot;);</span><br></pre></td></tr></table></figure>
+<li>动态添加方法 performSelector<figure class="highlight objc hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">resolveInstanceMethod</span><br><span class="line">class_addMethod(<span class="hljs-keyword">self</span>, <span class="hljs-keyword">@selector</span>(eat), eat, <span class="hljs-string">"v@:"</span>);</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 
@@ -264,8 +264,8 @@
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
 <div id="comment-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
         clientID: '7cf9ae5a9ae4228f59ef',

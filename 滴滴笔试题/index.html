@@ -19,7 +19,7 @@
 <meta property="og:description" content="滴滴笔试题">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-06T08:37:57.488Z">
+<meta property="og:updated_time" content="2019-09-08T09:06:36.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="滴滴笔试题">
 <meta name="twitter:description" content="滴滴笔试题">
@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
 
 
     
@@ -156,7 +156,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 178 个字)
+                    1 分钟 读完 (大约 177 个字)
                 </span>
                 
                 
@@ -178,7 +178,7 @@
 <p>4.编写代码，实现 NSObject 中添加一个属性 p1</p>
 <p>5.KVO 的实现原理和注意事项。</p>
 <p>6.下面的代码有哪些问题？</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@interface Demo : NSObject</span><br><span class="line">@property (nonatomic, assign) BOOL *p1;</span><br><span class="line">@property (nonatomic, strong) NSString *p2;</span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line">@implementation Demo</span><br><span class="line">@dynamic p1;</span><br><span class="line"></span><br><span class="line">- (void)setP2:(NSString *)p2;</span><br><span class="line">&#123;</span><br><span class="line">	self.p1 = YES;</span><br><span class="line">	self.p2 = p2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">Demo</span> : <span class="hljs-title">NSObject</span></span></span><br><span class="line"><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">assign</span>) <span class="hljs-built_in">BOOL</span> *p1;</span><br><span class="line"><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">NSString</span> *p2;</span><br><span class="line"><span class="hljs-keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">Demo</span></span></span><br><span class="line"><span class="hljs-keyword">@dynamic</span> p1;</span><br><span class="line"></span><br><span class="line">- (<span class="hljs-keyword">void</span>)setP2:(<span class="hljs-built_in">NSString</span> *)p2;</span><br><span class="line">&#123;</span><br><span class="line">	<span class="hljs-keyword">self</span>.p1 = <span class="hljs-literal">YES</span>;</span><br><span class="line">	<span class="hljs-keyword">self</span>.p2 = p2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">@end</span></span><br></pre></td></tr></table></figure>
 <p>7.JS 和 Native 的通讯方式。</p>
 <p>8.网络5层模型是哪5层？</p>
 <p>9.把t1表中 name 为 mike 的记录中 status 值改为1</p>
@@ -233,8 +233,8 @@
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
 <div id="comment-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
         clientID: '7cf9ae5a9ae4228f59ef',

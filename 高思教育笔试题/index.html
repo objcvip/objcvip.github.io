@@ -19,7 +19,7 @@
 <meta property="og:description" content="高思教育笔试题">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-06T08:38:23.070Z">
+<meta property="og:updated_time" content="2019-09-08T09:04:25.596Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高思教育笔试题">
 <meta name="twitter:description" content="高思教育笔试题">
@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
 
 
     
@@ -156,7 +156,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 272 个字)
+                    2 分钟 读完 (大约 270 个字)
                 </span>
                 
                 
@@ -172,9 +172,9 @@
             <p>高思教育笔试题</p>
 <a id="more"></a>
 <h1 id="笔试题（部分）"><a href="#笔试题（部分）" class="headerlink" title="笔试题（部分）"></a>笔试题（部分）</h1><p>3.下面代码输出什么？</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int a = 0;</span><br><span class="line">void (^foo)(void) = ^&#123;</span><br><span class="line">	a = 1;</span><br><span class="line">	NSLog(@&quot;inner a=%d&quot;,a);</span><br><span class="line">&#125;;</span><br><span class="line">foo();</span><br><span class="line">NSLog(@&quot;outer a=%@&quot;,a);</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">int</span> a = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">void</span> (^foo)(<span class="hljs-keyword">void</span>) = ^&#123;</span><br><span class="line">	a = <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"inner a=%d"</span>,a);</span><br><span class="line">&#125;;</span><br><span class="line">foo();</span><br><span class="line"><span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"outer a=%@"</span>,a);</span><br></pre></td></tr></table></figure>
 <p>4.下面代码输出什么？</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- (void)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">  [super viewDidLoad];</span><br><span class="line">  NSLog(@&quot;1&quot;);</span><br><span class="line">  dispatch_sync(dispatch_get_main_queue(),^&#123;</span><br><span class="line">    NSLog(@&quot;2&quot;);</span><br><span class="line">  &#125;);</span><br><span class="line">  NSLog(@&quot;3&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="hljs-keyword">void</span>)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">  [<span class="hljs-keyword">super</span> viewDidLoad];</span><br><span class="line">  <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"1"</span>);</span><br><span class="line">  <span class="hljs-built_in">dispatch_sync</span>(dispatch_get_main_queue(),^&#123;</span><br><span class="line">    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"2"</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"3"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>5.什么情况使用 weak 关键字，相比 assign 有什么不同？</p>
 <p>6.@property 中有哪些属性关键字？/ @property 后面可以有哪些修饰符？</p>
 <p>7.@synthesize 和 @dynamic 分别有什么作用？</p>
@@ -234,8 +234,8 @@
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
 <div id="comment-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
         clientID: '7cf9ae5a9ae4228f59ef',

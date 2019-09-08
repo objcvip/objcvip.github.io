@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 3.8.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>《大话数据结构》三 - ObjC.vip</title>
+
+
+    <meta name="description" content="第4章 栈与队列栈是限定仅在表尾进行插入和删除操作的线性表。队列是只允许在一端进行插入操作、而在另一端进行删除操作的线性表。">
+<meta name="keywords" content="学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《大话数据结构》三">
+<meta property="og:url" content="https://objcvip.github.io/DataStructurePart3/index.html">
+<meta property="og:site_name" content="ObjC.vip">
+<meta property="og:description" content="第4章 栈与队列栈是限定仅在表尾进行插入和删除操作的线性表。队列是只允许在一端进行插入操作、而在另一端进行删除操作的线性表。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
+<meta property="og:updated_time" content="2019-09-08T16:13:17.741Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《大话数据结构》三">
+<meta name="twitter:description" content="第4章 栈与队列栈是限定仅在表尾进行插入和删除操作的线性表。队列是只允许在一端进行插入操作、而在另一端进行删除操作的线性表。">
+<meta name="twitter:image" content="https://objcvip.github.io/images/og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-1-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="《大话数据结构》三" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">首页</a>
+                
+                <a class="navbar-item"
+                href="/archives">目录</a>
+                
+                <a class="navbar-item"
+                href="/categories">分类</a>
+                
+                <a class="navbar-item"
+                href="/about">关于</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="GitHub" href="https://github.com/objcvip">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-12 has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-08T14:58:00.000Z">2019-09-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/《大话数据结构》/">《大话数据结构》</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 分钟 读完 (大约 1198 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                《大话数据结构》三
+            
+        </h1>
+        <div class="content">
+            <h1 id="第4章-栈与队列"><a href="#第4章-栈与队列" class="headerlink" title="第4章 栈与队列"></a>第4章 栈与队列</h1><p>栈是限定仅在表尾进行插入和删除操作的线性表。<br>队列是只允许在一端进行插入操作、而在另一端进行删除操作的线性表。</p>
+<a id="more"></a>
+<h2 id="栈的定义"><a href="#栈的定义" class="headerlink" title="栈的定义"></a>栈的定义</h2><blockquote>
+<p>栈（stack）是限定仅在表尾进行插入和删除操作的线性表。</p>
+</blockquote>
+<p>我们把允许插入和删除的一端称为栈顶（top），另一端称为栈底（bottom），不含任何数据元素的栈称为空栈。栈又称为后进先出（Last In First Out）的线性表，简称 LIFO 结构。</p>
+<p>栈的插入操作，叫做进栈，也称压栈、入栈。<br>栈的删除操作，叫做出栈，也有的叫弹栈。</p>
+<h2 id="进栈出栈的变化形式"><a href="#进栈出栈的变化形式" class="headerlink" title="进栈出栈的变化形式"></a>进栈出栈的变化形式</h2><p>元素数量多个，出栈次序会有很多种可能。</p>
+<h2 id="栈的抽象数据类型"><a href="#栈的抽象数据类型" class="headerlink" title="栈的抽象数据类型"></a>栈的抽象数据类型</h2><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ADT 栈</span><br><span class="line">Data</span><br><span class="line">	同线性表。元素具有相同的类型，相邻元素具有前驱和后继关系。</span><br><span class="line">Operation</span><br><span class="line">	InitStack(*S):初始化操作，建立一个空栈S。</span><br><span class="line">	DestroyStack(*S):若栈存在，则销毁它。</span><br><span class="line">	ClearStack(*S):将栈清空。</span><br><span class="line">	StackEmpty(S):若栈为空，返回 <span class="hljs-literal">true</span> ，否则返回 <span class="hljs-literal">false</span>。</span><br><span class="line">	GetTop(S,*e):若栈存在且非空，用e返回S的栈顶元素。</span><br><span class="line">	Push(*S,e):若栈S存在，插入新元素e到栈S中并成为栈顶元素。</span><br><span class="line">	Pop(*S,e):删除栈S中的栈顶元素，并用e返回其值。</span><br><span class="line">	StackLength(S):返回栈S的元素个数。</span><br></pre></td></tr></table></figure>
+<h2 id="栈的顺序存储结构及实现"><a href="#栈的顺序存储结构及实现" class="headerlink" title="栈的顺序存储结构及实现"></a>栈的顺序存储结构及实现</h2><h3 id="栈的顺序存储结构"><a href="#栈的顺序存储结构" class="headerlink" title="栈的顺序存储结构"></a>栈的顺序存储结构</h3><p>栈的结构定义<br><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">typedef</span> init SElemType;</span><br><span class="line"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span></span></span><br><span class="line"><span class="hljs-class">&#123;</span></span><br><span class="line">	SElemType data[MAXSIZE]</span><br><span class="line">	<span class="hljs-keyword">int</span> top;     <span class="hljs-comment">/* 用于栈顶指针 */</span></span><br><span class="line">&#125;SqStack;</span><br></pre></td></tr></table></figure></p>
+<h3 id="栈的顺序存储结构——进栈操作"><a href="#栈的顺序存储结构——进栈操作" class="headerlink" title="栈的顺序存储结构——进栈操作"></a>栈的顺序存储结构——进栈操作</h3><p>进栈操作 push，其代码如下：<br><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function">Status <span class="hljs-title">Push</span> <span class="hljs-params">(SqStack *S, SElemType e)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span> (S-&gt;top == MAXSIZE - <span class="hljs-number">1</span>) <span class="hljs-comment">/* 栈满 */</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">return</span> ERROR;</span><br><span class="line">	&#125;</span><br><span class="line">	S-&gt;top++;   <span class="hljs-comment">/* 栈顶指针增加一 */</span></span><br><span class="line">	S-&gt;data[S-&gt;top]=e;   <span class="hljs-comment">/* 将新插入元素赋值给栈顶空间 */</span></span><br><span class="line">	<span class="hljs-keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="栈的顺序存储结构——出栈操作"><a href="#栈的顺序存储结构——出栈操作" class="headerlink" title="栈的顺序存储结构——出栈操作"></a>栈的顺序存储结构——出栈操作</h3><p>出栈操作 pop，其代码如下：<br><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function">Status <span class="hljs-title">Pop</span> <span class="hljs-params">(SqStack *S, SElemType *e)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span>(S-&gt;top==<span class="hljs-number">-1</span>)</span><br><span class="line">		<span class="hljs-keyword">return</span> ERROR;</span><br><span class="line">	*e=S-&gt;data[S-&gt;top]; <span class="hljs-comment">/* 将要删除的栈顶元素赋值给e */</span></span><br><span class="line">	S-&gt;top--;   <span class="hljs-comment">/* 栈顶指针减一 */</span></span><br><span class="line">	<span class="hljs-keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>进栈和出栈没有涉及到任何循环语句，因此时间复杂度均是 O(1)。</p>
+<h2 id="两栈共享空间"><a href="#两栈共享空间" class="headerlink" title="两栈共享空间"></a>两栈共享空间</h2><h2 id="栈的链式存储结构及实现"><a href="#栈的链式存储结构及实现" class="headerlink" title="栈的链式存储结构及实现"></a>栈的链式存储结构及实现</h2><h3 id="栈的链式存储结构"><a href="#栈的链式存储结构" class="headerlink" title="栈的链式存储结构"></a>栈的链式存储结构</h3><p>栈的链式存储结构，简称为链栈。<br>链栈的结构代码如下：<br><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">StackNode</span></span></span><br><span class="line"><span class="hljs-class">&#123;</span></span><br><span class="line">	SElemType data;</span><br><span class="line">	<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">StackNode</span> *<span class="hljs-title">next</span>;</span></span><br><span class="line">&#125;StackNode, *LinkStackPtr;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">LinkStack</span></span></span><br><span class="line"><span class="hljs-class">&#123;</span></span><br><span class="line">	LinkStackPtr top;</span><br><span class="line">	<span class="hljs-keyword">int</span> count;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="栈的链式存储结构——进栈操作"><a href="#栈的链式存储结构——进栈操作" class="headerlink" title="栈的链式存储结构——进栈操作"></a>栈的链式存储结构——进栈操作</h3><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/* 插入元素 e 为新的栈顶元素 */</span></span><br><span class="line"><span class="hljs-function">Status <span class="hljs-title">Push</span> <span class="hljs-params">(LinkStack *S, SElemType e)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	LinkStackPtr s = (LinkStackPtr)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(StackNode));</span><br><span class="line">	s-&gt;data = e;</span><br><span class="line">	s-&gt;next = s-&gt;top;  <span class="hljs-comment">/* 把当前的栈顶元素赋值给新结点的直接后继 */</span></span><br><span class="line">	S-&gt;top = s;  <span class="hljs-comment">/* 将新的结点s赋值给栈顶指针 */</span></span><br><span class="line">	S-&gt;count++;</span><br><span class="line">	<span class="hljs-keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="栈的链式存储结构——出栈操作"><a href="#栈的链式存储结构——出栈操作" class="headerlink" title="栈的链式存储结构——出栈操作"></a>栈的链式存储结构——出栈操作</h3><p>假设变量 p 用来存储要删除的栈顶结点，将栈顶指针下移一位，最后释放 p 即可。<br><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function">Status <span class="hljs-title">Pop</span> <span class="hljs-params">(LinkStack *S, SElemType *e)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	LinkStackPtr p;</span><br><span class="line">	<span class="hljs-keyword">if</span> (StackEmpty(*S))</span><br><span class="line">		<span class="hljs-keyword">return</span> ERROR;</span><br><span class="line">	*e = S-&gt;top-&gt;data;</span><br><span class="line">	p=S-&gt;top;  <span class="hljs-comment">/* 将栈顶结点赋值给p */</span></span><br><span class="line">	S-&gt;top=S-&gt;top-&gt;next;  <span class="hljs-comment">/* 使得栈顶指针下移一位，指向后一结点 */</span></span><br><span class="line">	<span class="hljs-built_in">free</span>(p);  <span class="hljs-comment">/* 释放结点 p */</span></span><br><span class="line">	S-&gt;count--;</span><br><span class="line">	<span class="hljs-keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>链栈的进栈 push 和出栈 pop 操作没有任何循环操作，时间复杂度均为O(1)。<br>如果栈的使用过程中元素变化不可预料，有时很小，有时非常大，那么最好是用链栈，反之，如果它的变化在可控范围内，建议使用顺序栈会更好一些。</p>
+<h2 id="栈的作用"><a href="#栈的作用" class="headerlink" title="栈的作用"></a>栈的作用</h2><p>栈的引入简化了程序设计的问题，划分了不同关注层次，使得思考范围缩小，更加聚焦于我们要解决的问题核心。</p>
+<h2 id="栈的应用——递归"><a href="#栈的应用——递归" class="headerlink" title="栈的应用——递归"></a>栈的应用——递归</h2><h3 id="斐波那切数列实现"><a href="#斐波那切数列实现" class="headerlink" title="斐波那切数列实现"></a>斐波那切数列实现</h3><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Fbi</span> <span class="hljs-params">(<span class="hljs-keyword">int</span> i)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span> (i &lt; <span class="hljs-number">2</span>)</span><br><span class="line">		<span class="hljs-keyword">return</span> i == <span class="hljs-number">0</span> ? <span class="hljs-number">0</span> : <span class="hljs-number">1</span>;</span><br><span class="line">	<span class="hljs-keyword">return</span> Fbi(i<span class="hljs-number">-1</span>) + Fbi(i<span class="hljs-number">-2</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> i;</span><br><span class="line">	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; <span class="hljs-number">40</span>; i++)</span><br><span class="line">		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, Fbi(i));</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="递归定义"><a href="#递归定义" class="headerlink" title="递归定义"></a>递归定义</h3><p>在高级语言中，调用自己和其他函数并没有本质的不同。我们把一个直接调用自己或通过一系列的调用语句间接地调用自己的函数，称做递归函数。<br>每个递归定义必须至少有一个条件，满足递归不再进行，即不再引用自身而是返回值退出。</p>
+<h2 id="栈的应用——四则运算表达式求值"><a href="#栈的应用——四则运算表达式求值" class="headerlink" title="栈的应用——四则运算表达式求值"></a>栈的应用——四则运算表达式求值</h2>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/学习笔记/">学习笔记</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/苏宁面试题/">
+                <span class="level-item">苏宁面试题</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '7cf9ae5a9ae4228f59ef',
+        clientSecret: 'a60824892847d86dab15dae00b18a8227f9af769',
+        id: '6dc88607068d638b2d110d779056e69b',
+        repo: 'Comments',
+        owner: 'objcvip',
+        admin: "objcvip",
+        createIssueManually: false,
+        distractionFreeMode: true
+    })
+    gitalk.render('comment-container')
+</script>
+
+    </div>
+</div>
+</div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="《大话数据结构》三" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 ObjC.vip&nbsp;
+                All rights reserved.
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>

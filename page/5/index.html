@@ -7,22 +7,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>【算法】快速排序 - ObjC.vip</title>
+<title>ObjC.vip</title>
 
 
-    <meta name="description" content="快速排序算法。">
-<meta name="keywords" content="算法,排序">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【算法】快速排序">
-<meta property="og:url" content="https://objcvip.github.io/快速排序/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="ObjC.vip">
+<meta property="og:url" content="https://objcvip.github.io/page/5/index.html">
 <meta property="og:site_name" content="ObjC.vip">
-<meta property="og:description" content="快速排序算法。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-08T09:18:57.507Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【算法】快速排序">
-<meta name="twitter:description" content="快速排序算法。">
+<meta name="twitter:title" content="ObjC.vip">
 <meta name="twitter:image" content="https://objcvip.github.io/images/og_image.png">
 
 
@@ -93,7 +88,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="【算法】快速排序" height="28">
+                <img src="/images/logo.svg" alt="ObjC.vip" height="28">
             
             </a>
         </div>
@@ -140,23 +135,24 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-12 has-order-2 column-main"><div class="card">
+                <div class="column is-12 has-order-2 column-main">
+    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-02-03T07:47:00.000Z">2018-02-03</time>
+                <time class="level-item has-text-grey" datetime="2014-12-31T16:00:00.000Z">2015-01-01</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/算法/">算法</a>
+                <a class="has-link-grey -link" href="/categories/Hello-World/">Hello World</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 395 个字)
+                    几秒 读完 (大约 8 个字)
                 </span>
                 
                 
@@ -165,30 +161,12 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                【算法】快速排序
+                <a class="has-link-black-ter" href="/helloworld/">Hello World.</a>
             
         </h1>
         <div class="content">
-            <p>快速排序算法。<br><a id="more"></a></p>
-<h1 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h1><p>通过一趟排序将要排序的数分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对着两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。</p>
-<h1 id="算法原理"><a href="#算法原理" class="headerlink" title="算法原理"></a>算法原理</h1><ol>
-<li>设置两个变量i、j，排序开始的时候：i = 0，j = N-1;</li>
-<li>以数组的第一个元素作为关键数据，赋值给key，即key = A[0];</li>
-<li>从j开始向前搜索，即由后开始向前搜索（j–）,找到第一个小于key的值A[j],将A[j]和A[i]互换。</li>
-<li>从i开始向后搜索，即由前开始向后搜索(i++),找到第一个大于key的值A[i],将A[i]和A[j]互换。</li>
-<li>重复第3、4步，直到i=j。<h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1>最优情况下，时间复杂度为O(nlogn)。<br>最坏情况下，时间复杂度为O(n^2)。<br>平均情况时间复杂度为O(nlogn)。<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><h2 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h2><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">sort</span> <span class="hljs-params">(<span class="hljs-keyword">int</span> *a, <span class="hljs-keyword">int</span> left, <span class="hljs-keyword">int</span> right)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (left &gt;= right) <span class="hljs-comment">//如果左边索引大于或等于右边的索引就代表已经整理完成了。</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">int</span> i = left;</span><br><span class="line">    <span class="hljs-keyword">int</span> j = right;</span><br><span class="line">    <span class="hljs-keyword">int</span> key = a[left];</span><br><span class="line">    <span class="hljs-keyword">while</span> (i &lt; j) </span><br><span class="line">    &#123;</span><br><span class="line">      <span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; key &lt;= a[j])</span><br><span class="line">      &#123;</span><br><span class="line">          j--;</span><br><span class="line">      &#125;</span><br><span class="line">      a[i] = a[j];</span><br><span class="line">      <span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; key &gt;= a[i])</span><br><span class="line">      &#123; </span><br><span class="line">          i++;</span><br><span class="line">      &#125;</span><br><span class="line">      a[j] = a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    a[i] = key;</span><br><span class="line">    sort (a, left i<span class="hljs-number">-1</span>);</span><br><span class="line">    sort (a, i+<span class="hljs-number">1</span>, right);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+            <p>Hello World.你好，世界。</p>
 
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/排序/">排序</a>, <a class="has-link-grey -link" href="/tags/算法/">算法</a>
-                </div>
-            </div>
         </div>
         
         
@@ -200,51 +178,31 @@
 
 
 
+
+
+
+
+    
 <div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/选择排序/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">【算法】选择排序</span>
-            </a>
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/page/4/">上一页</a>
         </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/冒泡排序/">
-                <span class="level-item">【算法】冒泡排序</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
+        <div class="pagination-next is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/page/6/">下一页</a>
         </div>
-        
-    </div>
-</div>
-
-
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
-        
-<div id="comment-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
-<script>
-    var gitalk = new Gitalk({
-        clientID: '7cf9ae5a9ae4228f59ef',
-        clientSecret: 'a60824892847d86dab15dae00b18a8227f9af769',
-        id: '46110833468d0432df63cfbb87aa289e',
-        repo: 'Comments',
-        owner: 'objcvip',
-        admin: "objcvip",
-        createIssueManually: false,
-        distractionFreeMode: true
-    })
-    gitalk.render('comment-container')
-</script>
-
-    </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
+            
+            <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/4/">4</a></li>
+            
+            <li><a class="pagination-link is-current" href="/page/5/">5</a></li>
+            
+        </ul>
+    </nav>
 </div>
 </div>
                 
@@ -258,7 +216,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="【算法】快速排序" height="28">
+                    <img src="/images/logo.svg" alt="ObjC.vip" height="28">
                 
                 </a>
                 <p class="is-size-7">

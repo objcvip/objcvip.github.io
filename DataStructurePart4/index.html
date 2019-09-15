@@ -19,7 +19,7 @@
 <meta property="og:description" content="第5章 串串（string）是由零个或多个字符组成的有限序列，又名叫字符串。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-10T14:25:23.494Z">
+<meta property="og:updated_time" content="2019-09-14T16:04:52.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《大话数据结构》四">
 <meta name="twitter:description" content="第5章 串串（string）是由零个或多个字符组成的有限序列，又名叫字符串。">
@@ -156,7 +156,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 658 个字)
+                    6 分钟 读完 (大约 929 个字)
                 </span>
                 
                 
@@ -182,7 +182,10 @@
 <h2 id="串的抽象数据类型"><a href="#串的抽象数据类型" class="headerlink" title="串的抽象数据类型"></a>串的抽象数据类型</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">ADT 串（string）</span><br><span class="line">Data</span><br><span class="line">  串中元素仅由一个字符组成，相邻元素具有前驱和后继关系。</span><br><span class="line">Operation</span><br><span class="line">  StrAssign(T,*chars):生成一个其值等于字符串常量chars的串T。</span><br><span class="line">  StrCopy(T,S):串S存在，由串复制得串T。</span><br><span class="line">  ClearString(S):串S存在，将串清空。</span><br><span class="line">  StringEmpty(S):若串为空，返回true，否则返回false。</span><br><span class="line">  StrLength(S):返回串S的元素个数，即串的长度。</span><br><span class="line">  StrCompare(S,T):若S&gt;T，返回值&gt;0,若S=T，返回0，若S&lt;T，返回值&lt;0.</span><br><span class="line">  Concat(T,S1,S2):用T返回由S1和S2联接而成的新串。</span><br><span class="line">  SubString(Sub,S,pos,len):串S存在，1&lt;=pos&lt;=StrLength(S)，且0&lt;=len&lt;=StrLength(S)-pos+1,用Sub返回串S的第pos个字符长度为len的子串。</span><br><span class="line">  Index(S,T,pos):串S和T存在，T是非空串，1&lt;=pos&lt;=StrLength(S)。若主串S中存在和串T值相同的子串，则返回它在主串S中第pos个字符之后第一次出现的位置，否则返回0。</span><br><span class="line">  Replace(S,T,V):串S、T和V存在，T是非空串。用V替换主串S中出现的所有与T相等的不重叠的子串。</span><br><span class="line">  StrInsert(S,pos,T):串S和T存在，1&lt;=pos&lt;=StrLength(S)+1。在串S的第pos个字符之前插入串T。</span><br><span class="line">  StrDelete(S,pos,len):串S存在，1&lt;=pos&lt;=StrLength(S)-len+1。从串S中删除第pos个字符起长度为len的子串。</span><br><span class="line">endADT</span><br></pre></td></tr></table></figure>
 <p>Index 的实现算法<br><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/* T为非空串。若主串S中第pos个字符之后存在与T相等的子串，则返回第一个这样的子串在S中的位置，否则返回0 */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Index</span><span class="hljs-params">(String S, String T, <span class="hljs-keyword">int</span> pos)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">  <span class="hljs-keyword">int</span> n,m,i;</span><br><span class="line">  String sub;</span><br><span class="line">  <span class="hljs-keyword">if</span> (pos &gt; <span class="hljs-number">0</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    n = StrLength(S);</span><br><span class="line">    m = StrLength(T);</span><br><span class="line">    i = pos;</span><br><span class="line">    <span class="hljs-keyword">while</span> ( i &lt;= n-m+<span class="hljs-number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      SubString(sub,S,i,m); <span class="hljs-comment">/* 取主串第i个位置 长度与T相等子串给sub */</span></span><br><span class="line">      <span class="hljs-keyword">if</span> (StrCompare(sub,T) != <span class="hljs-number">0</span>)  <span class="hljs-comment">/* 如果两串不相等 */</span></span><br><span class="line">        ++i;</span><br><span class="line">      <span class="hljs-keyword">else</span>  <span class="hljs-comment">/* 如果两串相等 */</span></span><br><span class="line">        <span class="hljs-keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; <span class="hljs-comment">/* 若无子串与T相等，返回0 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>当中用到了 StrLength、SubString、StrCompare 等基本操作来实现。</p>
-<h2 id="串的存储结构"><a href="#串的存储结构" class="headerlink" title="串的存储结构"></a>串的存储结构</h2><h3 id="串的顺序存储结构"><a href="#串的顺序存储结构" class="headerlink" title="串的顺序存储结构"></a>串的顺序存储结构</h3><h3 id="串的链式存储结构"><a href="#串的链式存储结构" class="headerlink" title="串的链式存储结构"></a>串的链式存储结构</h3><h2 id="朴素的模式匹配算法"><a href="#朴素的模式匹配算法" class="headerlink" title="朴素的模式匹配算法"></a>朴素的模式匹配算法</h2><p>子串的定位操作通常称做串的模式匹配。<br>假设我们要从下面的主串S=“goodgoogle”中，找到T=“google这个子串的位置”。<br>简单的来说，就是对主串的每一个字符作为子串开头，与要匹配的字符串进行匹配。对主串做大循环，每个字符开头做T的长度的小循环，直到匹配成功或全部遍历完成为止。<br>最好的情况，时间复杂度为O(1)。<br>稍差一些的情况，时间复杂度为O(n+m)，其中n为主串长度，m为要匹配的子串长度。<br>根据等概率原则，平均是(n+m)/2次查找，时间复杂度为O(n+m)。</p>
+<h2 id="串的存储结构"><a href="#串的存储结构" class="headerlink" title="串的存储结构"></a>串的存储结构</h2><h3 id="串的顺序存储结构"><a href="#串的顺序存储结构" class="headerlink" title="串的顺序存储结构"></a>串的顺序存储结构</h3><p>串的顺序存储结构是用一组地址连续的存储单元来存储串中的字符序列的。按照预定义的大小，为每个定义的串变量分配一个固定长度的存储区。一般使用定长数组来定义。</p>
+<h3 id="串的链式存储结构"><a href="#串的链式存储结构" class="headerlink" title="串的链式存储结构"></a>串的链式存储结构</h3><p>对于串的链式存储结构，与线性表是相似的，但由于串结构的特殊性，结构中的每个元素数据是一个字符，如果也简单的应用链表存储串值，一个结点对应一个字符，就会存在很大的空间浪费。因此，一个结点可以存放一个字符，也可以考虑存放多个字符，最后一个结点若是未被占满时，可以用“#”或其他非串值字符补全。</p>
+<p>串的链式存储结构除了在链接串与串操作时有一定方便外，总的来说不如顺序存储灵活，性能也不如顺序存储结构好。</p>
+<h2 id="朴素的模式匹配算法"><a href="#朴素的模式匹配算法" class="headerlink" title="朴素的模式匹配算法"></a>朴素的模式匹配算法</h2><p>子串的定位操作通常称做串的模式匹配。<br>假设我们要从下面的主串S=“goodgoogle”中，找到T=“google这个子串的位置”。<br>简单的来说，就是对主串的每一个字符作为子串开头，与要匹配的字符串进行匹配。对主串做大循环，每个字符开头做T的长度的小循环，直到匹配成功或全部遍历完成为止。<br>最好的情况，时间复杂度为O(1)。<br>稍差一些的情况，时间复杂度为O(n+m)，其中n为主串长度，m为要匹配的子串长度。<br>根据等概率原则，平均是(n+m)/2次查找，时间复杂度为O(n+m)。</p>
 <h2 id="KMP模式匹配算法"><a href="#KMP模式匹配算法" class="headerlink" title="KMP模式匹配算法"></a>KMP模式匹配算法</h2><p>D.E.Knuth、J.H.Morris 和 V.R.Pratt 发表一个模式匹配算法，可以大大避免重复遍历的情况，我们把它称之为克努特-莫里斯-普拉特算法，简称 KMP 算法。</p>
 
         </div>
@@ -207,6 +210,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/DataStructurePart5/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">《大话数据结构》五</span>
+            </a>
+        </div>
         
         
         <div class="level-end">

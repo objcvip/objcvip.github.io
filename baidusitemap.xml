@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://objcvip.github.io/EffectiveObjectiveCPart2/</loc>
+    <lastmod>2019-09-22T09:42:06.302Z</lastmod>
+  </url>  <url>
+    <loc>https://objcvip.github.io/EffectiveObjectiveCPart1/</loc>
+    <lastmod>2019-09-18T15:10:23.365Z</lastmod>
+  </url>  <url>
     <loc>https://objcvip.github.io/DataStructurePart5/</loc>
     <lastmod>2019-09-16T08:59:51.000Z</lastmod>
   </url>  <url>
@@ -109,14 +115,8 @@
     <loc>https://objcvip.github.io/RunloopSummary/</loc>
     <lastmod>2019-08-26T10:19:41.000Z</lastmod>
   </url>  <url>
-    <loc>https://objcvip.github.io/EffectiveObjectiveCPart2/</loc>
-    <lastmod>2018-12-21T11:04:51.409Z</lastmod>
-  </url>  <url>
     <loc>https://objcvip.github.io/MarkdownUsage/</loc>
     <lastmod>2018-12-14T06:30:28.892Z</lastmod>
-  </url>  <url>
-    <loc>https://objcvip.github.io/EffectiveObjectiveCPart1/</loc>
-    <lastmod>2018-12-08T11:51:36.703Z</lastmod>
   </url>  <url>
     <loc>https://objcvip.github.io/EffectiveObjectiveCPart5/</loc>
     <lastmod>2018-12-06T10:03:45.635Z</lastmod>

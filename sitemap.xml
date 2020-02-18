@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://objcvip.github.io/about/index.html</loc>
+    
+    <lastmod>2020-02-18T06:44:28.114Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://objcvip.github.io/EffectiveObjectiveCPart2/</loc>
     
     <lastmod>2019-09-22T09:42:06.302Z</lastmod>
@@ -152,13 +159,6 @@
     <loc>https://objcvip.github.io/%E4%BA%AC%E4%B8%9C%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     
     <lastmod>2019-09-07T16:27:57.388Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://objcvip.github.io/about/index.html</loc>
-    
-    <lastmod>2019-09-07T16:27:26.592Z</lastmod>
     
   </url>
   

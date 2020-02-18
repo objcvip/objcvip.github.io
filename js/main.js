@@ -11,7 +11,8 @@
 
     if (typeof (moment) === 'function') {
         $('.article-meta time').each(function () {
-            $(this).text(moment($(this).attr('datetime')).fromNow());
+	    //注释掉格式化时间
+            //$(this).text(moment($(this).attr('datetime')).fromNow());
         });
     }
 

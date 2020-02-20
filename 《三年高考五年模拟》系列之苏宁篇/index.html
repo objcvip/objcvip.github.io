@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 3.8.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>《三年高考五年模拟》系列之苏宁篇 - OBJC.VIP</title>
+
+
+    <meta name="description" content="当我们在问面试题时，我们究竟在问什么？OBJC.VIP 特别推出《三年高考五年模拟》系列文章，祝大家早日面向大厂进阶。笔者意在抛砖引玉，答案勘误及建议欢迎在下方评论或发邮件到objcvip@163.com斧正。本期带来《三年高考五年模拟》系列之苏宁篇。">
+<meta name="keywords" content="面试,三年高考五年模拟">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《三年高考五年模拟》系列之苏宁篇">
+<meta property="og:url" content="https://objcvip.github.io/《三年高考五年模拟》系列之苏宁篇/index.html">
+<meta property="og:site_name" content="OBJC.VIP">
+<meta property="og:description" content="当我们在问面试题时，我们究竟在问什么？OBJC.VIP 特别推出《三年高考五年模拟》系列文章，祝大家早日面向大厂进阶。笔者意在抛砖引玉，答案勘误及建议欢迎在下方评论或发邮件到objcvip@163.com斧正。本期带来《三年高考五年模拟》系列之苏宁篇。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
+<meta property="og:updated_time" content="2020-02-20T09:21:24.746Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《三年高考五年模拟》系列之苏宁篇">
+<meta name="twitter:description" content="当我们在问面试题时，我们究竟在问什么？OBJC.VIP 特别推出《三年高考五年模拟》系列文章，祝大家早日面向大厂进阶。笔者意在抛砖引玉，答案勘误及建议欢迎在下方评论或发邮件到objcvip@163.com斧正。本期带来《三年高考五年模拟》系列之苏宁篇。">
+<meta name="twitter:image" content="https://objcvip.github.io/images/og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-1-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="《三年高考五年模拟》系列之苏宁篇" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">首页</a>
+                
+                <a class="navbar-item"
+                href="/archives">归档</a>
+                
+                <a class="navbar-item"
+                href="/categories">分类</a>
+                
+                <a class="navbar-item"
+                href="/tags">标签</a>
+                
+                <a class="navbar-item"
+                href="/links">友链</a>
+                
+                <a class="navbar-item"
+                href="/about">关于</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-12 has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-02-20T07:47:00.000Z">2020-02-20</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/面试题/">面试题</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/面试题/《三年高考五年模拟》/">《三年高考五年模拟》</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    11 分钟 读完 (大约 1715 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                《三年高考五年模拟》系列之苏宁篇
+            
+        </h1>
+        <div class="content">
+            <p>当我们在问面试题时，我们究竟在问什么？<strong>OBJC.VIP</strong> 特别推出《三年高考五年模拟》系列文章，祝大家早日面向大厂进阶。笔者意在抛砖引玉，答案勘误及建议欢迎在下方评论或发邮件到<a href="mailto:objcvip@163.com" target="_blank" rel="noopener">objcvip@163.com</a>斧正。本期带来《三年高考五年模拟》系列之苏宁篇。<br><a id="more"></a></p>
+<p>题目链接：<a href="https://objc.vip/苏宁面试题/" target="_blank" rel="noopener">苏宁面试题</a></p>
+<h2 id="1-笔试题"><a href="#1-笔试题" class="headerlink" title="1. 笔试题"></a>1. 笔试题</h2><h3 id="1-1-冒泡排序"><a href="#1-1-冒泡排序" class="headerlink" title="1.1 冒泡排序"></a>1.1 冒泡排序</h3><p>Objective-C 实现如下：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">- (void)bubbleSort:(NSMutableArray *)array &#123;</span><br><span class="line">  for (int i = 0; i &lt; array.count; i++)</span><br><span class="line">  &#123;</span><br><span class="line">    for (int j = 0; j &lt; array.count-1-i; j++)</span><br><span class="line">    &#123;</span><br><span class="line">      NSInteger left = [array[j] integerValue];</span><br><span class="line">      NSInteger right = [array[j+1] integerValue];</span><br><span class="line">      if (left &lt; right) &#123;</span><br><span class="line">        [array exchangeObjectAtIndex:j withObjectAtIndex:j+1];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  NSLog(@&quot;%@&quot;,array);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>参考链接：<a href="https://objc.vip/冒泡排序/" target="_blank" rel="noopener">【算法】冒泡排序</a></p>
+<h3 id="1-2-二分查找"><a href="#1-2-二分查找" class="headerlink" title="1.2 二分查找"></a>1.2 二分查找</h3><p>Swift实现如下：<br><figure class="highlight swift hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">binarySearch</span>&lt;T: comparable&gt;<span class="hljs-params">(_a: [T], key: T)</span></span> -&gt; <span class="hljs-type">Int</span>? &#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> lowerBound = <span class="hljs-number">0</span></span><br><span class="line">  <span class="hljs-keyword">var</span> upperBound = a.<span class="hljs-built_in">count</span></span><br><span class="line">  <span class="hljs-keyword">while</span> lowerBound &lt; upperBound &#123;</span><br><span class="line">    <span class="hljs-keyword">let</span> midIndex = lowerBound + (upperBound - lowerBound) / <span class="hljs-number">2</span></span><br><span class="line">    <span class="hljs-keyword">if</span> a[midIndex] == key &#123;</span><br><span class="line">      <span class="hljs-keyword">return</span> midIndex</span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> a[midIndex] &lt; key &#123;</span><br><span class="line">      lowerBound = midIndex + <span class="hljs-number">1</span></span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">      upperBound = midIndex</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>参考链接：<a href="https://objc.vip/二分查找/" target="_blank" rel="noopener">【算法】二分查找</a></p>
+<h3 id="1-3-合并两个数组去重"><a href="#1-3-合并两个数组去重" class="headerlink" title="1.3 合并两个数组去重"></a>1.3 合并两个数组去重</h3><p>参考链接：<a href="https://objc.vip/合并两个数组并去重/" target="_blank" rel="noopener">【算法】合并两个数组并去重</a></p>
+<h3 id="1-4-两个大数相加"><a href="#1-4-两个大数相加" class="headerlink" title="1.4 两个大数相加"></a>1.4 两个大数相加</h3><p>参考链接：<a href="https://www.jianshu.com/p/fdeb84644b50" target="_blank" rel="noopener">大数相加算法</a></p>
+<h2 id="2-一面"><a href="#2-一面" class="headerlink" title="2. 一面"></a>2. 一面</h2><h3 id="2-1-SDWebImage-的缓存机制？LRU-说一下。"><a href="#2-1-SDWebImage-的缓存机制？LRU-说一下。" class="headerlink" title="2.1 SDWebImage 的缓存机制？LRU 说一下。"></a>2.1 SDWebImage 的缓存机制？LRU 说一下。</h3><p>SDWebImage加载图片拿到url会先把url的MD5值作为key从内存中查找，如果内存中有，则直接取图片显示；如果内存中没有，会从磁盘中查找。磁盘中没有，会走下载流程。<br>LRU 最近最少使用。缓存容量满时，会先清理最近最少的缓存。</p>
+<h3 id="2-2-数据库升级，比如从-1-0-升级到-2-0，增加了字段。"><a href="#2-2-数据库升级，比如从-1-0-升级到-2-0，增加了字段。" class="headerlink" title="2.2 数据库升级，比如从 1.0 升级到 2.0，增加了字段。"></a>2.2 数据库升级，比如从 1.0 升级到 2.0，增加了字段。</h3><p>做好兼容处理。</p>
+<h3 id="2-3-性能优化"><a href="#2-3-性能优化" class="headerlink" title="2.3 性能优化"></a>2.3 性能优化</h3><h4 id="2-3-1-优化启动时间"><a href="#2-3-1-优化启动时间" class="headerlink" title="2.3.1 优化启动时间"></a>2.3.1 优化启动时间</h4><ol>
+<li>将一些耗时操作延迟执行。比如SDK的初始化，界面的创建。</li>
+<li>不能延迟执行的，尽量放到后台执行。比如数据读取，原始 JSON 数据转对象，日志发送。</li>
+<li>减少动态库、合并动态库，定期清理不必要的动态库。</li>
+<li>减少类、分类的数量，合并Category和功能类似的类。删除不必要的方法和类、分类。</li>
+<li>将不必须在+load中做的事延时到+initialize中。</li>
+</ol>
+<h4 id="2-3-2-减少CPU、GPU资源消耗"><a href="#2-3-2-减少CPU、GPU资源消耗" class="headerlink" title="2.3.2 减少CPU、GPU资源消耗"></a>2.3.2 减少CPU、GPU资源消耗</h4><ol>
+<li>cell复用，header、footer复用。</li>
+<li>尽量把view设置不透明。</li>
+<li>减少视图的层级。</li>
+<li>尽量避免调整视图层次、添加和移除视图。</li>
+<li>合理选择加载图片的方式，UIImage imageNamed: ImageAssets 用于多个地方重复使用，UIImage imageWithContentsOfFile 一般用在图片数据很大，一般不需要多次使用的情况。</li>
+<li>图片大小最好和UIImageView的大小相同。</li>
+<li>不要阻塞主线程，耗时操作放在子线程进行。</li>
+<li>懒加载。</li>
+<li>缓存，缓存图片SDWebImage，缓存行高，NSCache缓存。</li>
+<li>复用高开销对象NSDateFormatter和NSCalendar。</li>
+<li>减少离屏渲染，优化圆角、阴影。</li>
+<li>使用正确的数据存储。</li>
+</ol>
+<h4 id="2-3-3-内存优化"><a href="#2-3-3-内存优化" class="headerlink" title="2.3.3 内存优化"></a>2.3.3 内存优化</h4><ol>
+<li>减少内存泄漏。</li>
+<li>降低内存使用峰值。<ul>
+<li>懒加载。</li>
+<li>灵活运用图片和文件加载。</li>
+<li>拉长文件处理机制，逐步处理文件。</li>
+</ul>
+</li>
+</ol>
+<h4 id="2-3-4-耗电优化"><a href="#2-3-4-耗电优化" class="headerlink" title="2.3.4 耗电优化"></a>2.3.4 耗电优化</h4><p>耗电功率是个比较综合的指标，影响因素很多。密集的网络请求，长链接，密集的CPU操作（比如大量的复杂计算）都会使耗电功率增加。网络状况（流畅的Wi-Fi还是信号不好的3G）都会影响。</p>
+<ol>
+<li>优化网络。<ul>
+<li>减少、压缩网络数据。</li>
+<li>若多次网络请求结果相同，尽量使用缓存。</li>
+<li>网络不可用时，不进行网络请求。</li>
+</ul>
+</li>
+<li>优化CPU、GPU消耗。</li>
+<li>优化I/O操作，使用dispatch_io。</li>
+<li>定位优化<ul>
+<li>尽量降低定位精度，如不要使用精度最高的KCLLocationAccuracyBest。</li>
+<li>如果只是需要快速确定用户位置，用 CLLocationManager 的 requestLocation 方法定位，定位完成后，定位硬件会自动断电。</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-4-Git-开发流程。"><a href="#2-4-Git-开发流程。" class="headerlink" title="2.4 Git 开发流程。"></a>2.4 Git 开发流程。</h3><ul>
+<li>master </li>
+<li>develop</li>
+<li>dev-xx 具体开发人员分支</li>
+</ul>
+<p>开发完成后发起PR。项目提审打Tag</p>
+<h3 id="2-5-微信登录流程。"><a href="#2-5-微信登录流程。" class="headerlink" title="2.5 微信登录流程。"></a>2.5 微信登录流程。</h3><p>注册微信的AppKey与AppSecret。使用微信SDK方法调起微信，回调拿到一些参数，把包含openId等协定好的参数传给服务器，由服务器判断该用户是否注册过，如果注册过，返回登录成功后的用户相关信息。</p>
+<h3 id="2-6-WebView-与-JS-交互。"><a href="#2-6-WebView-与-JS-交互。" class="headerlink" title="2.6 WebView 与 JS 交互。"></a>2.6 WebView 与 JS 交互。</h3><p>H5调用原生采用拦截协议的方式。<br>执行JS方法：evaluateScript<br>也可以使用JSBridge等方式。</p>
+<h3 id="2-7-说一下Runloop，苹果设计-Runloop-的初衷是什么？"><a href="#2-7-说一下Runloop，苹果设计-Runloop-的初衷是什么？" class="headerlink" title="2.7 说一下Runloop，苹果设计 Runloop 的初衷是什么？"></a>2.7 说一下Runloop，苹果设计 Runloop 的初衷是什么？</h3><p>Runloop 运行循环。<br>让线程在有任务的时候忙任务，没任务的时候休眠。<br>参考链接：<a href="https://objc.vip/RunloopSummary/" target="_blank" rel="noopener">【iOS 开发】RunLoop 总结</a></p>
+<h3 id="2-8-Delegate"><a href="#2-8-Delegate" class="headerlink" title="2.8 Delegate"></a>2.8 Delegate</h3><p>代理用assign修饰。</p>
+<h3 id="2-9-GCD"><a href="#2-9-GCD" class="headerlink" title="2.9 GCD"></a>2.9 GCD</h3><p>参考链接：<a href="https://www.jianshu.com/p/93cecfd5fc89" target="_blank" rel="noopener">GCD 的 API</a></p>
+<h3 id="2-10-深拷贝与浅拷贝"><a href="#2-10-深拷贝与浅拷贝" class="headerlink" title="2.10 深拷贝与浅拷贝"></a>2.10 深拷贝与浅拷贝</h3><p>深拷贝是拷贝整个对象。<br>浅拷贝只拷贝对象的指针。<br>copy用于修饰NSArray、NSDictionary、NSString。如果=右边赋值的对象是可变的，copy是深拷贝，拷贝对象的本身。如果赋值的对象是不可变的，copy是浅拷贝，只拷贝对象的指针。<br>用copy和用strong的区别？<br>用copy更安全，避免赋的值是可变的。如果能确保赋的值是不可变的，那么用strong和用copy都是浅拷贝，copy只是多了一个判断，判断可变还是不可变，其他是一样的。<br>NSMutableArray、NSMutableDictionary用Strong修饰，如果用copy，就会拷贝一份，变成不可变的，如果增删数据，就会发生错误。</p>
+<h3 id="2-11-进程间通信"><a href="#2-11-进程间通信" class="headerlink" title="2.11 进程间通信"></a>2.11 进程间通信</h3><p>URL Schemes</p>
+<h3 id="2-12-线程间通信，两个线程怎么切换？"><a href="#2-12-线程间通信，两个线程怎么切换？" class="headerlink" title="2.12 线程间通信，两个线程怎么切换？"></a>2.12 线程间通信，两个线程怎么切换？</h3><p>performSelectorOnThread</p>
+<h3 id="2-13-多态"><a href="#2-13-多态" class="headerlink" title="2.13 多态"></a>2.13 多态</h3><p>多态（Polymorphism）按字面的意思就是“多种状态”。在面向对象语言中，接口的多种不同的实现方式即为多态。<br>子类继承父类后，子类重写父类的方法，实现多态。</p>
+<h3 id="2-14-HTTP-三次握手，四次挥手。"><a href="#2-14-HTTP-三次握手，四次挥手。" class="headerlink" title="2.14 HTTP 三次握手，四次挥手。"></a>2.14 HTTP 三次握手，四次挥手。</h3><h2 id="3-二面"><a href="#3-二面" class="headerlink" title="3. 二面"></a>3. 二面</h2><h3 id="3-1-有没有复杂点的页面。"><a href="#3-1-有没有复杂点的页面。" class="headerlink" title="3.1 有没有复杂点的页面。"></a>3.1 有没有复杂点的页面。</h3><h3 id="3-2-（这个部门是做智能硬件的）蓝牙有哪些API。"><a href="#3-2-（这个部门是做智能硬件的）蓝牙有哪些API。" class="headerlink" title="3.2 （这个部门是做智能硬件的）蓝牙有哪些API。"></a>3.2 （这个部门是做智能硬件的）蓝牙有哪些API。</h3><h3 id="3-3-播放音频，展示音频的曲线，具体怎么做？"><a href="#3-3-播放音频，展示音频的曲线，具体怎么做？" class="headerlink" title="3.3 播放音频，展示音频的曲线，具体怎么做？"></a>3.3 播放音频，展示音频的曲线，具体怎么做？</h3><h2 id="4-三面"><a href="#4-三面" class="headerlink" title="4. 三面"></a>4. 三面</h2>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/三年高考五年模拟/">三年高考五年模拟</a>, <a class="has-link-grey -link" href="/tags/面试/">面试</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/《三年高考五年模拟》系列之滴滴出行篇/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">《三年高考五年模拟》系列之滴滴出行篇</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/面试题交流20191016/">
+                <span class="level-item">面试题交流（2019.10.16）</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.0/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.0/dist/gitalk.min.js"></script>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '7cf9ae5a9ae4228f59ef',
+        clientSecret: 'a60824892847d86dab15dae00b18a8227f9af769',
+        id: '2252bc14ba3d5efc5eec113f687c1249',
+        repo: 'Comments',
+        owner: 'objcvip',
+        admin: "objcvip",
+        createIssueManually: false,
+        distractionFreeMode: true
+    })
+    gitalk.render('comment-container')
+</script>
+
+    </div>
+</div>
+</div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="《三年高考五年模拟》系列之苏宁篇" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 ObjC.vip&nbsp;
+                All rights reserved.
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>

@@ -7,22 +7,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>【算法】二分查找 - OBJC.VIP</title>
+<title>《三年高考五年模拟》系列之好未来篇 - OBJC.VIP</title>
 
 
-    <meta name="description" content="二分查找也称折半查找（Binary Search），它是一种效率较高的查找方法。但是，折半查找要求线性表必须采用顺序存储结构，而且表中元素按关键字有序排列。">
-<meta name="keywords" content="算法">
+    <meta name="description" content="当我们在问面试题时，我们究竟在问什么？OBJC.VIP 特别推出《三年高考五年模拟》系列文章，祝大家早日面向大厂进阶。笔者意在抛砖引玉，答案勘误及建议欢迎在下方评论或发邮件到objcvip@163.com斧正。本期带来《三年高考五年模拟》系列之好未来篇。">
+<meta name="keywords" content="面试,三年高考五年模拟">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【算法】二分查找">
-<meta property="og:url" content="https://objcvip.github.io/二分查找/index.html">
+<meta property="og:title" content="《三年高考五年模拟》系列之好未来篇">
+<meta property="og:url" content="https://objcvip.github.io/《三年高考五年模拟》系列之好未来篇/index.html">
 <meta property="og:site_name" content="OBJC.VIP">
-<meta property="og:description" content="二分查找也称折半查找（Binary Search），它是一种效率较高的查找方法。但是，折半查找要求线性表必须采用顺序存储结构，而且表中元素按关键字有序排列。">
+<meta property="og:description" content="当我们在问面试题时，我们究竟在问什么？OBJC.VIP 特别推出《三年高考五年模拟》系列文章，祝大家早日面向大厂进阶。笔者意在抛砖引玉，答案勘误及建议欢迎在下方评论或发邮件到objcvip@163.com斧正。本期带来《三年高考五年模拟》系列之好未来篇。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://objcvip.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-06T08:35:24.442Z">
+<meta property="og:updated_time" content="2020-02-20T09:45:50.867Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【算法】二分查找">
-<meta name="twitter:description" content="二分查找也称折半查找（Binary Search），它是一种效率较高的查找方法。但是，折半查找要求线性表必须采用顺序存储结构，而且表中元素按关键字有序排列。">
+<meta name="twitter:title" content="《三年高考五年模拟》系列之好未来篇">
+<meta name="twitter:description" content="当我们在问面试题时，我们究竟在问什么？OBJC.VIP 特别推出《三年高考五年模拟》系列文章，祝大家早日面向大厂进阶。笔者意在抛砖引玉，答案勘误及建议欢迎在下方评论或发邮件到objcvip@163.com斧正。本期带来《三年高考五年模拟》系列之好未来篇。">
 <meta name="twitter:image" content="https://objcvip.github.io/images/og_image.png">
 
 
@@ -93,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="【算法】二分查找" height="28">
+                <img src="/images/logo.svg" alt="《三年高考五年模拟》系列之好未来篇" height="28">
             
             </a>
         </div>
@@ -143,17 +143,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-02-05T07:47:00.000Z">2018-02-05</time>
+                <time class="level-item has-text-grey" datetime="2020-02-20T09:40:00.000Z">2020-02-20</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/算法/">算法</a>
+                <a class="has-link-grey -link" href="/categories/面试题/">面试题</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/面试题/《三年高考五年模拟》/">《三年高考五年模拟》</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 283 个字)
+                    3 分钟 读完 (大约 509 个字)
                 </span>
                 
                 
@@ -162,15 +162,30 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                【算法】二分查找
+                《三年高考五年模拟》系列之好未来篇
             
         </h1>
         <div class="content">
-            <p>二分查找也称折半查找（Binary Search），它是一种效率较高的查找方法。但是，折半查找要求线性表必须采用顺序存储结构，而且表中元素按关键字有序排列。</p>
-<a id="more"></a>
-<h1 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h1><p>首先，假设表中元素是按升序排列，将表中间位置记录的关键字与查找关键字比较，如果两者相等，则查找成功；否则利用中间位置记录将表分成前、后两个子表，如果中间位置记录的关键字大于查找关键字，则进一步查找前一子表，否则进一步查找后一子表。重复以上过程，直到找到满足条件的记录，使查找成功，或直到子表不存在为止，此时查找不成功。</p>
-<h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1><p>O(log2n)</p>
-<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><figure class="highlight swift hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">binarySearch</span>&lt;T: Comparable&gt;<span class="hljs-params">(<span class="hljs-number">_</span> a: [T], key: T)</span></span> -&gt; <span class="hljs-type">Int</span>? &#123;    </span><br><span class="line">    <span class="hljs-keyword">var</span> lowerBound = <span class="hljs-number">0</span>    </span><br><span class="line">    <span class="hljs-keyword">var</span> upperBound = a.<span class="hljs-built_in">count</span>    </span><br><span class="line">    <span class="hljs-keyword">while</span> lowerBound &lt; upperBound &#123;        </span><br><span class="line">        <span class="hljs-keyword">let</span> midIndex = lowerBound + (upperBound - lowerBound) / <span class="hljs-number">2</span>        </span><br><span class="line">        <span class="hljs-keyword">if</span> a[midIndex] == key &#123;            </span><br><span class="line">            <span class="hljs-keyword">return</span> midIndex        </span><br><span class="line">        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> a[midIndex] &lt; key &#123;            </span><br><span class="line">            lowerBound = midIndex + <span class="hljs-number">1</span>        </span><br><span class="line">        &#125; <span class="hljs-keyword">else</span> &#123;            </span><br><span class="line">            upperBound = midIndex        </span><br><span class="line">        &#125;    </span><br><span class="line">    &#125;    </span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <p>当我们在问面试题时，我们究竟在问什么？<strong>OBJC.VIP</strong> 特别推出《三年高考五年模拟》系列文章，祝大家早日面向大厂进阶。笔者意在抛砖引玉，答案勘误及建议欢迎在下方评论或发邮件到<a href="mailto:objcvip@163.com" target="_blank" rel="noopener">objcvip@163.com</a>斧正。本期带来《三年高考五年模拟》系列之好未来篇。<br><a id="more"></a></p>
+<p>题目链接：<a href="https://objc.vip/好未来面试题/" target="_blank" rel="noopener">好未来面试题</a></p>
+<h2 id="1-一面"><a href="#1-一面" class="headerlink" title="1. 一面"></a>1. 一面</h2><p>1、说一下optional。（？ ！ ？？ 几种解包方式 if let、guard、？？等）</p>
+<p>2、说一下闭包。</p>
+<p>3、比较代理、通知、KVO？这三个谁的效率最高，谁的效率最低？( KVO 效率最低，因为 Runtime ）</p>
+<p>4、NSString 和 String 的区别？（ String 是值类型，NSString 是引用类型）</p>
+<p>5、Swift 跟 OC 的区别？（ OC 是动态的语言，Swift 是静态的语言）OC 是面向对象的，Swift 呢？（面向对象、面向协议、响应式编程）解释一下面向协议编程？</p>
+<p>6、说一下 MRC ？自动释放池？自动释放池什么时候释放？（我说 drain ）</p>
+<p>7、说一下多线程？（我提到了 dispatch_once 单例）</p>
+<p>8、分别用 OC 和 Swift 手写一下单例。（ Swift 的单例我忘记写 static 了，但是经提醒立马说出来了）</p>
+<p>9、SnaptKit 内部看过吗？</p>
+<p>10、链式语法的实现。</p>
+<p>UIView.top.equalTo().offSet(10)</p>
+<p>UIView.left.equalTo().offSet(10)</p>
+<p>为什么能写成UIView.top.left.offSet(10)</p>
+<h2 id="2-二面"><a href="#2-二面" class="headerlink" title="2. 二面"></a>2. 二面</h2><p>主要是手写算法题：</p>
+<p>1、用两个栈实现队列。</p>
+<p>2、从扑克牌中抽出5张，写一个方法判断是不是顺子。（如34567）大小王是万能的，可以替代任意数字。</p>
+<h2 id="3-三面"><a href="#3-三面" class="headerlink" title="3. 三面"></a>3. 三面</h2><p>项目经理聊项目</p>
+<h2 id="4-四面"><a href="#4-四面" class="headerlink" title="4. 四面"></a>4. 四面</h2><p>HR问了很多问题，包括个人优缺点，在前公司3年的成长等等。</p>
 
         </div>
         
@@ -178,7 +193,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/算法/">算法</a>
+                    <a class="has-link-grey -link" href="/tags/三年高考五年模拟/">三年高考五年模拟</a>, <a class="has-link-grey -link" href="/tags/面试/">面试</a>
                 </div>
             </div>
         </div>
@@ -195,17 +210,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/翻转字符串/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">【算法】翻转字符串</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/选择排序/">
-                <span class="level-item">【算法】选择排序</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/《三年高考五年模拟》系列之微店篇/">
+                <span class="level-item">《三年高考五年模拟》系列之微店篇</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -227,7 +235,7 @@
     var gitalk = new Gitalk({
         clientID: '7cf9ae5a9ae4228f59ef',
         clientSecret: 'a60824892847d86dab15dae00b18a8227f9af769',
-        id: '8e8e632f5ff2544acc30a8079e0e70e4',
+        id: 'af9966fddc24bbc5932cbce5b21363fc',
         repo: 'Comments',
         owner: 'objcvip',
         admin: "objcvip",
@@ -251,7 +259,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="【算法】二分查找" height="28">
+                    <img src="/images/logo.svg" alt="《三年高考五年模拟》系列之好未来篇" height="28">
                 
                 </a>
                 <p class="is-size-7">
